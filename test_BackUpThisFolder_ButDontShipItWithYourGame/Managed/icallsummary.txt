@@ -335,6 +335,8 @@ UnityEngine.AnimationCurve::RemoveKey_Injected
 UnityEngine.AnimationCurve::SmoothTangents_Injected
 UnityEngine.AnimationCurve::get_keys_Injected
 UnityEngine.AnimationCurve::set_keys_Injected
+UnityEngine.AnimationCurve::set_postWrapMode_Injected
+UnityEngine.AnimationCurve::set_preWrapMode_Injected
 UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal
 UnityEngine.Animations.PositionConstraint::AddSource_Injected
 UnityEngine.Animations.PositionConstraint::Internal_Create
@@ -370,6 +372,7 @@ UnityEngine.Application::get_streamingAssetsPath_Injected
 UnityEngine.Application::get_unityVersion_Injected
 UnityEngine.Application::get_version_Injected
 UnityEngine.Application::set_runInBackground
+UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
 UnityEngine.AssetBundle::LoadAsset_Internal_Injected
 UnityEngine.AssetBundle::LoadFromFile_Internal_Injected
@@ -455,6 +458,7 @@ UnityEngine.Camera::ScreenToWorldPoint_Injected
 UnityEngine.Camera::SetStereoProjectionMatrix_Injected
 UnityEngine.Camera::SetStereoViewMatrix_Injected
 UnityEngine.Camera::SetupCurrent_Injected
+UnityEngine.Camera::ViewportToWorldPoint_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::WorldToViewportPoint_Injected
 UnityEngine.Camera::get_backgroundColor_Injected
@@ -956,6 +960,7 @@ UnityEngine.ImageConversion::LoadImage_Injected
 UnityEngine.ImageConversion::EncodeToJPG_Injected
 UnityEngine.ImageConversion::EncodeToPNG_Injected
 UnityEngine.Input::CheckDisabled
+UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetKeyInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
@@ -973,6 +978,7 @@ UnityEngine.Input::get_mousePosition_Injected
 UnityEngine.Input::get_mouseScrollDelta_Injected
 UnityEngine.Input::set_compositionCursorPos_Injected
 UnityEngine.Input::set_imeCompositionMode
+UnityEngine.Input::set_simulateMouseWithTouches
 UnityEngine.Input::get_imeCompositionMode
 UnityEngine.IntegratedSubsystem::IsRunning_Injected
 UnityEngine.IntegratedSubsystem::SetHandle_Injected
@@ -1337,6 +1343,7 @@ UnityEngine.QualitySettings::get_billboardsFaceCameraPosition
 UnityEngine.QualitySettings::get_enableLODCrossFade
 UnityEngine.QualitySettings::get_antiAliasing
 UnityEngine.QualitySettings::get_maximumLODLevel
+UnityEngine.QualitySettings::get_vSyncCount
 UnityEngine.QualitySettings::get_lodBias
 UnityEngine.QualitySettings::get_meshLodThreshold
 UnityEngine.QualitySettings::set_antiAliasing
@@ -1977,9 +1984,13 @@ UnityEngine.TextGenerator::GetLinesInternal_Injected
 UnityEngine.TextGenerator::GetVerticesInternal_Injected
 UnityEngine.TextGenerator::Internal_Destroy
 UnityEngine.TextGenerator::get_rectExtents_Injected
+UnityEngine.TextMesh::get_font_Injected
+UnityEngine.TextMesh::get_color_Injected
 UnityEngine.TextMesh::set_anchor_Injected
 UnityEngine.TextMesh::set_characterSize_Injected
 UnityEngine.TextMesh::set_color_Injected
+UnityEngine.TextMesh::set_fontSize_Injected
+UnityEngine.TextMesh::set_font_Injected
 UnityEngine.TextMesh::set_text_Injected
 UnityEngine.Texture::get_isReadable_Injected
 UnityEngine.Texture::get_streamingTextureDiscardUnusedMips
@@ -2073,6 +2084,7 @@ UnityEngine.Transform::get_childCount_Injected
 UnityEngine.Transform::FindRelativeTransformWithPath_Injected
 UnityEngine.Transform::GetChild_Injected
 UnityEngine.Transform::GetParent_Injected
+UnityEngine.Transform::GetRoot_Injected
 UnityEngine.Transform::GetPositionAndRotation_Injected
 UnityEngine.Transform::Internal_LookAt_Injected
 UnityEngine.Transform::InverseTransformDirection_Injected
