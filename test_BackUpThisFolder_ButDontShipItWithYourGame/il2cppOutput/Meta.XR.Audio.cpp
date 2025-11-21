@@ -3308,7 +3308,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113191
+// Method Definition Index: 113218
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR State_t1239C776CF603A96F6EAE7862CB00FC9FC2F86EB* MetaXRAcousticControlZone_get_state_m594C3D31852E7AC7E88F5ED5C8EF9FC5C7FD502D (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3329,7 +3329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR State_t1239C776CF603A96F6EAE7862CB00FC9FC2F86
 		return L_0;
 	}
 }
-// Method Definition Index: 113192
+// Method Definition Index: 113219
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F MetaXRAcousticControlZone_get_ZoneColor_m1D100A56096AE6ABA1498C0D093CC5EB141847D4 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3352,7 +3352,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 		return L_1;
 	}
 }
-// Method Definition Index: 113193
+// Method Definition Index: 113220
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_ZoneColor_m4EA5FAED8F7B3CC7811CE7AAB67D1331EF916F15 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3377,7 +3377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_ZoneColor_
 		return;
 	}
 }
-// Method Definition Index: 113194
+// Method Definition Index: 113221
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179A1F10* MetaXRAcousticControlZone_get_Rt60_m90B8D942078B1EEEEECA2DB993FD6BFC7C0E5518 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3400,7 +3400,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179
 		return L_1;
 	}
 }
-// Method Definition Index: 113195
+// Method Definition Index: 113222
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_Rt60_mDC7396A3058D86EDC949069AC9ED1735A9C7E9A4 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179A1F10* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3426,7 +3426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_Rt60_mDC73
 		return;
 	}
 }
-// Method Definition Index: 113196
+// Method Definition Index: 113223
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179A1F10* MetaXRAcousticControlZone_get_ReverbLevel_m104874E72177FA389AB6172F818DE7988EB6E4A3 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3449,7 +3449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179
 		return L_1;
 	}
 }
-// Method Definition Index: 113197
+// Method Definition Index: 113224
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_ReverbLevel_mF3B649BD35FC4D81686CF7BFC0BFE912754B710E (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179A1F10* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3475,7 +3475,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_ReverbLeve
 		return;
 	}
 }
-// Method Definition Index: 113198
+// Method Definition Index: 113225
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179A1F10* MetaXRAcousticControlZone_get_EarlyReflectionsLevel_mF6D87796DBC49919CF55E7F62BD012CBBEB669B8 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3498,7 +3498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179
 		return L_1;
 	}
 }
-// Method Definition Index: 113199
+// Method Definition Index: 113226
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_EarlyReflectionsLevel_m2634FFBAC7C5B78A1832D675F86FD481D54D0B25 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, Spectrum_tB3DBF8FDC543E15999B59292C4341C4E179A1F10* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3524,7 +3524,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_EarlyRefle
 		return;
 	}
 }
-// Method Definition Index: 113200
+// Method Definition Index: 113227
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticControlZone_get_EarlyReflectionsTime_m16D31FAFA8BD01BBD79176DB7C80CB13F24F92DE (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3547,7 +3547,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticControlZone_get_EarlyRefl
 		return L_1;
 	}
 }
-// Method Definition Index: 113201
+// Method Definition Index: 113228
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_EarlyReflectionsTime_mEF17BA42DA5C03EE244E1878275F2CD705C0E6D9 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3572,7 +3572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_EarlyRefle
 		return;
 	}
 }
-// Method Definition Index: 113202
+// Method Definition Index: 113229
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticControlZone_get_FadeDistance_m2906F663584DD13D62618ED5A08CA9C5D950E40C (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3595,7 +3595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticControlZone_get_FadeDista
 		return L_1;
 	}
 }
-// Method Definition Index: 113203
+// Method Definition Index: 113230
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_FadeDistance_m46994370EA793A60BA41BA879FD27F1C8B34C624 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3628,7 +3628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_set_FadeDistan
 		return;
 	}
 }
-// Method Definition Index: 113204
+// Method Definition Index: 113231
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 MetaXRAcousticControlZone_get_NativeFadeDistance_mAE9EDD74286D4FE19E118E7F602F97058BD9D87F (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3692,7 +3692,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_15;
 	}
 }
-// Method Definition Index: 113205
+// Method Definition Index: 113232
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 MetaXRAcousticControlZone_get_NativeBoxSize_mB3C1569D88F25D9896C7F953F34EE162A5A3C83C (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3732,7 +3732,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_6;
 	}
 }
-// Method Definition Index: 113206
+// Method Definition Index: 113233
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_Clone_m81BB2900A7B42234EEAF6DA7DA5520D5E95D969D (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, State_t1239C776CF603A96F6EAE7862CB00FC9FC2F86EB* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3762,7 +3762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_Clone_m81BB290
 		return;
 	}
 }
-// Method Definition Index: 113207
+// Method Definition Index: 113234
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone__ctor_mE439725BBBD2334DF05BDA66AE24525239934EA2 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3872,7 +3872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone__ctor_mE439725
 		return;
 	}
 }
-// Method Definition Index: 113208
+// Method Definition Index: 113235
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_Start_m6141EAF318DDB3B23C98862B7F1BE99F6C0265BF (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3898,7 +3898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_Start_m6141EAF
 		return;
 	}
 }
-// Method Definition Index: 113209
+// Method Definition Index: 113236
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_StartInternal_mBF3E896B4E15D2DE4B8D59E5400AB06BF0FEC15C (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3995,7 +3995,7 @@ IL_0049:
 		return;
 	}
 }
-// Method Definition Index: 113210
+// Method Definition Index: 113237
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_OnDestroy_mF5134887BB7ADDF53F46048502407E07AEB7D59A (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4021,7 +4021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_OnDestroy_mF51
 		return;
 	}
 }
-// Method Definition Index: 113211
+// Method Definition Index: 113238
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_DestroyInternal_m93B0007328541C3B42DF414FB30019177485F949 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4081,7 +4081,7 @@ IL_0033:
 		return;
 	}
 }
-// Method Definition Index: 113212
+// Method Definition Index: 113239
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_OnEnable_m57F3C0BF590A37970E4829A17514B3FFDA136FC1 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4143,7 +4143,7 @@ IL_0029:
 		return;
 	}
 }
-// Method Definition Index: 113213
+// Method Definition Index: 113240
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_OnDisable_mB9282BBEEAF7FB4F6A00F749A693C44CE8F748E3 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4205,7 +4205,7 @@ IL_0029:
 		return;
 	}
 }
-// Method Definition Index: 113214
+// Method Definition Index: 113241
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_LateUpdate_mB35E1DC8DEC602EC72A5BCFB55DE4AECF503A2A0 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4292,7 +4292,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 113215
+// Method Definition Index: 113242
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_ApplyTransform_m854437D6756E4308F400D3466F8D8C997E784343 (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4423,7 +4423,7 @@ IL_009d:
 		return;
 	}
 }
-// Method Definition Index: 113216
+// Method Definition Index: 113243
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticControlZone_ApplyProperties_mD72351BB11AD2561BDF1B79521501B1D066754EF (MetaXRAcousticControlZone_tDAC222497F4D74ECD1F2E0148B0CB6C15311266C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4849,7 +4849,7 @@ IL_018f:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113217
+// Method Definition Index: 113244
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void State_Clone_m4EEFBF12FD9078FA8DEB43F240F422221654FEE1 (State_t1239C776CF603A96F6EAE7862CB00FC9FC2F86EB* __this, State_t1239C776CF603A96F6EAE7862CB00FC9FC2F86EB* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4919,7 +4919,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void State_Clone_m4EEFBF12FD9078FA8DEB43F240F
 		return;
 	}
 }
-// Method Definition Index: 113218
+// Method Definition Index: 113245
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void State__ctor_m81FF19A29A8D9B66E0C53891BB37011940931B95 (State_t1239C776CF603A96F6EAE7862CB00FC9FC2F86EB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4986,7 +4986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void State__ctor_m81FF19A29A8D9B66E0C53891BB3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113219
+// Method Definition Index: 113246
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_add_OnAnyGeometryEnabled_m5C0E7A36FD54543BC4CCC90F96E46DE59C2DA2C1 (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5035,7 +5035,7 @@ IL_0006:
 		return;
 	}
 }
-// Method Definition Index: 113220
+// Method Definition Index: 113247
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_remove_OnAnyGeometryEnabled_mCBC0CEAF2B1FB54128C7C343CDBDAF64DE16949A (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5084,7 +5084,7 @@ IL_0006:
 		return;
 	}
 }
-// Method Definition Index: 113221
+// Method Definition Index: 113248
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticGeometry_get_RelativeFilePath_m497DFC116B1CD94853D1502C874D15AAAE6681C0 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5105,7 +5105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticGeometry_get_Relative
 		return L_0;
 	}
 }
-// Method Definition Index: 113222
+// Method Definition Index: 113249
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticGeometry_get_AbsoluteFilePath_m0029B7F7F44163D8F84CC6934B5A440F55BEE6CA (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5145,7 +5145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticGeometry_get_Absolute
 		return L_3;
 	}
 }
-// Method Definition Index: 113223
+// Method Definition Index: 113250
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_AbsoluteFilePath_mD0996936775500EB09C3DB2CF61ABF8D3617833F (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5255,7 +5255,7 @@ IL_0056:
 		return;
 	}
 }
-// Method Definition Index: 113224
+// Method Definition Index: 113251
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_EnableSimplification_m4AFEF8997D152F5866E7C3D24FAA24EF1FFAE1D9 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5276,7 +5276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_EnableSimplif
 		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&1))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
-// Method Definition Index: 113225
+// Method Definition Index: 113252
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_EnableSimplification_m99B6E5569C4B287B4343F4F95C297F3FBB085899 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5329,7 +5329,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 113226
+// Method Definition Index: 113253
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_EnableDiffraction_mD7C7DBA58D288700A7C8CAE7A95695BC35B8F91D (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5350,7 +5350,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_EnableDiffrac
 		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&2))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
-// Method Definition Index: 113227
+// Method Definition Index: 113254
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_EnableDiffraction_m3FA98D19C2875159E6CA1EE1862F58768DB3FD63 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5403,7 +5403,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 113228
+// Method Definition Index: 113255
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MaxSimplifyError_mEE86DCF82536B1667F18031A6CE6F4109CD0FDD0 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5424,7 +5424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MaxSimplifyE
 		return L_0;
 	}
 }
-// Method Definition Index: 113229
+// Method Definition Index: 113256
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_MaxSimplifyError_m65949DF09FEFD0AEB57EC7E918FA09B646F3777B (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5456,7 +5456,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_MaxSimplifyEr
 		return;
 	}
 }
-// Method Definition Index: 113230
+// Method Definition Index: 113257
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MinDiffractionEdgeAngle_m29852A9CE5E5C8407B57CC4721CFBFAC516CA4E5 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5477,7 +5477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MinDiffracti
 		return L_0;
 	}
 }
-// Method Definition Index: 113231
+// Method Definition Index: 113258
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_MinDiffractionEdgeAngle_mF279D95CF5FB44B54C9FD6CFB5DC23829B616E5D (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5509,7 +5509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_MinDiffractio
 		return;
 	}
 }
-// Method Definition Index: 113232
+// Method Definition Index: 113259
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MinDiffractionEdgeLength_m7BE563B5A05680580317A86D0DA7B4111F9D286F (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5530,7 +5530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MinDiffracti
 		return L_0;
 	}
 }
-// Method Definition Index: 113233
+// Method Definition Index: 113260
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_MinDiffractionEdgeLength_m1F06CC0C3D5A8FD9A81AFEBA9DF851427C712649 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5562,7 +5562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_MinDiffractio
 		return;
 	}
 }
-// Method Definition Index: 113234
+// Method Definition Index: 113261
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_FlagLength_m942F012C26C51095673EF9BF69F1FE38069AD492 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5583,7 +5583,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_FlagLength_m
 		return L_0;
 	}
 }
-// Method Definition Index: 113235
+// Method Definition Index: 113262
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_FlagLength_m618EA3DD63CC248C803DECC895CCEAAF04E7EF95 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5609,7 +5609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_FlagLength_m6
 		return;
 	}
 }
-// Method Definition Index: 113236
+// Method Definition Index: 113263
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRAcousticGeometry_get_LodSelection_m517053F8C33D8BC4DE9C1015CA02524254B605D0 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5630,7 +5630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRAcousticGeometry_get_LodSelecti
 		return L_0;
 	}
 }
-// Method Definition Index: 113237
+// Method Definition Index: 113264
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_LodSelection_m90772556AF96952E082C38C153A8EB507096AA5A (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5653,7 +5653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_LodSelection_
 		return;
 	}
 }
-// Method Definition Index: 113238
+// Method Definition Index: 113265
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_UseColliders_m090094B16B722E8F6DD2A8DA495E7BEB4A551856 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5674,7 +5674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_UseColliders_
 		return L_0;
 	}
 }
-// Method Definition Index: 113239
+// Method Definition Index: 113266
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_UseColliders_mA89C1A432A3FD8B75D45E700204917D2817A3ADB (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5697,7 +5697,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_UseColliders_
 		return;
 	}
 }
-// Method Definition Index: 113240
+// Method Definition Index: 113267
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_OverrideExcludeTagsEnabled_mDDE2B2B272E8F57CCA4486679039961F0B4C3279 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5718,7 +5718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_OverrideExclu
 		return L_0;
 	}
 }
-// Method Definition Index: 113241
+// Method Definition Index: 113268
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_OverrideExcludeTagsEnabled_mCC4E69A5C87DCDCAF32D32C611F3268EE498BCCF (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5741,7 +5741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_OverrideExclu
 		return;
 	}
 }
-// Method Definition Index: 113242
+// Method Definition Index: 113269
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* MetaXRAcousticGeometry_get_OverrideExcludeTags_mE695AD770ED8EDB254160C1D5EB5E2BF9FE60579 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5762,7 +5762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 113243
+// Method Definition Index: 113270
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_OverrideExcludeTags_m6F58515A2A0B71930960A66C9A86625D13F890C1 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5786,7 +5786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_set_OverrideExclu
 		return;
 	}
 }
-// Method Definition Index: 113244
+// Method Definition Index: 113271
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* MetaXRAcousticGeometry_get_ExcludeTags_mBE216AA4F8B0F7893FFA29F4752526FBC870FF9B (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5841,7 +5841,7 @@ IL_001a:
 		return G_B3_0;
 	}
 }
-// Method Definition Index: 113245
+// Method Definition Index: 113272
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_IsLoaded_m5EE61EEA70E3913F1B1908BA897AE7FA2816AC51 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5862,7 +5862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_IsLoaded_m5EE
 		return (bool)((((int32_t)L_0) == ((int32_t)3))? 1 : 0);
 	}
 }
-// Method Definition Index: 113246
+// Method Definition Index: 113273
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRAcousticGeometry_get_VertexCount_mB25BA461D84F3234A29C9C00673AC1876B3F34BF (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5883,7 +5883,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRAcousticGeometry_get_VertexCoun
 		return L_0;
 	}
 }
-// Method Definition Index: 113247
+// Method Definition Index: 113274
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_Awake_mD497435369A281B35E902DA318129CBC9B1FE277 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5910,7 +5910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_Awake_mD497435369
 		return;
 	}
 }
-// Method Definition Index: 113248
+// Method Definition Index: 113275
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_StartInternal_m0E7E9B6CA1ABAE01D9431DE1BDC1E898F0790C0F (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5971,7 +5971,7 @@ IL_001e:
 		return L_2;
 	}
 }
-// Method Definition Index: 113249
+// Method Definition Index: 113276
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_CreatePropagationGeometry_mAF7DF4B233275F171DD3C91BD625BE45E5679377 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6323,7 +6323,7 @@ IL_0134:
 		return L_32;
 	}
 }
-// Method Definition Index: 113250
+// Method Definition Index: 113277
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_IncrementEnabledGeometryCount_m5FCFE415DFEB8310DAF231193FE7B919F67B0650 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6377,7 +6377,7 @@ IL_0026:
 		return;
 	}
 }
-// Method Definition Index: 113251
+// Method Definition Index: 113278
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_DecrementEnabledGeometryCount_m641302B5E92E4075EC5577509030DFCCBC6B0751 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6412,7 +6412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_DecrementEnabledG
 		return;
 	}
 }
-// Method Definition Index: 113252
+// Method Definition Index: 113279
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_OnEnable_m315FA2E9705D869162BF7AFCF8DC579DB1DB77EA (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6613,7 +6613,7 @@ IL_00b9:
 		return;
 	}
 }
-// Method Definition Index: 113253
+// Method Definition Index: 113280
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_OnDisable_m3071ECB93ABBFCD27AAF2EC96D5DE236F36DB739 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6798,7 +6798,7 @@ IL_00b3:
 		return;
 	}
 }
-// Method Definition Index: 113254
+// Method Definition Index: 113281
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_LateUpdate_m12CB08F9ED97A266C462040B340C902D6D97F4F7 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6886,7 +6886,7 @@ IL_003d:
 		return;
 	}
 }
-// Method Definition Index: 113255
+// Method Definition Index: 113282
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_ApplyTransform_m668FB7715054C7D5C1D1071585CDB5F48C349F47 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6962,7 +6962,7 @@ IL_0037:
 		return;
 	}
 }
-// Method Definition Index: 113256
+// Method Definition Index: 113283
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_OnDestroy_m178477FD5C66534EB3A4A980E557FF8B2BC19884 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6989,7 +6989,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_OnDestroy_m178477
 		return;
 	}
 }
-// Method Definition Index: 113257
+// Method Definition Index: 113284
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_DestroyInternal_m8CEAF97E458C8A6B6CDB261471E8C41D5EE78881 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7045,7 +7045,7 @@ IL_0017:
 		return L_2;
 	}
 }
-// Method Definition Index: 113258
+// Method Definition Index: 113285
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_DestroyPropagationGeometry_m82D8FD1E6669A262A65FC68F5F4A944ADB22E821 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7197,7 +7197,7 @@ IL_006b:
 		return L_10;
 	}
 }
-// Method Definition Index: 113259
+// Method Definition Index: 113286
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_isObjectUsedByLODGroup_m177BC19EC3D88E008A6A4D819089436CD6D4BDC8 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_obj, LODGroup_tA4C4F98D3F698143BC7529146AB31A3D2EF24D9A* ___1_lod, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7356,7 +7356,7 @@ IL_0060:
 		return L_21;
 	}
 }
-// Method Definition Index: 113260
+// Method Definition Index: 113287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_traverseMeshHierarchy_m5EC8A7EA4F92259F999466B67CD7BA662BA03AD7 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_obj, bool ___1_includeChildren, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___2_excludeTags, bool ___3_parentWasExcluded, int32_t ___4_lodSelection, LODGroup_tA4C4F98D3F698143BC7529146AB31A3D2EF24D9A* ___5_parentLOD, RuntimeObject* ___6_visitor, RuntimeObject* ___7_parentData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8072,7 +8072,7 @@ IL_0219:
 		return;
 	}
 }
-// Method Definition Index: 113261
+// Method Definition Index: 113288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_GatherGeometryInternal_m67C04895DD090700BF80D2BC0A8F29BA212A1EBB (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, intptr_t ___0_geometryHandle, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_meshObject, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_worldToLocal, bool ___3_ignoreStatic, int32_t* ___4_ignoredMeshCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10516,7 +10516,7 @@ IL_0a19:
 		return L_473;
 	}
 }
-// Method Definition Index: 113262
+// Method Definition Index: 113289
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_uploadMeshFilter_m2A93FE65CAE6F0084FA17C290FC0DCA07B42897C (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___0_tempVertices, List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___1_tempIndices, MeshGroupU5BU5D_tE2FBC633F034275D8D81A139BC36181351263935* ___2_groups, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_vertices, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___4_indices, int32_t* ___5_vertexOffset, int32_t* ___6_indexOffset, int32_t* ___7_groupOffset, Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___8_mesh, IMaterialDataProviderU5BU5D_t62A73F7C8F9F04CB57B4E44409FEB75532A8F2EB* ___9_materials, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___10_matrix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11053,7 +11053,7 @@ IL_020e:
 		return L_124;
 	}
 }
-// Method Definition Index: 113263
+// Method Definition Index: 113290
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_updateCountsForMesh_m454250E4D8BC3D6C219AE25429781A199D59F014 (int32_t* ___0_totalVertexCount, uint32_t* ___1_totalIndexCount, int32_t* ___2_totalFaceCount, int32_t* ___3_totalMaterialCount, Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___4_mesh, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11255,7 +11255,7 @@ IL_0071:
 		return;
 	}
 }
-// Method Definition Index: 113264
+// Method Definition Index: 113291
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_GatherGeometryRuntime_mD419463F9DDE0C6C51433EC6B09C51B68B2BB664 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11383,7 +11383,7 @@ IL_006a:
 		return L_15;
 	}
 }
-// Method Definition Index: 113265
+// Method Definition Index: 113292
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_ReadFile_mA3924D47B92B438C41289D98520F3630D8C6ADC2 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11643,7 +11643,7 @@ IL_00f2:
 		return L_32;
 	}
 }
-// Method Definition Index: 113266
+// Method Definition Index: 113293
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaXRAcousticGeometry_LoadGeometryAsync_mEAF60D803E86DFB471BB8F8CA1966F21A4A63AD9 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, String_t* ___0_relativePath, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11670,7 +11670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaXRAcousticGeometry_LoadGeo
 		return L_2;
 	}
 }
-// Method Definition Index: 113267
+// Method Definition Index: 113294
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_LoadGeometryFromMemory_mF656919C4231614A89C90E1D4D278A105CB98D45 (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, ReadOnly_t20A1D3C0A351842F6F4706F8195289BE46CD78DF ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11721,7 +11721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry_LoadGeometryFromM
 		return;
 	}
 }
-// Method Definition Index: 113268
+// Method Definition Index: 113295
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry__ctor_mAD6CF5C9FC16C5D7AFFDAADA4EF1ADBB8FB89BFF (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11790,7 +11790,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry__ctor_mAD6CF5C9FC
 		return;
 	}
 }
-// Method Definition Index: 113269
+// Method Definition Index: 113296
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticGeometry__cctor_mE3926D8EDEA01AA896301AFCB34FA2DA3280F01C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11969,7 +11969,7 @@ IL2CPP_EXTERN_C void TerrainMaterial_t077467F802F665351CC173D06C63F44AC513304B_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113273
+// Method Definition Index: 113300
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGatherer__ctor_m8EB66E52706A836BB2CE7468E45632C7D46507EB (MeshGatherer_tAEFF5ABB563CDE078ADCCA65B04C8F0CE21DFBD8* __this, bool ___0_ignoreStatic, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12023,7 +12023,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGatherer__ctor_m8EB66E52706A836BB2CE
 		return;
 	}
 }
-// Method Definition Index: 113274
+// Method Definition Index: 113301
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MeshGatherer_visit_m05DCF30C98B2C22BA7558B92889541D6314B992D (MeshGatherer_tAEFF5ABB563CDE078ADCCA65B04C8F0CE21DFBD8* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_transform, RuntimeObject* ___1_parentData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12674,7 +12674,7 @@ IL_021a:
 		return L_101;
 	}
 }
-// Method Definition Index: 113275
+// Method Definition Index: 113302
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t01807CA78E531826F5A381E8CDA67844A9D3DEFE* MeshGatherer_get_Meshes_mF5119CE9B78EF875DB5B1349E0E32EF6789F4AF3 (MeshGatherer_tAEFF5ABB563CDE078ADCCA65B04C8F0CE21DFBD8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12695,7 +12695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t01807CA78E531826F5A381E8CDA67844A9D3D
 		return L_0;
 	}
 }
-// Method Definition Index: 113276
+// Method Definition Index: 113303
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4305C707AFADCAC77068901AE83BFE5A7794DF1B* MeshGatherer_get_Terrains_mC58F9EEE71D6DB456160AF10CB5EF7CBAC1F1BC7 (MeshGatherer_tAEFF5ABB563CDE078ADCCA65B04C8F0CE21DFBD8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12724,7 +12724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4305C707AFADCAC77068901AE83BFE5A7794D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113277
+// Method Definition Index: 113304
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m5160E5CE4F32AE342CAFB5EE8146B8A85A7CBE42 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12744,7 +12744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m5160E5CE4F32AE342CAFB5EE
 		return;
 	}
 }
-// Method Definition Index: 113278
+// Method Definition Index: 113305
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m732A6CC8DAEAE61B651C84E4D583B99E69588025 (U3CU3Ec_t19429DB0A9E2119D28FFB319EF2C2C4CB98D5924* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12760,7 +12760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m732A6CC8DAEAE61B651C84E4D
 		return;
 	}
 }
-// Method Definition Index: 113279
+// Method Definition Index: 113306
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CvisitU3Eb__1_0_mF84E4A5A4F69A5F0251048CC8E368A04F54EC93E (U3CU3Ec_t19429DB0A9E2119D28FFB319EF2C2C4CB98D5924* __this, MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12787,7 +12787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CvisitU3Eb__1_0_mF84E4A5A4F69A
 		return L_1;
 	}
 }
-// Method Definition Index: 113280
+// Method Definition Index: 113307
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* U3CU3Ec_U3CvisitU3Eb__1_1_mF0FC81E70F16450D65377F49AC4D8384A894768E (U3CU3Ec_t19429DB0A9E2119D28FFB319EF2C2C4CB98D5924* __this, MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12817,7 +12817,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113281
+// Method Definition Index: 113308
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ColliderGatherer_visit_mD525B494101027D3EE4ED66AA5480AA2CEB79680 (ColliderGatherer_t432538FC898CB6E59E2AA2DDAC5F9569D51A52D0* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_transform, RuntimeObject* ___1_parentData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13618,7 +13618,7 @@ IL_03d3:
 		return L_157;
 	}
 }
-// Method Definition Index: 113282
+// Method Definition Index: 113309
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t01807CA78E531826F5A381E8CDA67844A9D3DEFE* ColliderGatherer_get_Meshes_m0B49D7D634CC019BA8121A0B13E68DF62E07CC27 (ColliderGatherer_t432538FC898CB6E59E2AA2DDAC5F9569D51A52D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13639,7 +13639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t01807CA78E531826F5A381E8CDA67844A9D3D
 		return L_0;
 	}
 }
-// Method Definition Index: 113283
+// Method Definition Index: 113310
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4305C707AFADCAC77068901AE83BFE5A7794DF1B* ColliderGatherer_get_Terrains_m9D50C8682C2EAA89C4CD6C47DCB82C0CBB00D2BF (ColliderGatherer_t432538FC898CB6E59E2AA2DDAC5F9569D51A52D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13660,7 +13660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4305C707AFADCAC77068901AE83BFE5A7794D
 		return L_0;
 	}
 }
-// Method Definition Index: 113284
+// Method Definition Index: 113311
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColliderGatherer__ctor_m1EABD2703185C99F1B62F5106C710A6E28688F7D (ColliderGatherer_t432538FC898CB6E59E2AA2DDAC5F9569D51A52D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13709,7 +13709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColliderGatherer__ctor_m1EABD2703185C99F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113285
+// Method Definition Index: 113312
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mD6EF6632C65B3A49E8E9F2052FE3B0D90CE0890E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13729,7 +13729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mD6EF6632C65B3A49E8E9F205
 		return;
 	}
 }
-// Method Definition Index: 113286
+// Method Definition Index: 113313
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m047DD36A33F4A9B67FDD1A0FF8AAF58BAB5C35AB (U3CU3Ec_t8CEE3EDAEE75BBF8F8A2DBBE51011E6BDFA9C54D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13745,7 +13745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m047DD36A33F4A9B67FDD1A0FF
 		return;
 	}
 }
-// Method Definition Index: 113287
+// Method Definition Index: 113314
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CvisitU3Eb__0_0_mBAB29C635899EC519C71EBE9F022E0635AEC2FFB (U3CU3Ec_t8CEE3EDAEE75BBF8F8A2DBBE51011E6BDFA9C54D* __this, MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13772,7 +13772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CvisitU3Eb__0_0_mBAB29C635899E
 		return L_1;
 	}
 }
-// Method Definition Index: 113288
+// Method Definition Index: 113315
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* U3CU3Ec_U3CvisitU3Eb__0_1_m1C95E6FA8D8C1EDFF9976C97DAE0D8E307667160 (U3CU3Ec_t8CEE3EDAEE75BBF8F8A2DBBE51011E6BDFA9C54D* __this, MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13802,7 +13802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113289
+// Method Definition Index: 113316
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m9DF7A6E8C7C0EE4A43DE461DCE89DEE73B85B94C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13822,7 +13822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m9DF7A6E8C7C0EE4A43DE461D
 		return;
 	}
 }
-// Method Definition Index: 113290
+// Method Definition Index: 113317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mDA5DDDCCF2D2148566431D3C51C6213FF2BC1CF4 (U3CU3Ec_tE04D4F079CC0E98FA2C8A2CEA309FD92C559BDE7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13838,7 +13838,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mDA5DDDCCF2D2148566431D3C5
 		return;
 	}
 }
-// Method Definition Index: 113291
+// Method Definition Index: 113318
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3CGatherGeometryInternalU3Eb__87_0_m0DAD34467309281DFE6B5A12848D48BE219715C4 (U3CU3Ec_tE04D4F079CC0E98FA2C8A2CEA309FD92C559BDE7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_t, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13865,7 +13865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3CGatherGeometryInternalU3
 		return L_1;
 	}
 }
-// Method Definition Index: 113292
+// Method Definition Index: 113319
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3C_cctorU3Eb__95_0_m42AEE8730B13DD086A287242E0030ECBFE8AC3E1 (U3CU3Ec_tE04D4F079CC0E98FA2C8A2CEA309FD92C559BDE7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13894,7 +13894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3C_cctorU3Eb__95_0_m42AEE8730B1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113293
+// Method Definition Index: 113320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass93_0__ctor_m939B5A6BB903A37FCBB87DDEDE162EF36E5373AD (U3CU3Ec__DisplayClass93_0_t4EF3D624075093C1EABE20D32C52673DAD2A9501* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13910,7 +13910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass93_0__ctor_m939B5A6
 		return;
 	}
 }
-// Method Definition Index: 113294
+// Method Definition Index: 113321
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass93_0_U3CLoadGeometryFromMemoryU3Eb__0_mFE94F9428DA7363DBDEB1309549FEEF97BE3D5F6 (U3CU3Ec__DisplayClass93_0_t4EF3D624075093C1EABE20D32C52673DAD2A9501* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14075,7 +14075,7 @@ IL_0088:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113295
+// Method Definition Index: 113322
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryAsyncU3Ed__92__ctor_mB52E0F9537696691623B4D78A92A1C963B5D61E9 (U3CLoadGeometryAsyncU3Ed__92_tB0269FBB53AC1FA879647944E2D2CB087DBA5B43* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14093,7 +14093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryAsyncU3Ed__92__ctor_mB52E
 		return;
 	}
 }
-// Method Definition Index: 113296
+// Method Definition Index: 113323
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryAsyncU3Ed__92_System_IDisposable_Dispose_mB9FAD1F8887BDC550F1C6D1B918EBB48BB28E584 (U3CLoadGeometryAsyncU3Ed__92_tB0269FBB53AC1FA879647944E2D2CB087DBA5B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14108,7 +14108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryAsyncU3Ed__92_System_IDis
 		return;
 	}
 }
-// Method Definition Index: 113297
+// Method Definition Index: 113324
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CLoadGeometryAsyncU3Ed__92_MoveNext_m10CA36DF3A626C8AAF054BA491B51B653EB561CC (U3CLoadGeometryAsyncU3Ed__92_tB0269FBB53AC1FA879647944E2D2CB087DBA5B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14380,7 +14380,7 @@ IL_0118:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 113298
+// Method Definition Index: 113325
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadGeometryAsyncU3Ed__92_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3DA0B231A53DA36AE045DA2AB9F8EB62898FC28E (U3CLoadGeometryAsyncU3Ed__92_tB0269FBB53AC1FA879647944E2D2CB087DBA5B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14396,7 +14396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadGeometryAsyncU3Ed__92_S
 		return L_0;
 	}
 }
-// Method Definition Index: 113299
+// Method Definition Index: 113326
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryAsyncU3Ed__92_System_Collections_IEnumerator_Reset_m195B838858C3A0B4E2DDDB13A2AFAF9E688B29CC (U3CLoadGeometryAsyncU3Ed__92_tB0269FBB53AC1FA879647944E2D2CB087DBA5B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14413,7 +14413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryAsyncU3Ed__92_System_Coll
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CLoadGeometryAsyncU3Ed__92_System_Collections_IEnumerator_Reset_m195B838858C3A0B4E2DDDB13A2AFAF9E688B29CC_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 113300
+// Method Definition Index: 113327
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadGeometryAsyncU3Ed__92_System_Collections_IEnumerator_get_Current_m093841A8CE415BC4731CC0A607933F21146DACF7 (U3CLoadGeometryAsyncU3Ed__92_tB0269FBB53AC1FA879647944E2D2CB087DBA5B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14437,7 +14437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadGeometryAsyncU3Ed__92_S
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113301
+// Method Definition Index: 113328
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryFromMemoryU3Ed__93__ctor_mDF49A760A4EFBB7F71A189E87E264F9F2C7C6C88 (U3CLoadGeometryFromMemoryU3Ed__93_t0CDA83C4C3F98C5F0A83876127EADED022FB7240* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14453,7 +14453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryFromMemoryU3Ed__93__ctor_
 		return;
 	}
 }
-// Method Definition Index: 113302
+// Method Definition Index: 113329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryFromMemoryU3Ed__93_MoveNext_m91D20E8E178E65EB6DA2EFB9AC3F50B9229F8261 (U3CLoadGeometryFromMemoryU3Ed__93_t0CDA83C4C3F98C5F0A83876127EADED022FB7240* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14863,7 +14863,7 @@ IL_0226:
 		return;
 	}
 }
-// Method Definition Index: 113303
+// Method Definition Index: 113330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryFromMemoryU3Ed__93_SetStateMachine_mEB5858EA08400742CAE28B873B21F2174E0621DB (U3CLoadGeometryFromMemoryU3Ed__93_t0CDA83C4C3F98C5F0A83876127EADED022FB7240* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14886,7 +14886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadGeometryFromMemoryU3Ed__93_SetSta
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113304
+// Method Definition Index: 113331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMap_get_StaticOnly_m8BA1F14249108444642373ED363BBEA324AC83B8 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14907,7 +14907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMap_get_StaticOnly_m8BA1F1
 		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&1))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
-// Method Definition Index: 113305
+// Method Definition Index: 113332
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_set_StaticOnly_m4F9A57E118CBF1E962412C379DAA1D180FCBDE47 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14960,7 +14960,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 113306
+// Method Definition Index: 113333
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMap_get_NoFloating_mBFE5776284E4458F921965681F9C17B56A6877F4 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14981,7 +14981,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMap_get_NoFloating_mBFE577
 		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&2))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
-// Method Definition Index: 113307
+// Method Definition Index: 113334
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_set_NoFloating_mA2BA6D7C8518D7919F43064DCB129E76147A33B6 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15034,7 +15034,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 113308
+// Method Definition Index: 113335
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMap_get_Diffraction_m65631DB1F2526C19B3A0B7CCB89EAF77F5D25A04 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15055,7 +15055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMap_get_Diffraction_m65631
 		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&8))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
-// Method Definition Index: 113309
+// Method Definition Index: 113336
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_set_Diffraction_mC31F7DB7C70B7ABAEF952DF5004CC6A4B43A495C (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15108,7 +15108,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 113310
+// Method Definition Index: 113337
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 MetaXRAcousticMap_get_GravityVector_m992E73530D4AA8E6F79FB4230E1F352513AEDA9A (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15129,7 +15129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 113311
+// Method Definition Index: 113338
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_set_GravityVector_mB150F5E8D766CE94FE3F326CA5683396B94C1593 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15155,7 +15155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_set_GravityVector_mB15
 		return;
 	}
 }
-// Method Definition Index: 113312
+// Method Definition Index: 113339
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMap_get_RelativeFilePath_mDFD82C6668487DAF02373CAD10F018E45F52D6C1 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15176,7 +15176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMap_get_RelativeFileP
 		return L_0;
 	}
 }
-// Method Definition Index: 113313
+// Method Definition Index: 113340
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMap_get_AbsoluteFilePath_mD73ED8AF514B7D8D9D9C20B4DA87B9E5FE533DB8 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15216,7 +15216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMap_get_AbsoluteFileP
 		return L_3;
 	}
 }
-// Method Definition Index: 113314
+// Method Definition Index: 113341
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_set_AbsoluteFilePath_m5F43F0BAEF537C302DC636D50C5515BFAE8C951A (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15362,7 +15362,7 @@ IL_0074:
 		return;
 	}
 }
-// Method Definition Index: 113315
+// Method Definition Index: 113342
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_Start_m4E031C707D6B0FBAA1AF24C31721D2DCB190852A (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15388,7 +15388,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_Start_m4E031C707D6B0FB
 		return;
 	}
 }
-// Method Definition Index: 113316
+// Method Definition Index: 113343
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_StartInternal_m06632A2907FBA3D7B2D3A95EB4682B68E78D16DA (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, bool ___0_autoLoad, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15817,7 +15817,7 @@ IL_0191:
 		return;
 	}
 }
-// Method Definition Index: 113317
+// Method Definition Index: 113344
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaXRAcousticMap_LoadMapAsync_mF3B44F87A768ACD810F6496061490A58BC56F16F (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, String_t* ___0_streamingAssetsSubPath, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15844,7 +15844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaXRAcousticMap_LoadMapAsync
 		return L_2;
 	}
 }
-// Method Definition Index: 113318
+// Method Definition Index: 113345
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_LoadMapFromMemory_mDB257A15687E33B54CC085A1114DA0093008CF18 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, ReadOnly_t20A1D3C0A351842F6F4706F8195289BE46CD78DF ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15895,7 +15895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_LoadMapFromMemory_mDB2
 		return;
 	}
 }
-// Method Definition Index: 113319
+// Method Definition Index: 113346
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_OnDestroy_m8CB4B8CB0F5619274352DA4C21ABCD196471FFF7 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15921,7 +15921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_OnDestroy_m8CB4B8CB0F5
 		return;
 	}
 }
-// Method Definition Index: 113320
+// Method Definition Index: 113347
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_DestroyInternal_m0D42F4E58ACB4CA16F563170A98BDDD242EBBC50 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16066,7 +16066,7 @@ IL_0068:
 		return;
 	}
 }
-// Method Definition Index: 113321
+// Method Definition Index: 113348
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_OnEnable_m39C3890E86F265E8D3C732BE4F46EC30976964A0 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16144,7 +16144,7 @@ IL_003f:
 		return;
 	}
 }
-// Method Definition Index: 113322
+// Method Definition Index: 113349
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_OnDisable_m7965D8C727C118F3E2B7D19118CCE19D34ADA32B (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16230,7 +16230,7 @@ IL_004b:
 		return;
 	}
 }
-// Method Definition Index: 113323
+// Method Definition Index: 113350
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_LateUpdate_m06A758103021F1777656D1B773C11ADC3FD459B0 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16317,7 +16317,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 113324
+// Method Definition Index: 113351
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_ApplyTransform_m3691C060BB5A5C88BC75520D253A3C18F847EAFC (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16364,7 +16364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap_ApplyTransform_m3691C0
 		return;
 	}
 }
-// Method Definition Index: 113325
+// Method Definition Index: 113352
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap__ctor_mBAE35F46B0BD8A9C363FC33B0FD71CC49CB0C046 (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16437,7 +16437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMap__ctor_mBAE35F46B0BD8A9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113326
+// Method Definition Index: 113353
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass36_0__ctor_mE4701DC1AA5EE403AF9D91097D8A8824837F84CE (U3CU3Ec__DisplayClass36_0_t4AF586E1A62845DE22D41907CF5B2AFDD19B160D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16453,7 +16453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass36_0__ctor_mE4701DC
 		return;
 	}
 }
-// Method Definition Index: 113327
+// Method Definition Index: 113354
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass36_0_U3CLoadMapFromMemoryU3Eb__0_mCBB45E0FA25A680AC0E4360595C29E009C7C0811 (U3CU3Ec__DisplayClass36_0_t4AF586E1A62845DE22D41907CF5B2AFDD19B160D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16610,7 +16610,7 @@ IL_0088:
 		return;
 	}
 }
-// Method Definition Index: 113328
+// Method Definition Index: 113355
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass36_0_U3CLoadMapFromMemoryU3Eb__1_mB93688E1234291D6E1630F05B68C4A3A349C6450 (U3CU3Ec__DisplayClass36_0_t4AF586E1A62845DE22D41907CF5B2AFDD19B160D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16684,7 +16684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass36_0_U3CLoadMapFrom
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113329
+// Method Definition Index: 113356
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapAsyncU3Ed__35__ctor_m0940621AB67AFD9EA2D42851479C8EE423CDF47D (U3CLoadMapAsyncU3Ed__35_tDB0CDFAE379B15B0D09BB940E03E3114182B0C62* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16702,7 +16702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapAsyncU3Ed__35__ctor_m0940621AB
 		return;
 	}
 }
-// Method Definition Index: 113330
+// Method Definition Index: 113357
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapAsyncU3Ed__35_System_IDisposable_Dispose_mBC3538DE33161E189CD78195E1A773B8BA5123C3 (U3CLoadMapAsyncU3Ed__35_tDB0CDFAE379B15B0D09BB940E03E3114182B0C62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16717,7 +16717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapAsyncU3Ed__35_System_IDisposab
 		return;
 	}
 }
-// Method Definition Index: 113331
+// Method Definition Index: 113358
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CLoadMapAsyncU3Ed__35_MoveNext_m8CEA2679B028F601120962ED88420F57A377B32E (U3CLoadMapAsyncU3Ed__35_tDB0CDFAE379B15B0D09BB940E03E3114182B0C62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16978,7 +16978,7 @@ IL_0101:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 113332
+// Method Definition Index: 113359
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadMapAsyncU3Ed__35_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB444CE42525136D6232932EB8766DDDAB71D3C33 (U3CLoadMapAsyncU3Ed__35_tDB0CDFAE379B15B0D09BB940E03E3114182B0C62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16994,7 +16994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadMapAsyncU3Ed__35_System
 		return L_0;
 	}
 }
-// Method Definition Index: 113333
+// Method Definition Index: 113360
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapAsyncU3Ed__35_System_Collections_IEnumerator_Reset_mB10902B71D720DE3BC3C493CDBB6409CF4F7D766 (U3CLoadMapAsyncU3Ed__35_tDB0CDFAE379B15B0D09BB940E03E3114182B0C62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17011,7 +17011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapAsyncU3Ed__35_System_Collectio
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CLoadMapAsyncU3Ed__35_System_Collections_IEnumerator_Reset_mB10902B71D720DE3BC3C493CDBB6409CF4F7D766_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 113334
+// Method Definition Index: 113361
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadMapAsyncU3Ed__35_System_Collections_IEnumerator_get_Current_m3B429BAF7642C019F5AE7D40E11932038A702C31 (U3CLoadMapAsyncU3Ed__35_tDB0CDFAE379B15B0D09BB940E03E3114182B0C62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17035,7 +17035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadMapAsyncU3Ed__35_System
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113335
+// Method Definition Index: 113362
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapFromMemoryU3Ed__36__ctor_m1876EB546A3D94BD9D389F084A0A2856A4257291 (U3CLoadMapFromMemoryU3Ed__36_tEF88BB2A6A8B8DDFA6C0E19CEC084F3D370157CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17051,7 +17051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapFromMemoryU3Ed__36__ctor_m1876
 		return;
 	}
 }
-// Method Definition Index: 113336
+// Method Definition Index: 113363
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapFromMemoryU3Ed__36_MoveNext_mC2886373116221E142B1BC03BFE4785C1DBAEB99 (U3CLoadMapFromMemoryU3Ed__36_tEF88BB2A6A8B8DDFA6C0E19CEC084F3D370157CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17446,7 +17446,7 @@ IL_020e:
 		return;
 	}
 }
-// Method Definition Index: 113337
+// Method Definition Index: 113364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapFromMemoryU3Ed__36_SetStateMachine_m55B3294A39CEFBB4B107AB1ED13157D3DD282CE1 (U3CLoadMapFromMemoryU3Ed__36_tEF88BB2A6A8B8DDFA6C0E19CEC084F3D370157CD* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17469,7 +17469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadMapFromMemoryU3Ed__36_SetStateMac
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113338
+// Method Definition Index: 113365
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* MetaXRAcousticMaterial_get_Properties_m090B79955F0A00975FF839C6D8FE604A5BA5F7FA (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17490,7 +17490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterialProperties_t27FEAAC2A38
 		return L_0;
 	}
 }
-// Method Definition Index: 113339
+// Method Definition Index: 113366
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_set_Properties_m13B0523DDB71A29A685F89475BC24CE908472A45 (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17514,7 +17514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_set_Properties_m1
 		return;
 	}
 }
-// Method Definition Index: 113340
+// Method Definition Index: 113367
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E* MetaXRAcousticMaterial_get_Data_mF8A45A33E28CFCD65CD6429FC40779BFAED0E36C (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17583,7 +17583,7 @@ IL_0022:
 		return G_B6_0;
 	}
 }
-// Method Definition Index: 113341
+// Method Definition Index: 113368
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F MetaXRAcousticMaterial_get_Color_m64756400E1EA998EF2351CC3F39C6CC34DD5F36E (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17636,7 +17636,7 @@ IL_001a:
 		return G_B3_0;
 	}
 }
-// Method Definition Index: 113342
+// Method Definition Index: 113369
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_CopyPresetToCustomData_m22BCACE61D31254B97B3A14F3D274620067EC117 (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, int32_t ___0_preset, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17702,7 +17702,7 @@ IL_002f:
 		return;
 	}
 }
-// Method Definition Index: 113343
+// Method Definition Index: 113370
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_Start_mAA53445543A3A7D84FD81F504BE87A7F4B1C547D (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17754,7 +17754,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 113344
+// Method Definition Index: 113371
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMaterial_StartInternal_m2AF3A9B2C4F6F1E87B35D73862471ACA08702E6E (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17821,7 +17821,7 @@ IL_002e:
 		return L_5;
 	}
 }
-// Method Definition Index: 113345
+// Method Definition Index: 113372
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_OnDestroy_m09FE8D3DDC190C22A263EB2C3C9D6EFAE6E1AFA9 (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17847,7 +17847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_OnDestroy_m09FE8D
 		return;
 	}
 }
-// Method Definition Index: 113346
+// Method Definition Index: 113373
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_DestroyInternal_m7590363CFC9AD98AEC38903D6B99A51835E731D2 (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17900,7 +17900,7 @@ IL_002e:
 		return;
 	}
 }
-// Method Definition Index: 113347
+// Method Definition Index: 113374
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMaterial_ApplyMaterialProperties_m2ABADC8FFB60C4E900B8DF5B075D70E311C1CBBE (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17940,7 +17940,7 @@ IL_0015:
 		return L_3;
 	}
 }
-// Method Definition Index: 113348
+// Method Definition Index: 113375
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t MetaXRAcousticMaterial_CreateMaterialNativeHandle_m55CB35FDFCB1DE71B51571A69069B3110C54C8A0 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E* ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18043,7 +18043,7 @@ IL_003e:
 		return L_10;
 	}
 }
-// Method Definition Index: 113349
+// Method Definition Index: 113376
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_DestroyMaterialNativeHandle_m9C665BF0D610369019332CC2AA746418327B3D9F (intptr_t ___0_handle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18076,7 +18076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial_DestroyMaterialNa
 		return;
 	}
 }
-// Method Definition Index: 113350
+// Method Definition Index: 113377
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMaterial_ApplyPropertiesToNative_mD0090AB4AF157330CFA1081B1CAFC05D8EF51437 (intptr_t ___0_handle, MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E* ___1_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18112,7 +18112,7 @@ IL_000c:
 		return L_3;
 	}
 }
-// Method Definition Index: 113351
+// Method Definition Index: 113378
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetaXRAcousticMaterial_ApplyPropertiesToNative_mF4B399238BBB2B45BD62BF31A6ED3FD0FAEB4484 (intptr_t ___0_handle, MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E* ___1_data, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___2_gameObject, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18669,7 +18669,7 @@ IL_01cf:
 		return L_75;
 	}
 }
-// Method Definition Index: 113352
+// Method Definition Index: 113379
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial__ctor_mEC3605810D80CBB2975B3C09C9ED1BBFD9D951E6 (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18700,7 +18700,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterial__ctor_mEC3605810D
 		return;
 	}
 }
-// Method Definition Index: 113353
+// Method Definition Index: 113380
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMaterial_Meta_XR_Acoustics_IMaterialDataProvider_get_name_m2BEE0AF3CFF1EA8802C13F36F32144F2BA36409F (MetaXRAcousticMaterial_t6C23F9ABEC725EFC659ED3F4E819DA3A49BAF04C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18725,7 +18725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMaterial_Meta_XR_Acou
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113354
+// Method Definition Index: 113381
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m61ECEC28A3830B36696AA089CA912B1D4BA883B1 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18745,7 +18745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m61ECEC28A3830B36696AA089
 		return;
 	}
 }
-// Method Definition Index: 113355
+// Method Definition Index: 113382
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD0016B2ABF984AB7FA71827C78B9413B0C33AB26 (U3CU3Ec_tFCC7246B5DF6CCB59472A1115B9C47CF3AB3BD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18761,7 +18761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD0016B2ABF984AB7FA71827C7
 		return;
 	}
 }
-// Method Definition Index: 113356
+// Method Definition Index: 113383
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3CApplyPropertiesToNativeU3Eb__20_0_m34B61B2ABD4BE7FFD0E3E9383D76A6DA159C19F2 (U3CU3Ec_tFCC7246B5DF6CCB59472A1115B9C47CF3AB3BD7E* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_t, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18796,7 +18796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3CApplyPropertiesToNativeU
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113357
+// Method Definition Index: 113384
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* MetaXRAcousticMaterialMapping_findAcousticMaterial_m99315D069FA6F40B9103DFB495CAD03B287B9087 (MetaXRAcousticMaterialMapping_tD3A21BC8329BA95D199B7F3B6247445C4348D6E5* __this, PhysicsMaterial_t2949C5AB81E97E3B99B71EAFA5966CB89A9BEB1C* ___0_pmat, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18939,7 +18939,7 @@ IL_0064:
 		return L_16;
 	}
 }
-// Method Definition Index: 113358
+// Method Definition Index: 113385
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaXRAcousticMaterialMapping_tD3A21BC8329BA95D199B7F3B6247445C4348D6E5* MetaXRAcousticMaterialMapping_get_Instance_mA04D942C81CFA7B8C435D87BFB2B8551B328C69E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19039,7 +19039,7 @@ IL_0044:
 		return L_9;
 	}
 }
-// Method Definition Index: 113359
+// Method Definition Index: 113386
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialMapping__ctor_m54755FFC1CFCF13A9ABE25CC09A2A190F60F3B85 (MetaXRAcousticMaterialMapping_tD3A21BC8329BA95D199B7F3B6247445C4348D6E5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19063,7 +19063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialMapping__ctor_m547
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113360
+// Method Definition Index: 113387
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pair__ctor_m4E0C4EA48C9ADC5766E6860DA4B3DB2A4E20307C (Pair_t833BF123F980B19EB01DD9E23BABE9A7F8662E71* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19087,7 +19087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pair__ctor_m4E0C4EA48C9ADC5766E6860DA4B3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113361
+// Method Definition Index: 113388
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass0_0__ctor_mC1A4120919D842E410895258F02A0F8469EF6738 (U3CU3Ec__DisplayClass0_0_tB3DC995C943D74E23759F4726E97E7047F6FD619* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19103,7 +19103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass0_0__ctor_mC1A41209
 		return;
 	}
 }
-// Method Definition Index: 113362
+// Method Definition Index: 113389
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass0_0_U3CfindAcousticMaterialU3Eb__0_m0D20FE2FCB8C2E51254FD02C8BF9FA7C79E86437 (U3CU3Ec__DisplayClass0_0_tB3DC995C943D74E23759F4726E97E7047F6FD619* __this, Pair_t833BF123F980B19EB01DD9E23BABE9A7F8662E71* ___0_pair, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19140,7 +19140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass0_0_U3CfindAcoustic
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 113363
+// Method Definition Index: 113390
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E* MetaXRAcousticMaterialProperties_get_Data_m754E5EEFD11964F76599949B27DC18FCD619FC40 (MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19161,7 +19161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaterialData_t41B21BF613E7FA7EFE406A6D70F6816
 		return L_0;
 	}
 }
-// Method Definition Index: 113364
+// Method Definition Index: 113391
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRAcousticMaterialProperties_get_Preset_mC9C0CE562D9611579BD6825369D34D2C9DFCA50E (MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19182,7 +19182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRAcousticMaterialProperties_get_
 		return L_0;
 	}
 }
-// Method Definition Index: 113365
+// Method Definition Index: 113392
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_set_Preset_mD14408F3DF86A7EF953BD2ABC5AC8156C87653D1 (MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19234,7 +19234,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 113366
+// Method Definition Index: 113393
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_SetPreset_mBC60D73953B9F57155899052C54CAD0974F6222D (int32_t ___0_builtinPreset, MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___1_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19907,7 +19907,7 @@ IL_023a:
 		return;
 	}
 }
-// Method Definition Index: 113367
+// Method Definition Index: 113394
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_AcousticTile_m86779A4C585E171C29008D4A4BF56C4CB0C659E0 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20054,7 +20054,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Acousti
 		return;
 	}
 }
-// Method Definition Index: 113368
+// Method Definition Index: 113395
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Brick_mD559382F8EDAAE86F62B62AC46922549833BE739 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20201,7 +20201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Brick_m
 		return;
 	}
 }
-// Method Definition Index: 113369
+// Method Definition Index: 113396
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_BrickPainted_m657B66668E96DFB40D60DB568898D337FDD3B7E5 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20348,7 +20348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_BrickPa
 		return;
 	}
 }
-// Method Definition Index: 113370
+// Method Definition Index: 113397
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Cardboard_m4501E1FC1170278607B5368A1C9C12353016282B (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20515,7 +20515,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Cardboa
 		return;
 	}
 }
-// Method Definition Index: 113371
+// Method Definition Index: 113398
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Carpet_m7ADEF69E29248B9C2DB8C253AB2A4CAAEFB69B30 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20662,7 +20662,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Carpet_
 		return;
 	}
 }
-// Method Definition Index: 113372
+// Method Definition Index: 113399
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_CarpetHeavy_m28ADD780E6D6F639853A01752BAE8FF24433FC54 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20809,7 +20809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_CarpetH
 		return;
 	}
 }
-// Method Definition Index: 113373
+// Method Definition Index: 113400
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_CarpetHeavyPadded_m1AA5C529D6A662DEC08733426DD1F718C69D92F4 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20956,7 +20956,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_CarpetH
 		return;
 	}
 }
-// Method Definition Index: 113374
+// Method Definition Index: 113401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_CeramicTile_m43B7C33AA321E0EEC27C39B52EF887E804995F0C (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21103,7 +21103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Ceramic
 		return;
 	}
 }
-// Method Definition Index: 113375
+// Method Definition Index: 113402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Concrete_mAFB863D9FD80BC5CFAC2F6E72E77147F0338DDFA (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21250,7 +21250,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Concret
 		return;
 	}
 }
-// Method Definition Index: 113376
+// Method Definition Index: 113403
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_ConcreteRough_mFFC1895700E5A1F3764071C532B87184228B38D6 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21397,7 +21397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Concret
 		return;
 	}
 }
-// Method Definition Index: 113377
+// Method Definition Index: 113404
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_ConcreteBlock_mB9C64CEC34E6CB838AEE39D79CA5BD0DD4A86B9C (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21544,7 +21544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Concret
 		return;
 	}
 }
-// Method Definition Index: 113378
+// Method Definition Index: 113405
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_ConcreteBlockPainted_m9DCB3DC31103E609FFE71DD96D0673A8BD27FC27 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21691,7 +21691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Concret
 		return;
 	}
 }
-// Method Definition Index: 113379
+// Method Definition Index: 113406
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Curtain_m1E1AE1B2904ECE175B03C5839732BC82FA96A503 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21838,7 +21838,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Curtain
 		return;
 	}
 }
-// Method Definition Index: 113380
+// Method Definition Index: 113407
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Foliage_m996E50E59FB597E03A2174D2D76BBED58CEF9716 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21985,7 +21985,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Foliage
 		return;
 	}
 }
-// Method Definition Index: 113381
+// Method Definition Index: 113408
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Glass_mBBEAE87511A6F46118E8379072D2A3DD1A444880 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22132,7 +22132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Glass_m
 		return;
 	}
 }
-// Method Definition Index: 113382
+// Method Definition Index: 113409
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_GlassHeavy_mF7F386BA2DC1348F68490ABCF5E1F1114EB79882 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22279,7 +22279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_GlassHe
 		return;
 	}
 }
-// Method Definition Index: 113383
+// Method Definition Index: 113410
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Grass_mB8315E4E537F32FCD1D72D72B95AAA4E47627C8E (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22395,7 +22395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Grass_m
 		return;
 	}
 }
-// Method Definition Index: 113384
+// Method Definition Index: 113411
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Gravel_mD9A05CB1221E363B30749B05273CB844820B557F (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22511,7 +22511,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Gravel_
 		return;
 	}
 }
-// Method Definition Index: 113385
+// Method Definition Index: 113412
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_GypsumBoard_m68B58B96B0A7ABC4BC68E9231535A20F9217C5EB (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22658,7 +22658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_GypsumB
 		return;
 	}
 }
-// Method Definition Index: 113386
+// Method Definition Index: 113413
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Marble_mFCD0466549B5E09F3E67E899376DEB444F4A584F (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22805,7 +22805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Marble_
 		return;
 	}
 }
-// Method Definition Index: 113387
+// Method Definition Index: 113414
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Mud_m3E2AB8E9964DCBB8C8BE640C2BFA5A01EBE0CA16 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22921,7 +22921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Mud_m3E
 		return;
 	}
 }
-// Method Definition Index: 113388
+// Method Definition Index: 113415
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_PlasterOnBrick_mA94DA10F152B6BF36E23FFAB092B800E275886BD (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23068,7 +23068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Plaster
 		return;
 	}
 }
-// Method Definition Index: 113389
+// Method Definition Index: 113416
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_PlasterOnConcreteBlock_mE83152B4E258AA27BF4274EB9CFB014CA3D4F7DE (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23215,7 +23215,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Plaster
 		return;
 	}
 }
-// Method Definition Index: 113390
+// Method Definition Index: 113417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Rubber_m5F6BF366B7D73655590850B04DD62DEFBDB04040 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23362,7 +23362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Rubber_
 		return;
 	}
 }
-// Method Definition Index: 113391
+// Method Definition Index: 113418
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Soil_m1A5A39BD2B06857D6E2F1ED4718FF0B67454839D (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23478,7 +23478,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Soil_m1
 		return;
 	}
 }
-// Method Definition Index: 113392
+// Method Definition Index: 113419
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_SoundProof_m644328950C8AAB3D15A4D83EBC27AC1EC50B8E06 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23542,7 +23542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_SoundPr
 		return;
 	}
 }
-// Method Definition Index: 113393
+// Method Definition Index: 113420
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Snow_mD7A667D5785DC721DF9AA2DD382717A67BD0F4F5 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23658,7 +23658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Snow_mD
 		return;
 	}
 }
-// Method Definition Index: 113394
+// Method Definition Index: 113421
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Steel_m56523AF647F0D0BD076915F8A0561406D184448C (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23805,7 +23805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Steel_m
 		return;
 	}
 }
-// Method Definition Index: 113395
+// Method Definition Index: 113422
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Stone_m56FC47CDDB3777A229E073AD0146D5D20D1D7D6B (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23942,7 +23942,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Stone_m
 		return;
 	}
 }
-// Method Definition Index: 113396
+// Method Definition Index: 113423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Vent_mA024D11F74B57F9B6DFFC12ED326A9CE6D5FFD5F (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24119,7 +24119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Vent_mA
 		return;
 	}
 }
-// Method Definition Index: 113397
+// Method Definition Index: 113424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Water_mC0AED00F7920EFAAA0B2568026E2725BEE64B615 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24266,7 +24266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_Water_m
 		return;
 	}
 }
-// Method Definition Index: 113398
+// Method Definition Index: 113425
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodThin_m356DDF6F79D87668130F8358600FB8A9DCFDBB7A (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24413,7 +24413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodThi
 		return;
 	}
 }
-// Method Definition Index: 113399
+// Method Definition Index: 113426
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodThick_m5C24D39A27B403E13B4D3360C9679DC29F09761E (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24560,7 +24560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodThi
 		return;
 	}
 }
-// Method Definition Index: 113400
+// Method Definition Index: 113427
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodFloor_mEB7CDBE48267046C955A8797B7354EC65A79BAD9 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24707,7 +24707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodFlo
 		return;
 	}
 }
-// Method Definition Index: 113401
+// Method Definition Index: 113428
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodOnConcrete_mD8A6047DD92F6590BE4DB27AB5D274B248126568 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24854,7 +24854,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_WoodOnC
 		return;
 	}
 }
-// Method Definition Index: 113402
+// Method Definition Index: 113429
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_MetaDefault_m6275F6C447A2836C6BE0873560E296F5D6367926 (MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E** ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24926,7 +24926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties_MetaDef
 		return;
 	}
 }
-// Method Definition Index: 113403
+// Method Definition Index: 113430
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties__ctor_mFCE39A86C0CF44A9002A7974184B5BA033C3B0AB (MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24959,7 +24959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRAcousticMaterialProperties__ctor_m
 		return;
 	}
 }
-// Method Definition Index: 113404
+// Method Definition Index: 113431
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMaterialProperties_Meta_XR_Acoustics_IMaterialDataProvider_get_name_mA1A487046D6DE9E74DA9D13BB9F4F08664F78080 (MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25065,7 +25065,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 113221
+// Method Definition Index: 113248
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaXRAcousticGeometry_get_RelativeFilePath_m497DFC116B1CD94853D1502C874D15AAAE6681C0_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25164,7 +25164,7 @@ IL_0017:
 		return L_10;
 	}
 }
-// Method Definition Index: 113240
+// Method Definition Index: 113267
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_OverrideExcludeTagsEnabled_mDDE2B2B272E8F57CCA4486679039961F0B4C3279_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25185,7 +25185,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MetaXRAcousticGeometry_get_O
 		return L_0;
 	}
 }
-// Method Definition Index: 113862
+// Method Definition Index: 113889
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* MetaXRAcousticSettings_get_ExcludeTags_m53F907405211CB582EE051ECE52CA65993F38D1A_inline (MetaXRAcousticSettings_tDD5A8FF53B48D70646FFC715466C85E6CE18E406* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25206,7 +25206,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE
 		return L_0;
 	}
 }
-// Method Definition Index: 113242
+// Method Definition Index: 113269
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* MetaXRAcousticGeometry_get_OverrideExcludeTags_mE695AD770ED8EDB254160C1D5EB5E2BF9FE60579_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25435,7 +25435,7 @@ IL_003d:
 		return L_17;
 	}
 }
-// Method Definition Index: 113228
+// Method Definition Index: 113255
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MaxSimplifyError_mEE86DCF82536B1667F18031A6CE6F4109CD0FDD0_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25456,7 +25456,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_
 		return L_0;
 	}
 }
-// Method Definition Index: 113230
+// Method Definition Index: 113257
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MinDiffractionEdgeAngle_m29852A9CE5E5C8407B57CC4721CFBFAC516CA4E5_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25477,7 +25477,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_
 		return L_0;
 	}
 }
-// Method Definition Index: 113232
+// Method Definition Index: 113259
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_MinDiffractionEdgeLength_m7BE563B5A05680580317A86D0DA7B4111F9D286F_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25498,7 +25498,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_
 		return L_0;
 	}
 }
-// Method Definition Index: 113234
+// Method Definition Index: 113261
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MetaXRAcousticGeometry_get_FlagLength_m942F012C26C51095673EF9BF69F1FE38069AD492_inline (MetaXRAcousticGeometry_t98E8F8236DEEBC18503CC5C88267E7D9EDC5EE02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25724,7 +25724,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 113312
+// Method Definition Index: 113339
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMap_get_RelativeFilePath_mDFD82C6668487DAF02373CAD10F018E45F52D6C1_inline (MetaXRAcousticMap_tDD63B9AE5F7E8951F997838778F8BE1F1E7BD2F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25745,7 +25745,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaXRAcousticMap_get_R
 		return L_0;
 	}
 }
-// Method Definition Index: 113363
+// Method Definition Index: 113390
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MaterialData_t41B21BF613E7FA7EFE406A6D70F68160BB13C17E* MetaXRAcousticMaterialProperties_get_Data_m754E5EEFD11964F76599949B27DC18FCD619FC40_inline (MetaXRAcousticMaterialProperties_t27FEAAC2A38377B93FC6EEDC5BD08B0DA71BAA56* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
