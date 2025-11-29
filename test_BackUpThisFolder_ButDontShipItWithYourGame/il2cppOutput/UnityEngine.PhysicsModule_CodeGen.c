@@ -404,6 +404,8 @@ extern void Rigidbody_get_linearVelocity_m367F5415641E5FB968440A91BAE2FCB8CAEA2C
 extern void Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985 (void);
 extern void Rigidbody_get_angularVelocity_m4EACCFCF15CA441CCD53B24322C2E7B8EEBDF6A8 (void);
 extern void Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0 (void);
+extern void Rigidbody_set_linearDamping_m42BB8ADA5D26250A11256502D08BDC2DAB980242 (void);
+extern void Rigidbody_set_angularDamping_m2763171B779080FC724173D87C34015ABED51671 (void);
 extern void Rigidbody_get_mass_m09DDDDC437499B83B3BD0D77C134BFDC3E667054 (void);
 extern void Rigidbody_set_mass_mC7F886DEDB57C742A16F8B6B779F69AFE164CA4B (void);
 extern void Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389 (void);
@@ -416,6 +418,7 @@ extern void Rigidbody_get_position_m4ECB79BDBBF8FD1EA572EDB792D3330DDED24691 (vo
 extern void Rigidbody_set_position_mA15BE12B8D82220E8CA90A0F0CBFB206FE81B41C (void);
 extern void Rigidbody_get_rotation_m07882A7024FB3F96BA13EC577A96163BBB621AA1 (void);
 extern void Rigidbody_set_rotation_mF2FC85A4A26AD9FED7DE0061889DF5A408461A5D (void);
+extern void Rigidbody_set_interpolation_mC7D39114A7AC6ED0AB2B40FECA4E2ED3C1D7603C (void);
 extern void Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9 (void);
 extern void Rigidbody_MoveRotation_m85825C7206E770E39DED9EE6D792702F577A891D (void);
 extern void Rigidbody_Sleep_m9826BDFCF078DF00223011B3F0FA7F4894F8F4CA (void);
@@ -431,6 +434,8 @@ extern void Rigidbody_get_linearVelocity_Injected_m0230F76BD25355A9762C9C5E32C60
 extern void Rigidbody_set_linearVelocity_Injected_mCAC97A87C8F0FAFA7007C394AF7974DD37073467 (void);
 extern void Rigidbody_get_angularVelocity_Injected_m8F8207351352DBE8B7103C3A703E03A25C3046CB (void);
 extern void Rigidbody_set_angularVelocity_Injected_m214B4B9E3C8DCA28990EE9D4BD3402474C32E939 (void);
+extern void Rigidbody_set_linearDamping_Injected_mE9170235C451E464E568531097B082444080A306 (void);
+extern void Rigidbody_set_angularDamping_Injected_m3859D5E1B39760EB29ECB9A333DA18DAA467DF03 (void);
 extern void Rigidbody_get_mass_Injected_m8664DF1CE25F4732818AEAE600C5451ECABB41BB (void);
 extern void Rigidbody_set_mass_Injected_m19C3B6F0F2C8AE43E22EAD4A4A28315DB2C63880 (void);
 extern void Rigidbody_set_useGravity_Injected_mE1C763DD42795192ABDEF9C9CD758ACA6B91EBBC (void);
@@ -443,6 +448,7 @@ extern void Rigidbody_get_position_Injected_mD3AC6CDFE76252AAE5F4862BC7D18E0C479
 extern void Rigidbody_set_position_Injected_m4BA595FF3746D7E89C136800180532B528E2680C (void);
 extern void Rigidbody_get_rotation_Injected_m185864060C2B33EDDEDE270E78A6C45F1AAF1FC1 (void);
 extern void Rigidbody_set_rotation_Injected_m7E13C37597294859ACA960465BA6EC37177D1F5C (void);
+extern void Rigidbody_set_interpolation_Injected_mD053C1B95C26E2D682A2281D9C07E3C5E1573D76 (void);
 extern void Rigidbody_MovePosition_Injected_m1FBFE36CBE00546E08E32E304FEB6EEA5EE34E3E (void);
 extern void Rigidbody_MoveRotation_Injected_m45E52DDE97339CE0552EBF4169DFBBC87D3F02D5 (void);
 extern void Rigidbody_Sleep_Injected_m5950FFE8F57AA31DABC7D4A25A8B44241C75AC2E (void);
@@ -455,7 +461,7 @@ extern void SphereCollider_set_radius_m6119FE18C6739B077AB17334B1B53984911017FF 
 extern void SphereCollider__ctor_mA8570CBE8C0E74C607669DC4E0CCA6CB1E4CB200 (void);
 extern void SphereCollider_get_radius_Injected_mF96901A391F7DBD16C5895D85C4853B65CD033A0 (void);
 extern void SphereCollider_set_radius_Injected_m1A4885A34095D7CE22CE2001BA6D47022F387747 (void);
-static Il2CppMethodPointer s_methodPointers[448] = 
+static Il2CppMethodPointer s_methodPointers[454] = 
 {
 	Collision_get_relativeVelocity_mAD9D45864C56FFAB284E77835BF75DF86D4E4CC0,
 	Collision_get_collider_mBB5A086C78FE4BE0589E216F899B611673ADD25D,
@@ -854,6 +860,8 @@ static Il2CppMethodPointer s_methodPointers[448] =
 	Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985,
 	Rigidbody_get_angularVelocity_m4EACCFCF15CA441CCD53B24322C2E7B8EEBDF6A8,
 	Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0,
+	Rigidbody_set_linearDamping_m42BB8ADA5D26250A11256502D08BDC2DAB980242,
+	Rigidbody_set_angularDamping_m2763171B779080FC724173D87C34015ABED51671,
 	Rigidbody_get_mass_m09DDDDC437499B83B3BD0D77C134BFDC3E667054,
 	Rigidbody_set_mass_mC7F886DEDB57C742A16F8B6B779F69AFE164CA4B,
 	Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389,
@@ -866,6 +874,7 @@ static Il2CppMethodPointer s_methodPointers[448] =
 	Rigidbody_set_position_mA15BE12B8D82220E8CA90A0F0CBFB206FE81B41C,
 	Rigidbody_get_rotation_m07882A7024FB3F96BA13EC577A96163BBB621AA1,
 	Rigidbody_set_rotation_mF2FC85A4A26AD9FED7DE0061889DF5A408461A5D,
+	Rigidbody_set_interpolation_mC7D39114A7AC6ED0AB2B40FECA4E2ED3C1D7603C,
 	Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9,
 	Rigidbody_MoveRotation_m85825C7206E770E39DED9EE6D792702F577A891D,
 	Rigidbody_Sleep_m9826BDFCF078DF00223011B3F0FA7F4894F8F4CA,
@@ -881,6 +890,8 @@ static Il2CppMethodPointer s_methodPointers[448] =
 	Rigidbody_set_linearVelocity_Injected_mCAC97A87C8F0FAFA7007C394AF7974DD37073467,
 	Rigidbody_get_angularVelocity_Injected_m8F8207351352DBE8B7103C3A703E03A25C3046CB,
 	Rigidbody_set_angularVelocity_Injected_m214B4B9E3C8DCA28990EE9D4BD3402474C32E939,
+	Rigidbody_set_linearDamping_Injected_mE9170235C451E464E568531097B082444080A306,
+	Rigidbody_set_angularDamping_Injected_m3859D5E1B39760EB29ECB9A333DA18DAA467DF03,
 	Rigidbody_get_mass_Injected_m8664DF1CE25F4732818AEAE600C5451ECABB41BB,
 	Rigidbody_set_mass_Injected_m19C3B6F0F2C8AE43E22EAD4A4A28315DB2C63880,
 	Rigidbody_set_useGravity_Injected_mE1C763DD42795192ABDEF9C9CD758ACA6B91EBBC,
@@ -893,6 +904,7 @@ static Il2CppMethodPointer s_methodPointers[448] =
 	Rigidbody_set_position_Injected_m4BA595FF3746D7E89C136800180532B528E2680C,
 	Rigidbody_get_rotation_Injected_m185864060C2B33EDDEDE270E78A6C45F1AAF1FC1,
 	Rigidbody_set_rotation_Injected_m7E13C37597294859ACA960465BA6EC37177D1F5C,
+	Rigidbody_set_interpolation_Injected_mD053C1B95C26E2D682A2281D9C07E3C5E1573D76,
 	Rigidbody_MovePosition_Injected_m1FBFE36CBE00546E08E32E304FEB6EEA5EE34E3E,
 	Rigidbody_MoveRotation_Injected_m45E52DDE97339CE0552EBF4169DFBBC87D3F02D5,
 	Rigidbody_Sleep_Injected_m5950FFE8F57AA31DABC7D4A25A8B44241C75AC2E,
@@ -987,7 +999,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[39] =
 	{ 0x06000188, RaycastHit_get_transform_m89DB7FCFC50E0213A37CBE089400064B8FA19155_AdjustorThunk },
 	{ 0x06000189, RaycastHit_get_rigidbody_mE6FCB1B1A9F0C8D4185A484C10B9A5403CCD6005_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[448] = 
+static const int32_t s_InvokerIndices[454] = 
 {
 	20454,
 	20243,
@@ -1386,6 +1398,8 @@ static const int32_t s_InvokerIndices[448] =
 	15683,
 	20454,
 	15683,
+	15573,
+	15573,
 	20345,
 	15573,
 	15241,
@@ -1398,6 +1412,7 @@ static const int32_t s_InvokerIndices[448] =
 	15683,
 	20284,
 	15513,
+	15385,
 	15683,
 	15513,
 	20465,
@@ -1413,6 +1428,8 @@ static const int32_t s_InvokerIndices[448] =
 	28361,
 	28361,
 	28361,
+	28368,
+	28368,
 	31790,
 	28368,
 	28362,
@@ -1425,6 +1442,7 @@ static const int32_t s_InvokerIndices[448] =
 	28361,
 	28361,
 	28361,
+	28365,
 	28361,
 	28361,
 	32115,
@@ -1443,7 +1461,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenMod
 const Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenModule = 
 {
 	"UnityEngine.PhysicsModule.dll",
-	448,
+	454,
 	s_methodPointers,
 	39,
 	s_adjustorThunks,

@@ -736,7 +736,7 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : 
 	float ___m_Seconds;
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D1810_t1EC5E61BE6A3DF7CA808C344605B16CF76828BC1 
+struct __StaticArrayInitTypeSizeU3D1833_tA7A35E76D2CDA3CE502F0A44CDC01E9A22D82D57 
 {
 	union
 	{
@@ -746,12 +746,12 @@ struct __StaticArrayInitTypeSizeU3D1810_t1EC5E61BE6A3DF7CA808C344605B16CF76828BC
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D1810_t1EC5E61BE6A3DF7CA808C344605B16CF76828BC1__padding[1810];
+		uint8_t __StaticArrayInitTypeSizeU3D1833_tA7A35E76D2CDA3CE502F0A44CDC01E9A22D82D57__padding[1833];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D3052_t3161A48B84F8415C2B361BD9A7A46A969723E76A 
+struct __StaticArrayInitTypeSizeU3D3096_t84BC36CC8BF0FB858AF68C25BA70C481BAB9ACEE 
 {
 	union
 	{
@@ -761,7 +761,7 @@ struct __StaticArrayInitTypeSizeU3D3052_t3161A48B84F8415C2B361BD9A7A46A969723E76
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D3052_t3161A48B84F8415C2B361BD9A7A46A969723E76A__padding[3052];
+		uint8_t __StaticArrayInitTypeSizeU3D3096_t84BC36CC8BF0FB858AF68C25BA70C481BAB9ACEE__padding[3096];
 	};
 };
 #pragma pack(pop, tp)
@@ -2108,8 +2108,8 @@ struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D1810_t1EC5E61BE6A3DF7CA808C344605B16CF76828BC1 ___4904238423B24B62E9A3D1034B9ABFB5861FB88F15971818FA338E39DE58422D;
-	__StaticArrayInitTypeSizeU3D3052_t3161A48B84F8415C2B361BD9A7A46A969723E76A ___652C8F1CE37D3359F7FF8971BD355E3F6333214F775B763B2241DDD0055E087E;
+	__StaticArrayInitTypeSizeU3D3096_t84BC36CC8BF0FB858AF68C25BA70C481BAB9ACEE ___7E5DC8D9AD20F77174E34756C42D90A5D3E22CCD92E164C5EAC02099F830A6C2;
+	__StaticArrayInitTypeSizeU3D1833_tA7A35E76D2CDA3CE502F0A44CDC01E9A22D82D57 ___837ACB72A4811B022028810D74A8D1205D7D12D1255E006A396779998907C7A3;
 };
 struct String_t_StaticFields
 {
@@ -2837,7 +2837,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111816
+// Method Definition Index: 111825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Awake_m29C1DE789B968D726EDD69F605321A223D47C1A0 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2850,24 +2850,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Awake_m29C1DE789B968D726EDD69
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, VertexZoom_Awake_m29C1DE789B968D726EDD69F605321A223D47C1A0_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7244));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7245));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7485));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7486));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7246));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7487));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:22>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7247));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7248));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7488));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7489));
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0;
 		L_0 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(__this, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7248));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7489));
 		__this->___m_TextComponent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_0);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:23>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7249));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7490));
 		return;
 	}
 }
-// Method Definition Index: 111817
+// Method Definition Index: 111826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnEnable_mE3719F01B6A8590066988F425F8A63103B5A7B47 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2883,28 +2883,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnEnable_mE3719F01B6A85900669
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, VertexZoom_OnEnable_mE3719F01B6A8590066988F425F8A63103B5A7B47_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7250));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7251));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7491));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7492));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7252));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7493));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:28>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7253));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7494));
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7254));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7495));
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7_RuntimeMethod_var), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7254));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7255));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7495));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7496));
 		NullCheck(L_0);
 		FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6(L_0, L_1, FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7255));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7496));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:29>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7256));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7497));
 		return;
 	}
 }
-// Method Definition Index: 111818
+// Method Definition Index: 111827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnDisable_mBB91C9EFA049395743D27358A427BB2B05850B47 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2920,28 +2920,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnDisable_mBB91C9EFA049395743
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, VertexZoom_OnDisable_mBB91C9EFA049395743D27358A427BB2B05850B47_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7257));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7258));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7498));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7499));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7259));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7500));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:34>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7260));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7501));
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7261));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7502));
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7_RuntimeMethod_var), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7261));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7262));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7502));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7503));
 		NullCheck(L_0);
 		FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F(L_0, L_1, FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7262));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7503));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:35>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7263));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7504));
 		return;
 	}
 }
-// Method Definition Index: 111819
+// Method Definition Index: 111828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Start_mB03D03148C98EBC9117D69510D24F21978546FCB (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2953,26 +2953,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Start_mB03D03148C98EBC9117D69
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, VertexZoom_Start_mB03D03148C98EBC9117D69510D24F21978546FCB_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7264));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7265));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7505));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7506));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7266));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7507));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:40>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7267));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7268));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7508));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7509));
 		RuntimeObject* L_0;
 		L_0 = VertexZoom_AnimateVertexColors_m632BD9DC8FB193AF2D5B540524B11AF139FDF5F0(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7268));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7269));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7509));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7510));
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7269));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7510));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:41>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7270));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7511));
 		return;
 	}
 }
-// Method Definition Index: 111820
+// Method Definition Index: 111829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2987,21 +2987,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_obj));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7271));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7272));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7512));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7513));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7273));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7514));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:46>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7274));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7515));
 		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_0 = ___0_obj;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7275));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7516));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, L_1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7275));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7516));
 		V_0 = L_2;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7276));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7517));
 		bool L_3 = V_0;
 		if (!L_3)
 		{
@@ -3010,18 +3010,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:47>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7277));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7518));
 		__this->___hasTextChanged = (bool)1;
 	}
 
 IL_0018:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:48>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7278));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7519));
 		return;
 	}
 }
-// Method Definition Index: 111821
+// Method Definition Index: 111830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexZoom_AnimateVertexColors_m632BD9DC8FB193AF2D5B540524B11AF139FDF5F0 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3043,7 +3043,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexZoom_AnimateVertexColors
 		return L_1;
 	}
 }
-// Method Definition Index: 111822
+// Method Definition Index: 111831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom__ctor_m454AF80ACB5C555BCB4B5E658A22B5A4FCC39422 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3055,21 +3055,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom__ctor_m454AF80ACB5C555BCB4B5E
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, VertexZoom__ctor_m454AF80ACB5C555BCB4B5E658A22B5A4FCC39422_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7279));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7280));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7520));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7521));
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:12>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7281));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7522));
 		__this->___AngleMultiplier = (1.0f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:13>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7282));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7523));
 		__this->___SpeedMultiplier = (1.0f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:14>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7283));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7524));
 		__this->___CurveScale = (1.0f);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7284));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7525));
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7284));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7525));
 		return;
 	}
 }
@@ -3081,7 +3081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom__ctor_m454AF80ACB5C555BCB4B5E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111823
+// Method Definition Index: 111832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m8C69A89B34AA3D16243E69F1E0015856C791CC8A (U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3097,7 +3097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m8C69A89
 		return;
 	}
 }
-// Method Definition Index: 111824
+// Method Definition Index: 111833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass10_0_U3CAnimateVertexColorsU3Eb__0_m8E51A05E012CCFA439DCF10A8B5C4FA196E4344A (U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* __this, int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3112,30 +3112,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass10_0_U3CAnimateV
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_a), (&___1_b));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, U3CU3Ec__DisplayClass10_0_U3CAnimateVertexColorsU3Eb__0_m8E51A05E012CCFA439DCF10A8B5C4FA196E4344A_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7285));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7286));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7526));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7527));
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:175>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7287));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7528));
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_0 = __this->___modifiedCharScale;
 		int32_t L_1 = ___0_a;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7288));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7529));
 		NullCheck(L_0);
 		float L_2;
 		L_2 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_0, L_1, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7288));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7529));
 		V_0 = L_2;
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_3 = __this->___modifiedCharScale;
 		int32_t L_4 = ___1_b;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7289));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7530));
 		NullCheck(L_3);
 		float L_5;
 		L_5 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_3, L_4, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7289));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7290));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7530));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7531));
 		int32_t L_6;
 		L_6 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F((&V_0), L_5, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7290));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7531));
 		return L_6;
 	}
 }
@@ -3147,7 +3147,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass10_0_U3CAnimateV
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111825
+// Method Definition Index: 111834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10__ctor_m7A5B8E07B89E628DB7119F7F61311165A2DBC4D6 (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3165,7 +3165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10__ctor_m7A
 		return;
 	}
 }
-// Method Definition Index: 111826
+// Method Definition Index: 111835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_IDisposable_Dispose_m974E92A444C6343E94C76BB6CC6508F7AE4FD36E (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3180,7 +3180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_ID
 		return;
 	}
 }
-// Method Definition Index: 111827
+// Method Definition Index: 111836
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__10_MoveNext_m6DBC52A95A92A54A1801DC4CEE548FA568251D5E (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3217,14 +3217,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__10_MoveNext_
 	bool V_8 = false;
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, U3CAnimateVertexColorsU3Ed__10_MoveNext_m6DBC52A95A92A54A1801DC4CEE548FA568251D5E_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7291));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7292));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7532));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7533));
 	Comparison_1_tB7DE1436CB53924C2FC41FF926D074C1ACC14D89* G_B21_0 = NULL;
 	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* G_B21_1 = NULL;
 	Comparison_1_tB7DE1436CB53924C2FC41FF926D074C1ACC14D89* G_B20_0 = NULL;
 	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* G_B20_1 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7293));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7534));
 		int32_t L_0 = __this->___U3CU3E1__state;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
@@ -3271,82 +3271,82 @@ IL_0027:
 IL_0029:
 	{
 		__this->___U3CU3E1__state = (-1);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7294));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7295));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7535));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7536));
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_2 = (U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7_il2cpp_TypeInfo_var);
 		U3CU3Ec__DisplayClass10_0__ctor_m8C69A89B34AA3D16243E69F1E0015856C791CC8A(L_2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7295));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7536));
 		__this->___U3CU3E8__1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1), (void*)L_2);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7296));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7537));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:59>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7297));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7538));
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_3 = __this->___U3CU3E4__this;
 		NullCheck(L_3);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = L_3->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7298));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7539));
 		NullCheck(L_4);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_4, (bool)0, (bool)0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7298));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7539));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:61>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7299));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7540));
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_5 = __this->___U3CU3E4__this;
 		NullCheck(L_5);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7300));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7541));
 		NullCheck(L_6);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_7;
 		L_7 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_6, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7300));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7541));
 		__this->___U3CtextInfoU3E5__2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__2), (void*)L_7);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:64>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7301));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7542));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_8 = __this->___U3CtextInfoU3E5__2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7302));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7543));
 		NullCheck(L_8);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_9;
 		L_9 = TMP_TextInfo_CopyMeshInfoVertexData_mF66E2F8821470E68D95FEB53D456CFA86241C0CA(L_8, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7302));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7543));
 		__this->___U3CcachedMeshInfoVertexDataU3E5__4 = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcachedMeshInfoVertexDataU3E5__4), (void*)L_9);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:67>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7303));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7544));
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_10 = __this->___U3CU3E8__1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7304));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7545));
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_11 = (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*)il2cpp_codegen_object_new(List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
 		List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802(L_11, List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7304));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7545));
 		NullCheck(L_10);
 		L_10->___modifiedCharScale = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&L_10->___modifiedCharScale), (void*)L_11);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:68>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7305));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7306));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7546));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7547));
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_12 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_12, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7306));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7547));
 		__this->___U3CscaleSortingOrderU3E5__5 = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CscaleSortingOrderU3E5__5), (void*)L_12);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:70>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7307));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7548));
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_13 = __this->___U3CU3E4__this;
 		NullCheck(L_13);
 		L_13->___hasTextChanged = (bool)1;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7308));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7549));
 		goto IL_089e;
 	}
 
 IL_00a2:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7309));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7550));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:75>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7310));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7551));
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_14 = __this->___U3CU3E4__this;
 		NullCheck(L_14);
 		bool L_15 = L_14->___hasTextChanged;
 		V_1 = L_15;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7311));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7552));
 		bool L_16 = V_1;
 		if (!L_16)
 		{
@@ -3354,38 +3354,38 @@ IL_00a2:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7312));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7553));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:78>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7313));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7554));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_17 = __this->___U3CtextInfoU3E5__2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7314));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7555));
 		NullCheck(L_17);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_18;
 		L_18 = TMP_TextInfo_CopyMeshInfoVertexData_mF66E2F8821470E68D95FEB53D456CFA86241C0CA(L_17, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7314));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7555));
 		__this->___U3CcachedMeshInfoVertexDataU3E5__4 = L_18;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcachedMeshInfoVertexDataU3E5__4), (void*)L_18);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:80>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7315));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7556));
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_19 = __this->___U3CU3E4__this;
 		NullCheck(L_19);
 		L_19->___hasTextChanged = (bool)0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7316));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7557));
 	}
 
 IL_00d1:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:83>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7317));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7558));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_20 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_20);
 		int32_t L_21 = L_20->___characterCount;
 		__this->___U3CcharacterCountU3E5__6 = L_21;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:86>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7318));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7559));
 		int32_t L_22 = __this->___U3CcharacterCountU3E5__6;
 		V_2 = (bool)((((int32_t)L_22) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7319));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7560));
 		bool L_23 = V_2;
 		if (!L_23)
 		{
@@ -3393,13 +3393,13 @@ IL_00d1:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7320));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7561));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:88>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7321));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7322));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7562));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7563));
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_24 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_24, (0.25f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7322));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7563));
 		__this->___U3CU3E2__current = L_24;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_24);
 		__this->___U3CU3E1__state = 1;
@@ -3408,43 +3408,43 @@ IL_00d1:
 
 IL_0109:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7323));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7564));
 		__this->___U3CU3E1__state = (-1);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:89>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7324));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7565));
 		goto IL_089e;
 	}
 
 IL_0115:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:93>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7325));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7566));
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_25 = __this->___U3CU3E8__1;
 		NullCheck(L_25);
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_26 = L_25->___modifiedCharScale;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7326));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7567));
 		NullCheck(L_26);
 		List_1_Clear_m6CD2E5AAE6552A27AECCC57936767B4DCFC902B1_inline(L_26, List_1_Clear_m6CD2E5AAE6552A27AECCC57936767B4DCFC902B1_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7326));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7567));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:94>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7327));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7568));
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_27 = __this->___U3CscaleSortingOrderU3E5__5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7328));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7569));
 		NullCheck(L_27);
 		List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_inline(L_27, List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7328));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7569));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7329));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7570));
 		__this->___U3CiU3E5__7 = 0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7330));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7571));
 		goto IL_06e3;
 	}
 
 IL_013e:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7331));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7572));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:98>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7332));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7573));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_28 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_28);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_29 = L_28->___characterInfo;
@@ -3464,11 +3464,11 @@ IL_013e:
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CcharInfoU3E5__8))->___material), (void*)NULL);
 		#endif
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:101>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7333));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7574));
 		TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8* L_33 = (TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8*)(&__this->___U3CcharInfoU3E5__8);
 		bool L_34 = L_33->___isVisible;
 		V_3 = (bool)((((int32_t)L_34) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7334));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7575));
 		bool L_35 = V_3;
 		if (!L_35)
 		{
@@ -3477,14 +3477,14 @@ IL_013e:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:102>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7335));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7576));
 		goto IL_06d1;
 	}
 
 IL_0172:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:105>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7336));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7577));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_36 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_36);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_37 = L_36->___characterInfo;
@@ -3493,7 +3493,7 @@ IL_0172:
 		int32_t L_39 = ((L_37)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_38)))->___materialReferenceIndex;
 		__this->___U3CmaterialIndexU3E5__9 = L_39;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:108>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7337));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7578));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_40 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_40);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_41 = L_40->___characterInfo;
@@ -3502,7 +3502,7 @@ IL_0172:
 		int32_t L_43 = ((L_41)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_42)))->___vertexIndex;
 		__this->___U3CvertexIndexU3E5__10 = L_43;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:111>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7338));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7579));
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_44 = __this->___U3CcachedMeshInfoVertexDataU3E5__4;
 		int32_t L_45 = __this->___U3CmaterialIndexU3E5__9;
 		NullCheck(L_44);
@@ -3510,7 +3510,7 @@ IL_0172:
 		__this->___U3CsourceVerticesU3E5__11 = L_46;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsourceVerticesU3E5__11), (void*)L_46);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:116>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7339));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7580));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_47 = __this->___U3CsourceVerticesU3E5__11;
 		int32_t L_48 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_47);
@@ -3521,29 +3521,29 @@ IL_0172:
 		NullCheck(L_51);
 		int32_t L_53 = ((int32_t)il2cpp_codegen_add(L_52, 2));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54 = (L_51)->GetAt(static_cast<il2cpp_array_size_t>(L_53));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7340));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7581));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55;
 		L_55 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_50, L_54, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7340));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7341));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7581));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7582));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56;
 		L_56 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_55, (2.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7341));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7342));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7582));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7583));
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_57;
 		L_57 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_56, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7342));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7583));
 		__this->___U3CcharMidBaslineU3E5__12 = L_57;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:120>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7343));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7584));
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_58 = __this->___U3CcharMidBaslineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7344));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7585));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
 		L_59 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_58, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7344));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7585));
 		__this->___U3CoffsetU3E5__13 = L_59;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:122>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7345));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7586));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_60 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_60);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_61 = L_60->___meshInfo;
@@ -3553,7 +3553,7 @@ IL_0172:
 		__this->___U3CdestinationVerticesU3E5__14 = L_63;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdestinationVerticesU3E5__14), (void*)L_63);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:124>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7346));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7587));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_64 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_65 = __this->___U3CvertexIndexU3E5__10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_66 = __this->___U3CsourceVerticesU3E5__11;
@@ -3562,14 +3562,14 @@ IL_0172:
 		int32_t L_68 = L_67;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = (L_66)->GetAt(static_cast<il2cpp_array_size_t>(L_68));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7347));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7588));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71;
 		L_71 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_69, L_70, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7347));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7588));
 		NullCheck(L_64);
 		(L_64)->SetAt(static_cast<il2cpp_array_size_t>(L_65), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_71);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:125>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7348));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7589));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_72 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_73 = __this->___U3CvertexIndexU3E5__10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_74 = __this->___U3CsourceVerticesU3E5__11;
@@ -3578,14 +3578,14 @@ IL_0172:
 		int32_t L_76 = ((int32_t)il2cpp_codegen_add(L_75, 1));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = (L_74)->GetAt(static_cast<il2cpp_array_size_t>(L_76));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7349));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7590));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79;
 		L_79 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_77, L_78, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7349));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7590));
 		NullCheck(L_72);
 		(L_72)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_73, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_79);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:126>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7350));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7591));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_80 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_81 = __this->___U3CvertexIndexU3E5__10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_82 = __this->___U3CsourceVerticesU3E5__11;
@@ -3594,14 +3594,14 @@ IL_0172:
 		int32_t L_84 = ((int32_t)il2cpp_codegen_add(L_83, 2));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = (L_82)->GetAt(static_cast<il2cpp_array_size_t>(L_84));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7351));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7592));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87;
 		L_87 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_85, L_86, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7351));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7592));
 		NullCheck(L_80);
 		(L_80)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_81, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_87);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:127>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7352));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7593));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_88 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_89 = __this->___U3CvertexIndexU3E5__10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_90 = __this->___U3CsourceVerticesU3E5__11;
@@ -3610,71 +3610,71 @@ IL_0172:
 		int32_t L_92 = ((int32_t)il2cpp_codegen_add(L_91, 3));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93 = (L_90)->GetAt(static_cast<il2cpp_array_size_t>(L_92));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7353));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7594));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95;
 		L_95 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_93, L_94, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7353));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7594));
 		NullCheck(L_88);
 		(L_88)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_89, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_95);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:132>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7354));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7355));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7595));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7596));
 		float L_96;
 		L_96 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((1.0f), (1.5f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7355));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7596));
 		__this->___U3CrandomScaleU3E5__15 = L_96;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:135>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7356));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7597));
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_97 = __this->___U3CU3E8__1;
 		NullCheck(L_97);
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_98 = L_97->___modifiedCharScale;
 		float L_99 = __this->___U3CrandomScaleU3E5__15;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7357));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7598));
 		NullCheck(L_98);
 		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_98, L_99, List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7357));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7598));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:136>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7358));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7599));
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_100 = __this->___U3CscaleSortingOrderU3E5__5;
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_101 = __this->___U3CU3E8__1;
 		NullCheck(L_101);
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_102 = L_101->___modifiedCharScale;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7359));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7600));
 		NullCheck(L_102);
 		int32_t L_103;
 		L_103 = List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_inline(L_102, List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7359));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7360));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7600));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7601));
 		NullCheck(L_100);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_100, ((int32_t)il2cpp_codegen_subtract(L_103, 1)), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7360));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7601));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:140>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7361));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7362));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7602));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7603));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_104;
 		memset((&L_104), 0, sizeof(L_104));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_104), (0.0f), (0.0f), (0.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7362));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7363));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7603));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7604));
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_105;
 		L_105 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7363));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7364));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7604));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7605));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_106;
 		L_106 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7364));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7605));
 		float L_107 = __this->___U3CrandomScaleU3E5__15;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7365));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7606));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_108;
 		L_108 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_106, L_107, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7365));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7366));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7606));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7607));
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_109;
 		L_109 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3(L_104, L_105, L_108, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7366));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7607));
 		__this->___U3CmatrixU3E5__3 = L_109;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:142>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7367));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7608));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_110 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_111 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_112 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__3);
@@ -3683,14 +3683,14 @@ IL_0172:
 		NullCheck(L_113);
 		int32_t L_115 = L_114;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_116 = (L_113)->GetAt(static_cast<il2cpp_array_size_t>(L_115));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7368));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7609));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117;
 		L_117 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_112, L_116, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7368));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7609));
 		NullCheck(L_110);
 		(L_110)->SetAt(static_cast<il2cpp_array_size_t>(L_111), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_117);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:143>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7369));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7610));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_118 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_119 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_120 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__3);
@@ -3699,14 +3699,14 @@ IL_0172:
 		NullCheck(L_121);
 		int32_t L_123 = ((int32_t)il2cpp_codegen_add(L_122, 1));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_124 = (L_121)->GetAt(static_cast<il2cpp_array_size_t>(L_123));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7370));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7611));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_125;
 		L_125 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_120, L_124, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7370));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7611));
 		NullCheck(L_118);
 		(L_118)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_119, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_125);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:144>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7371));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7612));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_126 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_127 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_128 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__3);
@@ -3715,14 +3715,14 @@ IL_0172:
 		NullCheck(L_129);
 		int32_t L_131 = ((int32_t)il2cpp_codegen_add(L_130, 2));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_132 = (L_129)->GetAt(static_cast<il2cpp_array_size_t>(L_131));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7372));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7613));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_133;
 		L_133 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_128, L_132, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7372));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7613));
 		NullCheck(L_126);
 		(L_126)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_127, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_133);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:145>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7373));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7614));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_134 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_135 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_136 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__3);
@@ -3731,66 +3731,66 @@ IL_0172:
 		NullCheck(L_137);
 		int32_t L_139 = ((int32_t)il2cpp_codegen_add(L_138, 3));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_140 = (L_137)->GetAt(static_cast<il2cpp_array_size_t>(L_139));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7374));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7615));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_141;
 		L_141 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_136, L_140, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7374));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7615));
 		NullCheck(L_134);
 		(L_134)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_135, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_141);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:147>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7375));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7616));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_142 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_143 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_142);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_144 = ((L_142)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_143)));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_144);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_146 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7376));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7617));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_147;
 		L_147 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_145, L_146, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7376));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7617));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_144 = L_147;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:148>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7377));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7618));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_148 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_149 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_148);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_150 = ((L_148)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_149, 1)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_150);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_152 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7378));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7619));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_153;
 		L_153 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_151, L_152, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7378));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7619));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_150 = L_153;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:149>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7379));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7620));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_154 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_155 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_154);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_156 = ((L_154)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_155, 2)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_157 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_156);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_158 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7380));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7621));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159;
 		L_159 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_157, L_158, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7380));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7621));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_156 = L_159;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:150>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7381));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7622));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_160 = __this->___U3CdestinationVerticesU3E5__14;
 		int32_t L_161 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_160);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_162 = ((L_160)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_161, 3)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_163 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_162);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_164 = __this->___U3CoffsetU3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7382));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7623));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_165;
 		L_165 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_163, L_164, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7382));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7623));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_162 = L_165;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:153>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7383));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7624));
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_166 = __this->___U3CcachedMeshInfoVertexDataU3E5__4;
 		int32_t L_167 = __this->___U3CmaterialIndexU3E5__9;
 		NullCheck(L_166);
@@ -3798,7 +3798,7 @@ IL_0172:
 		__this->___U3CsourceUVs0U3E5__16 = L_168;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsourceUVs0U3E5__16), (void*)L_168);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:154>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7384));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7625));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_169 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_169);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_170 = L_169->___meshInfo;
@@ -3808,7 +3808,7 @@ IL_0172:
 		__this->___U3CdestinationUVs0U3E5__17 = L_172;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdestinationUVs0U3E5__17), (void*)L_172);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:156>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7385));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7626));
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_173 = __this->___U3CdestinationUVs0U3E5__17;
 		int32_t L_174 = __this->___U3CvertexIndexU3E5__10;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_175 = __this->___U3CsourceUVs0U3E5__16;
@@ -3819,7 +3819,7 @@ IL_0172:
 		NullCheck(L_173);
 		(L_173)->SetAt(static_cast<il2cpp_array_size_t>(L_174), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_178);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:157>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7386));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7627));
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_179 = __this->___U3CdestinationUVs0U3E5__17;
 		int32_t L_180 = __this->___U3CvertexIndexU3E5__10;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_181 = __this->___U3CsourceUVs0U3E5__16;
@@ -3830,7 +3830,7 @@ IL_0172:
 		NullCheck(L_179);
 		(L_179)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_180, 1))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_184);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:158>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7387));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7628));
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_185 = __this->___U3CdestinationUVs0U3E5__17;
 		int32_t L_186 = __this->___U3CvertexIndexU3E5__10;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_187 = __this->___U3CsourceUVs0U3E5__16;
@@ -3841,7 +3841,7 @@ IL_0172:
 		NullCheck(L_185);
 		(L_185)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_186, 2))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_190);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:159>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7388));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7629));
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_191 = __this->___U3CdestinationUVs0U3E5__17;
 		int32_t L_192 = __this->___U3CvertexIndexU3E5__10;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_193 = __this->___U3CsourceUVs0U3E5__16;
@@ -3852,7 +3852,7 @@ IL_0172:
 		NullCheck(L_191);
 		(L_191)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_192, 3))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_196);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:162>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7389));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7630));
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_197 = __this->___U3CcachedMeshInfoVertexDataU3E5__4;
 		int32_t L_198 = __this->___U3CmaterialIndexU3E5__9;
 		NullCheck(L_197);
@@ -3860,7 +3860,7 @@ IL_0172:
 		__this->___U3CsourceColors32U3E5__18 = L_199;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsourceColors32U3E5__18), (void*)L_199);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:163>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7390));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7631));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_200 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_200);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_201 = L_200->___meshInfo;
@@ -3870,7 +3870,7 @@ IL_0172:
 		__this->___U3CdestinationColors32U3E5__19 = L_203;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdestinationColors32U3E5__19), (void*)L_203);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:165>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7391));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7632));
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_204 = __this->___U3CdestinationColors32U3E5__19;
 		int32_t L_205 = __this->___U3CvertexIndexU3E5__10;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_206 = __this->___U3CsourceColors32U3E5__18;
@@ -3881,7 +3881,7 @@ IL_0172:
 		NullCheck(L_204);
 		(L_204)->SetAt(static_cast<il2cpp_array_size_t>(L_205), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_209);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:166>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7392));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7633));
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_210 = __this->___U3CdestinationColors32U3E5__19;
 		int32_t L_211 = __this->___U3CvertexIndexU3E5__10;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_212 = __this->___U3CsourceColors32U3E5__18;
@@ -3892,7 +3892,7 @@ IL_0172:
 		NullCheck(L_210);
 		(L_210)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_211, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_215);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:167>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7393));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7634));
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_216 = __this->___U3CdestinationColors32U3E5__19;
 		int32_t L_217 = __this->___U3CvertexIndexU3E5__10;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_218 = __this->___U3CsourceColors32U3E5__18;
@@ -3903,7 +3903,7 @@ IL_0172:
 		NullCheck(L_216);
 		(L_216)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_217, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_221);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:168>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7394));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7635));
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_222 = __this->___U3CdestinationColors32U3E5__19;
 		int32_t L_223 = __this->___U3CvertexIndexU3E5__10;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_224 = __this->___U3CsourceColors32U3E5__18;
@@ -3913,7 +3913,7 @@ IL_0172:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_227 = (L_224)->GetAt(static_cast<il2cpp_array_size_t>(L_226));
 		NullCheck(L_222);
 		(L_222)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_223, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_227);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7395));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7636));
 		TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8* L_228 = (TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8*)(&__this->___U3CcharInfoU3E5__8);
 		il2cpp_codegen_initobj(L_228, sizeof(TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8));
 		__this->___U3CsourceVerticesU3E5__11 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)NULL;
@@ -3937,7 +3937,7 @@ IL_0172:
 IL_06d1:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7396));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7637));
 		int32_t L_231 = __this->___U3CiU3E5__7;
 		V_4 = L_231;
 		int32_t L_232 = V_4;
@@ -3947,11 +3947,11 @@ IL_06d1:
 IL_06e3:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7397));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7638));
 		int32_t L_233 = __this->___U3CiU3E5__7;
 		int32_t L_234 = __this->___U3CcharacterCountU3E5__6;
 		V_5 = (bool)((((int32_t)L_233) < ((int32_t)L_234))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7398));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7639));
 		bool L_235 = V_5;
 		if (L_235)
 		{
@@ -3960,17 +3960,17 @@ IL_06e3:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7399));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7640));
 		__this->___U3CiU3E5__20 = 0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7400));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7641));
 		goto IL_085f;
 	}
 
 IL_0706:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7401));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7642));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:175>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7402));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7643));
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_236 = __this->___U3CscaleSortingOrderU3E5__5;
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_237 = __this->___U3CU3E8__1;
 		NullCheck(L_237);
@@ -3988,10 +3988,10 @@ IL_0706:
 	{
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_240 = __this->___U3CU3E8__1;
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_241 = __this->___U3CU3E8__1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7403));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7644));
 		Comparison_1_tB7DE1436CB53924C2FC41FF926D074C1ACC14D89* L_242 = (Comparison_1_tB7DE1436CB53924C2FC41FF926D074C1ACC14D89*)il2cpp_codegen_object_new(Comparison_1_tB7DE1436CB53924C2FC41FF926D074C1ACC14D89_il2cpp_TypeInfo_var);
 		Comparison_1__ctor_m7E05FE21370A028EA8A2792D028FFDAD83F24F6C(L_242, L_241, (intptr_t)((void*)U3CU3Ec__DisplayClass10_0_U3CAnimateVertexColorsU3Eb__0_m8E51A05E012CCFA439DCF10A8B5C4FA196E4344A_RuntimeMethod_var), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7403));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7644));
 		Comparison_1_tB7DE1436CB53924C2FC41FF926D074C1ACC14D89* L_243 = L_242;
 		V_6 = L_243;
 		NullCheck(L_240);
@@ -4004,24 +4004,24 @@ IL_0706:
 
 IL_073d:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7404));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7645));
 		NullCheck(G_B21_1);
 		List_1_Sort_m90CDC07AEBE737318A490F4C2BC6F2955443EDA4(G_B21_1, G_B21_0, List_1_Sort_m90CDC07AEBE737318A490F4C2BC6F2955443EDA4_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7404));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7645));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:177>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7405));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7646));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_245 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_245);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_246 = L_245->___meshInfo;
 		int32_t L_247 = __this->___U3CiU3E5__20;
 		NullCheck(L_246);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_248 = __this->___U3CscaleSortingOrderU3E5__5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7406));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7647));
 		il2cpp_codegen_runtime_class_init_inline(TMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B_il2cpp_TypeInfo_var);
 		TMP_MeshInfo_SortGeometry_m74ED0FE2065414A659EE9A9C809E1B0B4A8A7734(((L_246)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_247))), L_248, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7406));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7647));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:180>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7407));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7648));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_249 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_249);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_250 = L_249->___meshInfo;
@@ -4034,12 +4034,12 @@ IL_073d:
 		int32_t L_255 = __this->___U3CiU3E5__20;
 		NullCheck(L_254);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_256 = ((L_254)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_255)))->___vertices;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7408));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7649));
 		NullCheck(L_252);
 		Mesh_set_vertices_m5BB814D89E9ACA00DBF19F7D8E22CB73AC73FE5C(L_252, L_256, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7408));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7649));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:181>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7409));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7650));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_257 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_257);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_258 = L_257->___meshInfo;
@@ -4052,12 +4052,12 @@ IL_073d:
 		int32_t L_263 = __this->___U3CiU3E5__20;
 		NullCheck(L_262);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_264 = ((L_262)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_263)))->___uvs0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7410));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7651));
 		NullCheck(L_260);
 		Mesh_SetUVs_mDFA98E5557AB6585FE0F8AB5C9286D1C69A53324(L_260, 0, L_264, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7410));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7651));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:182>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7411));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7652));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_265 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_265);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_266 = L_265->___meshInfo;
@@ -4070,12 +4070,12 @@ IL_073d:
 		int32_t L_271 = __this->___U3CiU3E5__20;
 		NullCheck(L_270);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_272 = ((L_270)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_271)))->___colors32;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7412));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7653));
 		NullCheck(L_268);
 		Mesh_set_colors32_m0E4462B7A1D613E6FB15DD7584BCE5491C17820F(L_268, L_272, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7412));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7653));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:184>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7413));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7654));
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_273 = __this->___U3CU3E4__this;
 		NullCheck(L_273);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_274 = L_273->___m_TextComponent;
@@ -4086,13 +4086,13 @@ IL_073d:
 		NullCheck(L_276);
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_278 = ((L_276)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_277)))->___mesh;
 		int32_t L_279 = __this->___U3CiU3E5__20;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7414));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7655));
 		NullCheck(L_274);
 		VirtualActionInvoker2< Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*, int32_t >::Invoke(107, L_274, L_278, L_279);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7414));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7415));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7655));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7656));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7416));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7657));
 		int32_t L_280 = __this->___U3CiU3E5__20;
 		V_4 = L_280;
 		int32_t L_281 = V_4;
@@ -4102,14 +4102,14 @@ IL_073d:
 IL_085f:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7417));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7658));
 		int32_t L_282 = __this->___U3CiU3E5__20;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_283 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_283);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_284 = L_283->___meshInfo;
 		NullCheck(L_284);
 		V_7 = (bool)((((int32_t)L_282) < ((int32_t)((int32_t)(((RuntimeArray*)L_284)->max_length))))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7418));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7659));
 		bool L_285 = V_7;
 		if (L_285)
 		{
@@ -4118,11 +4118,11 @@ IL_085f:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:187>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7419));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7420));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7660));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7661));
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_286 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_286, (0.100000001f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7420));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7661));
 		__this->___U3CU3E2__current = L_286;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_286);
 		__this->___U3CU3E1__state = 2;
@@ -4131,20 +4131,20 @@ IL_085f:
 
 IL_0896:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7421));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7662));
 		__this->___U3CU3E1__state = (-1);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7422));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7663));
 	}
 
 IL_089e:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:72>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7423));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7664));
 		V_8 = (bool)1;
 		goto IL_00a2;
 	}
 }
-// Method Definition Index: 111828
+// Method Definition Index: 111837
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m110CD16E89E725B1484D24FFB1753768F78A988B (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4160,7 +4160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10
 		return L_0;
 	}
 }
-// Method Definition Index: 111829
+// Method Definition Index: 111838
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_Reset_mDE5E71C88F5096FD70EB061287ADF0B847732821 (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4177,7 +4177,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_Reset_mDE5E71C88F5096FD70EB061287ADF0B847732821_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 111830
+// Method Definition Index: 111839
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_get_Current_m14B89756695EE73AEBB6F3A613F65E1343A8CC2C (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4201,7 +4201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111831
+// Method Definition Index: 111840
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Awake_m92842E51B4DBB2E4341ACB179468049FAB23949F (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4214,29 +4214,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Awake_m92842E51B4DBB2E43
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, WarpTextExample_Awake_m92842E51B4DBB2E4341ACB179468049FAB23949F_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7424));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7425));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7665));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7666));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7426));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7667));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:20>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7427));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7428));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7668));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7669));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7428));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7429));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7669));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7670));
 		NullCheck(L_0);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1;
 		L_1 = GameObject_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA59A63181077B821132B53D44724D7F86C6FECB3(L_0, GameObject_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA59A63181077B821132B53D44724D7F86C6FECB3_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7429));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7670));
 		__this->___m_TextComponent = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_1);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:21>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7430));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7671));
 		return;
 	}
 }
-// Method Definition Index: 111832
+// Method Definition Index: 111841
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Start_m3339EDC03B6FC498916520CBCCDB5F9FA090F809 (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4248,26 +4248,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Start_m3339EDC03B6FC4989
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, WarpTextExample_Start_m3339EDC03B6FC498916520CBCCDB5F9FA090F809_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7431));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7432));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7672));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7673));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7433));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7674));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:26>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7434));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7435));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7675));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7676));
 		RuntimeObject* L_0;
 		L_0 = WarpTextExample_WarpText_mBE4B6E5B6D8AAE9340CD59B1FA9DFE9A34665E98(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7435));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7436));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7676));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7677));
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7436));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7677));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:27>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7437));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7678));
 		return;
 	}
 }
-// Method Definition Index: 111833
+// Method Definition Index: 111842
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* WarpTextExample_CopyAnimationCurve_m65A93388CC2CF58CD2E08CC8EF682A2C97C558FF (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___0_curve, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4285,32 +4285,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD9991
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_curve));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, WarpTextExample_CopyAnimationCurve_m65A93388CC2CF58CD2E08CC8EF682A2C97C558FF_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7438));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7439));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7679));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7680));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7440));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7681));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:32>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7441));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7442));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7682));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7683));
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_0 = (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354*)il2cpp_codegen_object_new(AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_il2cpp_TypeInfo_var);
 		AnimationCurve__ctor_m0D976567166F92383307DC8EB8D7082CD34E226F(L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7442));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7683));
 		V_0 = L_0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:34>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7443));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7684));
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_1 = V_0;
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_2 = ___0_curve;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7444));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7685));
 		NullCheck(L_2);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_3;
 		L_3 = AnimationCurve_get_keys_m34452C69464AB459C04BFFEA4F541F06B419AC4E(L_2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7444));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7445));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7685));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7686));
 		NullCheck(L_1);
 		AnimationCurve_set_keys_mBE1284B44CDBB1D8381177A3D581A6E71467F95C(L_1, L_3, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7445));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7686));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:36>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7446));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7687));
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_4 = V_0;
 		V_1 = L_4;
 		goto IL_0018;
@@ -4319,12 +4319,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD9991
 IL_0018:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:37>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7447));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7688));
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_5 = V_1;
 		return L_5;
 	}
 }
-// Method Definition Index: 111834
+// Method Definition Index: 111843
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WarpTextExample_WarpText_mBE4B6E5B6D8AAE9340CD59B1FA9DFE9A34665E98 (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4346,7 +4346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WarpTextExample_WarpText_mBE4B
 		return L_1;
 	}
 }
-// Method Definition Index: 111835
+// Method Definition Index: 111844
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C45B5E60C19E1EA397FBA1795 (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4360,70 +4360,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C4
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, WarpTextExample__ctor_mBD48A5403123F25C45B5E60C19E1EA397FBA1795_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7448));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7449));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7689));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7690));
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:13>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7450));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7691));
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_0 = (KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3*)(KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3*)SZArrayNew(KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3_il2cpp_TypeInfo_var, (uint32_t)5);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_1 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7451));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7692));
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		Keyframe__ctor_mECF144086B28785BE911A22C06194A9E0FBF3C34((&L_2), (0.0f), (0.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7451));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7692));
 		NullCheck(L_1);
 		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0)L_2);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_3 = L_1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7452));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7693));
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_4;
 		memset((&L_4), 0, sizeof(L_4));
 		Keyframe__ctor_mECF144086B28785BE911A22C06194A9E0FBF3C34((&L_4), (0.25f), (2.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7452));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7693));
 		NullCheck(L_3);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0)L_4);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_5 = L_3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7453));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7694));
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_6;
 		memset((&L_6), 0, sizeof(L_6));
 		Keyframe__ctor_mECF144086B28785BE911A22C06194A9E0FBF3C34((&L_6), (0.5f), (0.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7453));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7694));
 		NullCheck(L_5);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0)L_6);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_7 = L_5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7454));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7695));
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_8;
 		memset((&L_8), 0, sizeof(L_8));
 		Keyframe__ctor_mECF144086B28785BE911A22C06194A9E0FBF3C34((&L_8), (0.75f), (2.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7454));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7695));
 		NullCheck(L_7);
 		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(3), (Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0)L_8);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_9 = L_7;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7455));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7696));
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_10;
 		memset((&L_10), 0, sizeof(L_10));
 		Keyframe__ctor_mECF144086B28785BE911A22C06194A9E0FBF3C34((&L_10), (1.0f), (0.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7455));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7696));
 		NullCheck(L_9);
 		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(4), (Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0)L_10);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7456));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7697));
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_11 = (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354*)il2cpp_codegen_object_new(AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_il2cpp_TypeInfo_var);
 		AnimationCurve__ctor_mEABC98C03805713354D61E50D9340766BD5B717E(L_11, L_9, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7456));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7697));
 		__this->___VertexCurve = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___VertexCurve), (void*)L_11);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:14>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7457));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7698));
 		__this->___AngleMultiplier = (1.0f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:15>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7458));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7699));
 		__this->___SpeedMultiplier = (1.0f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:16>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7459));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7700));
 		__this->___CurveScale = (1.0f);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7460));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7701));
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7460));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7701));
 		return;
 	}
 }
@@ -4435,7 +4435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111836
+// Method Definition Index: 111845
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8__ctor_m1943C34BBEAF121203BA8C5D725E991283A4A3BB (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4453,7 +4453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8__ctor_m1943C34BBEAF12
 		return;
 	}
 }
-// Method Definition Index: 111837
+// Method Definition Index: 111846
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_IDisposable_Dispose_m145D2DA1026419984AD79D5D62FBC38C9441AB53 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4468,7 +4468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_IDisposable_Di
 		return;
 	}
 }
-// Method Definition Index: 111838
+// Method Definition Index: 111847
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B02 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4491,15 +4491,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4
 	bool V_7 = false;
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B02_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7461));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7462));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7702));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7703));
 	int32_t G_B11_0 = 0;
 	U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* G_B21_0 = NULL;
 	U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* G_B20_0 = NULL;
 	float G_B22_0 = 0.0f;
 	U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* G_B22_1 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7463));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7704));
 		int32_t L_0 = __this->___U3CU3E1__state;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
@@ -4546,36 +4546,36 @@ IL_0027:
 IL_0029:
 	{
 		__this->___U3CU3E1__state = (-1);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7464));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7705));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:47>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7465));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7706));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_2 = __this->___U3CU3E4__this;
 		NullCheck(L_2);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_3 = L_2->___VertexCurve;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7466));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7707));
 		NullCheck(L_3);
 		AnimationCurve_set_preWrapMode_mA618E67F536483FA5F3507A2D97C045E089D1B2D(L_3, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7466));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7707));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:48>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7467));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7708));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_4 = __this->___U3CU3E4__this;
 		NullCheck(L_4);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_5 = L_4->___VertexCurve;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7468));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7709));
 		NullCheck(L_5);
 		AnimationCurve_set_postWrapMode_m39A4758ABD5D2AEE475940829352792FE7E9CBA9(L_5, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7468));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7709));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:55>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7469));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7710));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_6 = __this->___U3CU3E4__this;
 		NullCheck(L_6);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = L_6->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7470));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7711));
 		NullCheck(L_7);
 		TMP_Text_set_havePropertiesChanged_mA38D7BC9E260BF29450738B827F2220A05662B31(L_7, (bool)1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7470));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7711));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:56>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7471));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7712));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_8 = __this->___U3CU3E4__this;
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_9 = __this->___U3CU3E4__this;
 		NullCheck(L_9);
@@ -4583,41 +4583,41 @@ IL_0029:
 		NullCheck(L_8);
 		L_8->___CurveScale = ((float)il2cpp_codegen_multiply(L_10, (10.0f)));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:57>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7472));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7713));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_11 = __this->___U3CU3E4__this;
 		NullCheck(L_11);
 		float L_12 = L_11->___CurveScale;
 		__this->___U3Cold_CurveScaleU3E5__3 = L_12;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:58>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7473));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7714));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_13 = __this->___U3CU3E4__this;
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_14 = __this->___U3CU3E4__this;
 		NullCheck(L_14);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_15 = L_14->___VertexCurve;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7474));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7715));
 		NullCheck(L_13);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_16;
 		L_16 = WarpTextExample_CopyAnimationCurve_m65A93388CC2CF58CD2E08CC8EF682A2C97C558FF(L_13, L_15, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7474));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7715));
 		__this->___U3Cold_curveU3E5__4 = L_16;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3Cold_curveU3E5__4), (void*)L_16);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7475));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7716));
 		goto IL_0722;
 	}
 
 IL_00b5:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7476));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7717));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:62>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7477));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7718));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_17 = __this->___U3CU3E4__this;
 		NullCheck(L_17);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_18 = L_17->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7478));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7719));
 		NullCheck(L_18);
 		bool L_19;
 		L_19 = TMP_Text_get_havePropertiesChanged_m42ECC7D1CA0DF6E59ACF761EB20635E81FCB8EFF(L_18, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7478));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7719));
 		if (L_19)
 		{
 			goto IL_0110;
@@ -4635,29 +4635,29 @@ IL_00b5:
 	}
 	{
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_23 = __this->___U3Cold_curveU3E5__4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7479));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7720));
 		NullCheck(L_23);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_24;
 		L_24 = AnimationCurve_get_keys_m34452C69464AB459C04BFFEA4F541F06B419AC4E(L_23, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7479));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7720));
 		NullCheck(L_24);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7480));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7721));
 		float L_25;
 		L_25 = Keyframe_get_value_m53E6B7609086AAAA46E24BAF734EF08E16A3FD6C(((L_24)->GetAddressAt(static_cast<il2cpp_array_size_t>(1))), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7480));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7721));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_26 = __this->___U3CU3E4__this;
 		NullCheck(L_26);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_27 = L_26->___VertexCurve;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7481));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7722));
 		NullCheck(L_27);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_28;
 		L_28 = AnimationCurve_get_keys_m34452C69464AB459C04BFFEA4F541F06B419AC4E(L_27, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7481));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7722));
 		NullCheck(L_28);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7482));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7723));
 		float L_29;
 		L_29 = Keyframe_get_value_m53E6B7609086AAAA46E24BAF734EF08E16A3FD6C(((L_28)->GetAddressAt(static_cast<il2cpp_array_size_t>(1))), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7482));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7723));
 		G_B11_0 = ((((float)L_25) == ((float)L_29))? 1 : 0);
 		goto IL_0111;
 	}
@@ -4670,7 +4670,7 @@ IL_0110:
 IL_0111:
 	{
 		V_1 = (bool)G_B11_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7483));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7724));
 		bool L_30 = V_1;
 		if (!L_30)
 		{
@@ -4678,9 +4678,9 @@ IL_0111:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7484));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7725));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:64>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7485));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7726));
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -4689,66 +4689,66 @@ IL_0111:
 
 IL_0126:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7486));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7727));
 		__this->___U3CU3E1__state = (-1);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:65>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7487));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7728));
 		goto IL_0722;
 	}
 
 IL_0132:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:68>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7488));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7729));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_31 = __this->___U3CU3E4__this;
 		NullCheck(L_31);
 		float L_32 = L_31->___CurveScale;
 		__this->___U3Cold_CurveScaleU3E5__3 = L_32;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:69>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7489));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7730));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_33 = __this->___U3CU3E4__this;
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_34 = __this->___U3CU3E4__this;
 		NullCheck(L_34);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_35 = L_34->___VertexCurve;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7490));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7731));
 		NullCheck(L_33);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_36;
 		L_36 = WarpTextExample_CopyAnimationCurve_m65A93388CC2CF58CD2E08CC8EF682A2C97C558FF(L_33, L_35, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7490));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7731));
 		__this->___U3Cold_curveU3E5__4 = L_36;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3Cold_curveU3E5__4), (void*)L_36);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:71>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7491));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7732));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_37 = __this->___U3CU3E4__this;
 		NullCheck(L_37);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_38 = L_37->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7492));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7733));
 		NullCheck(L_38);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_38, (bool)0, (bool)0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7492));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7733));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:73>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7493));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7734));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_39 = __this->___U3CU3E4__this;
 		NullCheck(L_39);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_40 = L_39->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7494));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7735));
 		NullCheck(L_40);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_41;
 		L_41 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_40, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7494));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7735));
 		__this->___U3CtextInfoU3E5__5 = L_41;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__5), (void*)L_41);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:74>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7495));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7736));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_42 = __this->___U3CtextInfoU3E5__5;
 		NullCheck(L_42);
 		int32_t L_43 = L_42->___characterCount;
 		__this->___U3CcharacterCountU3E5__6 = L_43;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:77>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7496));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7737));
 		int32_t L_44 = __this->___U3CcharacterCountU3E5__6;
 		V_2 = (bool)((((int32_t)L_44) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7497));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7738));
 		bool L_45 = V_2;
 		if (!L_45)
 		{
@@ -4757,58 +4757,58 @@ IL_0132:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:77>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7498));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7739));
 		goto IL_0722;
 	}
 
 IL_01ab:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:82>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7499));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7740));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_46 = __this->___U3CU3E4__this;
 		NullCheck(L_46);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_47 = L_46->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7500));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7741));
 		NullCheck(L_47);
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_48;
 		L_48 = TMP_Text_get_bounds_mAEE407DE6CA2E1D1180868C03A3F0A3B6E455189(L_47, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7500));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7741));
 		V_3 = L_48;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7501));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7742));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49;
 		L_49 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline((&V_3), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7501));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7742));
 		float L_50 = L_49.___x;
 		__this->___U3CboundsMinXU3E5__7 = L_50;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:83>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7502));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7743));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_51 = __this->___U3CU3E4__this;
 		NullCheck(L_51);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_52 = L_51->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7503));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7744));
 		NullCheck(L_52);
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_53;
 		L_53 = TMP_Text_get_bounds_mAEE407DE6CA2E1D1180868C03A3F0A3B6E455189(L_52, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7503));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7744));
 		V_3 = L_53;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7504));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7745));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
 		L_54 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline((&V_3), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7504));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7745));
 		float L_55 = L_54.___x;
 		__this->___U3CboundsMaxXU3E5__8 = L_55;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7505));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7746));
 		__this->___U3CiU3E5__9 = 0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7506));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7747));
 		goto IL_06d2;
 	}
 
 IL_01fd:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7507));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7748));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:89>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7508));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7749));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_56 = __this->___U3CtextInfoU3E5__5;
 		NullCheck(L_56);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_57 = L_56->___characterInfo;
@@ -4816,7 +4816,7 @@ IL_01fd:
 		NullCheck(L_57);
 		bool L_59 = ((L_57)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_58)))->___isVisible;
 		V_4 = (bool)((((int32_t)L_59) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7509));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7750));
 		bool L_60 = V_4;
 		if (!L_60)
 		{
@@ -4825,14 +4825,14 @@ IL_01fd:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:90>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7510));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7751));
 		goto IL_06c0;
 	}
 
 IL_0227:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:92>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7511));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7752));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_61 = __this->___U3CtextInfoU3E5__5;
 		NullCheck(L_61);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_62 = L_61->___characterInfo;
@@ -4841,7 +4841,7 @@ IL_0227:
 		int32_t L_64 = ((L_62)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_63)))->___vertexIndex;
 		__this->___U3CvertexIndexU3E5__10 = L_64;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:95>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7512));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7753));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_65 = __this->___U3CtextInfoU3E5__5;
 		NullCheck(L_65);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_66 = L_65->___characterInfo;
@@ -4850,7 +4850,7 @@ IL_0227:
 		int32_t L_68 = ((L_66)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_67)))->___materialReferenceIndex;
 		__this->___U3CmaterialIndexU3E5__11 = L_68;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:97>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7513));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7754));
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_69 = __this->___U3CtextInfoU3E5__5;
 		NullCheck(L_69);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_70 = L_69->___meshInfo;
@@ -4860,7 +4860,7 @@ IL_0227:
 		__this->___U3CverticesU3E5__1 = L_72;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CverticesU3E5__1), (void*)L_72);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:100>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7514));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7755));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_73 = __this->___U3CverticesU3E5__1;
 		int32_t L_74 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_73);
@@ -4875,86 +4875,86 @@ IL_0227:
 		int32_t L_81 = __this->___U3CiU3E5__9;
 		NullCheck(L_80);
 		float L_82 = ((L_80)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_81)))->___baseLine;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7515));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7756));
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_83;
 		memset((&L_83), 0, sizeof(L_83));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_83), ((float)(((float)il2cpp_codegen_add(L_75, L_78))/(2.0f))), L_82, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7515));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7516));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7756));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7757));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84;
 		L_84 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_83, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7516));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7757));
 		__this->___U3CoffsetToMidBaselineU3E5__12 = L_84;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:104>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7517));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7758));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_85 = __this->___U3CverticesU3E5__1;
 		int32_t L_86 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_85);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_87 = ((L_85)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_86)));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_87);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7518));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7759));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90;
 		L_90 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_89, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7518));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7519));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7759));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7760));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91;
 		L_91 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_88, L_90, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7519));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7760));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_87 = L_91;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:105>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7520));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7761));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_92 = __this->___U3CverticesU3E5__1;
 		int32_t L_93 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_92);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_94 = ((L_92)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_93, 1)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_94);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7521));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7762));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
 		L_97 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_96, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7521));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7522));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7762));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7763));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98;
 		L_98 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_95, L_97, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7522));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7763));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_94 = L_98;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:106>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7523));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7764));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_99 = __this->___U3CverticesU3E5__1;
 		int32_t L_100 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_99);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_101 = ((L_99)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_100, 2)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_101);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7524));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7765));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_104;
 		L_104 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_103, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7524));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7525));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7765));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7766));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105;
 		L_105 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_102, L_104, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7525));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7766));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_101 = L_105;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:107>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7526));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7767));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_106 = __this->___U3CverticesU3E5__1;
 		int32_t L_107 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_106);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_108 = ((L_106)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_107, 3)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_109 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_108);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_110 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7527));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7768));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_111;
 		L_111 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_110, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7527));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7528));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7768));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7769));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112;
 		L_112 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_109, L_111, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7528));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7769));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_108 = L_112;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:110>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7529));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7770));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_113 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___U3CoffsetToMidBaselineU3E5__12);
 		float L_114 = L_113->___x;
 		float L_115 = __this->___U3CboundsMinXU3E5__7;
@@ -4962,100 +4962,100 @@ IL_0227:
 		float L_117 = __this->___U3CboundsMinXU3E5__7;
 		__this->___U3Cx0U3E5__13 = ((float)(((float)il2cpp_codegen_subtract(L_114, L_115))/((float)il2cpp_codegen_subtract(L_116, L_117))));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:111>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7530));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7771));
 		float L_118 = __this->___U3Cx0U3E5__13;
 		__this->___U3Cx1U3E5__14 = ((float)il2cpp_codegen_add(L_118, (9.99999975E-05f)));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:112>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7531));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7772));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_119 = __this->___U3CU3E4__this;
 		NullCheck(L_119);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_120 = L_119->___VertexCurve;
 		float L_121 = __this->___U3Cx0U3E5__13;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7532));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7773));
 		NullCheck(L_120);
 		float L_122;
 		L_122 = AnimationCurve_Evaluate_m50B857043DE251A186032ADBCBB4CEF817F4EE3C(L_120, L_121, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7532));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7773));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_123 = __this->___U3CU3E4__this;
 		NullCheck(L_123);
 		float L_124 = L_123->___CurveScale;
 		__this->___U3Cy0U3E5__15 = ((float)il2cpp_codegen_multiply(L_122, L_124));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:113>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7533));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7774));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_125 = __this->___U3CU3E4__this;
 		NullCheck(L_125);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_126 = L_125->___VertexCurve;
 		float L_127 = __this->___U3Cx1U3E5__14;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7534));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7775));
 		NullCheck(L_126);
 		float L_128;
 		L_128 = AnimationCurve_Evaluate_m50B857043DE251A186032ADBCBB4CEF817F4EE3C(L_126, L_127, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7534));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7775));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_129 = __this->___U3CU3E4__this;
 		NullCheck(L_129);
 		float L_130 = L_129->___CurveScale;
 		__this->___U3Cy1U3E5__16 = ((float)il2cpp_codegen_multiply(L_128, L_130));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:115>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7535));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7536));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7776));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7777));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_131;
 		memset((&L_131), 0, sizeof(L_131));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_131), (1.0f), (0.0f), (0.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7536));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7777));
 		__this->___U3ChorizontalU3E5__17 = L_131;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:117>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7537));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7778));
 		float L_132 = __this->___U3Cx1U3E5__14;
 		float L_133 = __this->___U3CboundsMaxXU3E5__8;
 		float L_134 = __this->___U3CboundsMinXU3E5__7;
 		float L_135 = __this->___U3CboundsMinXU3E5__7;
 		float L_136 = __this->___U3Cy1U3E5__16;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7538));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7779));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_137;
 		memset((&L_137), 0, sizeof(L_137));
 		Vector3__ctor_m5F87930F9B0828E5652E2D9D01ED907C01122C86_inline((&L_137), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_132, ((float)il2cpp_codegen_subtract(L_133, L_134)))), L_135)), L_136, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7538));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7779));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_138 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___U3CoffsetToMidBaselineU3E5__12);
 		float L_139 = L_138->___x;
 		float L_140 = __this->___U3Cy0U3E5__15;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7539));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7780));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_141;
 		memset((&L_141), 0, sizeof(L_141));
 		Vector3__ctor_m5F87930F9B0828E5652E2D9D01ED907C01122C86_inline((&L_141), L_139, L_140, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7539));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7540));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7780));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7781));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_142;
 		L_142 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_137, L_141, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7540));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7781));
 		__this->___U3CtangentU3E5__18 = L_142;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:119>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7541));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7782));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_143 = __this->___U3ChorizontalU3E5__17;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_144 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___U3CtangentU3E5__18);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7542));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7783));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145;
 		L_145 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline(L_144, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7542));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7543));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7783));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7784));
 		float L_146;
 		L_146 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_143, L_145, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7543));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7544));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7784));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7785));
 		float L_147;
 		L_147 = acosf(L_146);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7544));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7785));
 		__this->___U3CdotU3E5__19 = ((float)il2cpp_codegen_multiply(L_147, (57.2957802f)));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:120>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7545));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7786));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_148 = __this->___U3ChorizontalU3E5__17;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149 = __this->___U3CtangentU3E5__18;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7546));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7787));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_150;
 		L_150 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_148, L_149, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7546));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7787));
 		__this->___U3CcrossU3E5__20 = L_150;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:121>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7547));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7788));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_151 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___U3CcrossU3E5__20);
 		float L_152 = L_151->___z;
 		if ((((float)L_152) > ((float)(0.0f))))
@@ -5084,29 +5084,29 @@ IL_04ee:
 		NullCheck(G_B22_1);
 		G_B22_1->___U3CangleU3E5__21 = G_B22_0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:123>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7548));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7789));
 		float L_155 = __this->___U3Cy0U3E5__15;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7549));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7790));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_156;
 		memset((&L_156), 0, sizeof(L_156));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_156), (0.0f), L_155, (0.0f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7549));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7790));
 		float L_157 = __this->___U3CangleU3E5__21;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7550));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7791));
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_158;
 		L_158 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), L_157, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7550));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7551));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7791));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7792));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159;
 		L_159 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7551));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7552));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7792));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7793));
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_160;
 		L_160 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3(L_156, L_158, L_159, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7552));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7793));
 		__this->___U3CmatrixU3E5__2 = L_160;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:125>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7553));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7794));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_161 = __this->___U3CverticesU3E5__1;
 		int32_t L_162 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_163 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__2);
@@ -5115,14 +5115,14 @@ IL_04ee:
 		NullCheck(L_164);
 		int32_t L_166 = L_165;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_167 = (L_164)->GetAt(static_cast<il2cpp_array_size_t>(L_166));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7554));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7795));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_168;
 		L_168 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_163, L_167, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7554));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7795));
 		NullCheck(L_161);
 		(L_161)->SetAt(static_cast<il2cpp_array_size_t>(L_162), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_168);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:126>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7555));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7796));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_169 = __this->___U3CverticesU3E5__1;
 		int32_t L_170 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_171 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__2);
@@ -5131,14 +5131,14 @@ IL_04ee:
 		NullCheck(L_172);
 		int32_t L_174 = ((int32_t)il2cpp_codegen_add(L_173, 1));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_175 = (L_172)->GetAt(static_cast<il2cpp_array_size_t>(L_174));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7556));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7797));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_176;
 		L_176 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_171, L_175, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7556));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7797));
 		NullCheck(L_169);
 		(L_169)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_170, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_176);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:127>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7557));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7798));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_177 = __this->___U3CverticesU3E5__1;
 		int32_t L_178 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_179 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__2);
@@ -5147,14 +5147,14 @@ IL_04ee:
 		NullCheck(L_180);
 		int32_t L_182 = ((int32_t)il2cpp_codegen_add(L_181, 2));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_183 = (L_180)->GetAt(static_cast<il2cpp_array_size_t>(L_182));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7558));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7799));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_184;
 		L_184 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_179, L_183, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7558));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7799));
 		NullCheck(L_177);
 		(L_177)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_178, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_184);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:128>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7559));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7800));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_185 = __this->___U3CverticesU3E5__1;
 		int32_t L_186 = __this->___U3CvertexIndexU3E5__10;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_187 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___U3CmatrixU3E5__2);
@@ -5163,65 +5163,65 @@ IL_04ee:
 		NullCheck(L_188);
 		int32_t L_190 = ((int32_t)il2cpp_codegen_add(L_189, 3));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_191 = (L_188)->GetAt(static_cast<il2cpp_array_size_t>(L_190));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7560));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7801));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_192;
 		L_192 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814(L_187, L_191, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7560));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7801));
 		NullCheck(L_185);
 		(L_185)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_186, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_192);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:130>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7561));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7802));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_193 = __this->___U3CverticesU3E5__1;
 		int32_t L_194 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_193);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_195 = ((L_193)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_194)));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_196 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_195);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_197 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7562));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7803));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_198;
 		L_198 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_196, L_197, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7562));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7803));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_195 = L_198;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:131>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7563));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7804));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_199 = __this->___U3CverticesU3E5__1;
 		int32_t L_200 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_199);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_201 = ((L_199)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_200, 1)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_202 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_201);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_203 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7564));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7805));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_204;
 		L_204 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_202, L_203, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7564));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7805));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_201 = L_204;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:132>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7565));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7806));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_205 = __this->___U3CverticesU3E5__1;
 		int32_t L_206 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_205);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_207 = ((L_205)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_206, 2)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_208 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_207);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_209 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7566));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7807));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_210;
 		L_210 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_208, L_209, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7566));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7807));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_207 = L_210;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:133>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7567));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7808));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_211 = __this->___U3CverticesU3E5__1;
 		int32_t L_212 = __this->___U3CvertexIndexU3E5__10;
 		NullCheck(L_211);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_213 = ((L_211)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_212, 3)))));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_214 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_213);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_215 = __this->___U3CoffsetToMidBaselineU3E5__12;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7568));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7809));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_216;
 		L_216 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_214, L_215, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7568));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7809));
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_213 = L_216;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7569));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7810));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_217 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___U3CoffsetToMidBaselineU3E5__12);
 		il2cpp_codegen_initobj(L_217, sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_218 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___U3ChorizontalU3E5__17);
@@ -5235,7 +5235,7 @@ IL_04ee:
 IL_06c0:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7570));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7811));
 		int32_t L_221 = __this->___U3CiU3E5__9;
 		V_5 = L_221;
 		int32_t L_222 = V_5;
@@ -5245,11 +5245,11 @@ IL_06c0:
 IL_06d2:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7571));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7812));
 		int32_t L_223 = __this->___U3CiU3E5__9;
 		int32_t L_224 = __this->___U3CcharacterCountU3E5__6;
 		V_6 = (bool)((((int32_t)L_223) < ((int32_t)L_224))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7572));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7813));
 		bool L_225 = V_6;
 		if (L_225)
 		{
@@ -5258,20 +5258,20 @@ IL_06d2:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:138>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7573));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7814));
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_226 = __this->___U3CU3E4__this;
 		NullCheck(L_226);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_227 = L_226->___m_TextComponent;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7574));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7815));
 		NullCheck(L_227);
 		VirtualActionInvoker0::Invoke(109, L_227);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7574));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7815));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:140>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7575));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7576));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7816));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7817));
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_228 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_228, (0.0250000004f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7576));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7817));
 		__this->___U3CU3E2__current = L_228;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_228);
 		__this->___U3CU3E1__state = 2;
@@ -5280,9 +5280,9 @@ IL_06d2:
 
 IL_0713:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7577));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7818));
 		__this->___U3CU3E1__state = (-1);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7578));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7819));
 		__this->___U3CtextInfoU3E5__5 = (TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__5), (void*)(TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D*)NULL);
 	}
@@ -5290,12 +5290,12 @@ IL_0713:
 IL_0722:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:60>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7579));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7820));
 		V_7 = (bool)1;
 		goto IL_00b5;
 	}
 }
-// Method Definition Index: 111839
+// Method Definition Index: 111848
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5311,7 +5311,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Coll
 		return L_0;
 	}
 }
-// Method Definition Index: 111840
+// Method Definition Index: 111849
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5328,7 +5328,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_Collections_IE
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 111841
+// Method Definition Index: 111850
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5352,7 +5352,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Coll
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111842
+// Method Definition Index: 111851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_add_OnMenuToggle_mA1DC974675C955915D6F9054E275FE76BABCD769 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5399,7 +5399,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111843
+// Method Definition Index: 111852
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_remove_OnMenuToggle_m34604FE8678B871BB3D8EF10B6B2957C3D5EAF3B (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5446,7 +5446,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111844
+// Method Definition Index: 111853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_add_OnCursorModeToggle_m26837DC3A103E313096659CBA36889CE2BBE9B75 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5493,7 +5493,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111845
+// Method Definition Index: 111854
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_remove_OnCursorModeToggle_m209BD69D0DA91F19CBCA5FC1D0C217CE12598B9D (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5540,7 +5540,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111846
+// Method Definition Index: 111855
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_add_OnZoomDelta_m81968978C0E81391CA30CD4A5B5CDFC4055411F9 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5587,7 +5587,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111847
+// Method Definition Index: 111856
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_remove_OnZoomDelta_m71D3B80A02C1E02E7FAC7AB21DA1790DC0880D04 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5634,7 +5634,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111848
+// Method Definition Index: 111857
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_add_OnFreezeToggle_m27D6D93ED51EDEFECCBCBBC716BFC748AC39BB93 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5681,7 +5681,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111849
+// Method Definition Index: 111858
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_remove_OnFreezeToggle_m17BF61CED7761A66707EDAE219B8ABD1AE678AE0 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5728,7 +5728,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111850
+// Method Definition Index: 111859
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_add_OnFFTRequest_m4A09C8129D3CB8B0FA6CE48CC2F541F17E623DBE (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5775,7 +5775,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111851
+// Method Definition Index: 111860
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_remove_OnFFTRequest_m914CD582CC01E2B25A0135BC53C37BB54D7D0273 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5822,7 +5822,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 111852
+// Method Definition Index: 111861
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_Start_m0B401A98477A15ECC15B7B747BF0D047BDE57A0A (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5839,25 +5839,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_Start_m0B401A98477A
 	bool V_2 = false;
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_Start_m0B401A98477A15ECC15B7B747BF0D047BDE57A0A_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7580));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7581));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7821));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7822));
 	int32_t G_B3_0 = 0;
 	int32_t G_B8_0 = 0;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7582));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7823));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:91>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7583));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7584));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7824));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7825));
 		MetaXRGestureActions_AutoFindHandsIfNeeded_m71BEB1BDEA01A02570672DB61939BF334AF7667B(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7584));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7825));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:92>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7585));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7826));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_0 = __this->___leftSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7586));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7827));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7586));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7827));
 		if (!L_1)
 		{
 			goto IL_0024;
@@ -5865,11 +5865,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_Start_m0B401A98477A
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_2 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7587));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7828));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7587));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7828));
 		G_B3_0 = ((int32_t)(L_3));
 		goto IL_0025;
 	}
@@ -5882,7 +5882,7 @@ IL_0024:
 IL_0025:
 	{
 		V_0 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7588));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7829));
 		bool L_4 = V_0;
 		if (!L_4)
 		{
@@ -5891,13 +5891,13 @@ IL_0025:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:92>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7589));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7830));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_5 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7590));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7831));
 		NullCheck(L_5);
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_6;
 		L_6 = Component_GetComponentInChildren_TisOVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374_m05A32DA3BD2CCAD22C14140D3937B34DD48E09CE(L_5, Component_GetComponentInChildren_TisOVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374_m05A32DA3BD2CCAD22C14140D3937B34DD48E09CE_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7590));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7831));
 		__this->___leftSkeleton = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftSkeleton), (void*)L_6);
 	}
@@ -5905,13 +5905,13 @@ IL_0025:
 IL_003a:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:93>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7591));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7832));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_7 = __this->___rightSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7592));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7833));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
 		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7592));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7833));
 		if (!L_8)
 		{
 			goto IL_0056;
@@ -5919,11 +5919,11 @@ IL_003a:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_9 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7593));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7834));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
 		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7593));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7834));
 		G_B8_0 = ((int32_t)(L_10));
 		goto IL_0057;
 	}
@@ -5936,7 +5936,7 @@ IL_0056:
 IL_0057:
 	{
 		V_1 = (bool)G_B8_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7594));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7835));
 		bool L_11 = V_1;
 		if (!L_11)
 		{
@@ -5945,13 +5945,13 @@ IL_0057:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:93>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7595));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7836));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_12 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7596));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7837));
 		NullCheck(L_12);
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_13;
 		L_13 = Component_GetComponentInChildren_TisOVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374_m05A32DA3BD2CCAD22C14140D3937B34DD48E09CE(L_12, Component_GetComponentInChildren_TisOVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374_m05A32DA3BD2CCAD22C14140D3937B34DD48E09CE_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7596));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7837));
 		__this->___rightSkeleton = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightSkeleton), (void*)L_13);
 	}
@@ -5959,15 +5959,15 @@ IL_0057:
 IL_006c:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:94>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7597));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7838));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_14 = __this->___leftSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7598));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7839));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_15;
 		L_15 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7598));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7839));
 		V_2 = L_15;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7599));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7840));
 		bool L_16 = V_2;
 		if (!L_16)
 		{
@@ -5976,42 +5976,42 @@ IL_006c:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:94>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7600));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7841));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_17 = __this->___leftSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7601));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7842));
 		NullCheck(L_17);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
 		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_17, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7601));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7602));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7842));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7843));
 		NullCheck(L_18);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_18, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7602));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7843));
 		__this->___lastLeftWristUp = L_19;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7603));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7844));
 		goto IL_009f;
 	}
 
 IL_0094:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:94>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7604));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7605));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7845));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7846));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7605));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7846));
 		__this->___lastLeftWristUp = L_20;
 	}
 
 IL_009f:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:95>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7606));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7847));
 		return;
 	}
 }
-// Method Definition Index: 111853
+// Method Definition Index: 111862
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_AutoFindHandsIfNeeded_m71BEB1BDEA01A02570672DB61939BF334AF7667B (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6039,23 +6039,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_AutoFindHandsIfNeed
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_1), (&V_4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_AutoFindHandsIfNeeded_m71BEB1BDEA01A02570672DB61939BF334AF7667B_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7607));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7608));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7848));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7849));
 	int32_t G_B3_0 = 0;
 	int32_t G_B8_0 = 0;
 	int32_t G_B13_0 = 0;
 	int32_t G_B20_0 = 0;
 	int32_t G_B25_0 = 0;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7609));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7850));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:99>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7610));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7851));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_0 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7611));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7852));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7611));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7852));
 		if (L_1)
 		{
 			goto IL_001d;
@@ -6063,11 +6063,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_AutoFindHandsIfNeed
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_2 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7612));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7853));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7612));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7853));
 		G_B3_0 = ((int32_t)(L_3));
 		goto IL_001e;
 	}
@@ -6080,7 +6080,7 @@ IL_001d:
 IL_001e:
 	{
 		V_0 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7613));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7854));
 		bool L_4 = V_0;
 		if (!L_4)
 		{
@@ -6088,44 +6088,44 @@ IL_001e:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7614));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7855));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:101>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7615));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7616));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7856));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7857));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* L_5;
 		L_5 = Object_FindObjectsOfType_TisOVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509_mDD5721DB5B4C249A302AE90FAAC68F2FBA980D4A(Object_FindObjectsOfType_TisOVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509_mDD5721DB5B4C249A302AE90FAAC68F2FBA980D4A_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7616));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7857));
 		V_1 = L_5;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7617));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7858));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:102>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7618));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7859));
 		OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* L_6 = V_1;
 		V_2 = L_6;
 		V_3 = 0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7619));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7860));
 		goto IL_00a8;
 	}
 
 IL_0033:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:102>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7620));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7861));
 		OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* L_7 = V_2;
 		int32_t L_8 = V_3;
 		NullCheck(L_7);
 		int32_t L_9 = L_8;
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		V_4 = L_10;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7621));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7862));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:105>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7622));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7863));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_11 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7623));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7864));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_12;
 		L_12 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7623));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7864));
 		if (!L_12)
 		{
 			goto IL_005f;
@@ -6133,21 +6133,21 @@ IL_0033:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_13 = V_4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7624));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7865));
 		NullCheck(L_13);
 		String_t* L_14;
 		L_14 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_13, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7624));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7625));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7865));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7866));
 		NullCheck(L_14);
 		String_t* L_15;
 		L_15 = String_ToLower_m6191ABA3DC514ED47C10BDA23FD0DDCEAE7ACFBD(L_14, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7625));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7626));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7866));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7867));
 		NullCheck(L_15);
 		bool L_16;
 		L_16 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_15, _stringLiteral8739227E8E687EF781DA0D923452C2686CFF10A2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7626));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7867));
 		G_B8_0 = ((int32_t)(L_16));
 		goto IL_0060;
 	}
@@ -6160,7 +6160,7 @@ IL_005f:
 IL_0060:
 	{
 		V_5 = (bool)G_B8_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7627));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7868));
 		bool L_17 = V_5;
 		if (!L_17)
 		{
@@ -6169,7 +6169,7 @@ IL_0060:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:105>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7628));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7869));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_18 = V_4;
 		__this->___leftHand = L_18;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___leftHand), (void*)L_18);
@@ -6178,13 +6178,13 @@ IL_0060:
 IL_006e:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:106>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7629));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7870));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_19 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7630));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7871));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_20;
 		L_20 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_19, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7630));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7871));
 		if (!L_20)
 		{
 			goto IL_0094;
@@ -6192,21 +6192,21 @@ IL_006e:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_21 = V_4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7631));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7872));
 		NullCheck(L_21);
 		String_t* L_22;
 		L_22 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_21, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7631));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7632));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7872));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7873));
 		NullCheck(L_22);
 		String_t* L_23;
 		L_23 = String_ToLower_m6191ABA3DC514ED47C10BDA23FD0DDCEAE7ACFBD(L_22, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7632));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7633));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7873));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7874));
 		NullCheck(L_23);
 		bool L_24;
 		L_24 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_23, _stringLiteralB1E5119D36EC43B340C0A0DDC99F1156546EA9DF, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7633));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7874));
 		G_B13_0 = ((int32_t)(L_24));
 		goto IL_0095;
 	}
@@ -6219,7 +6219,7 @@ IL_0094:
 IL_0095:
 	{
 		V_6 = (bool)G_B13_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7634));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7875));
 		bool L_25 = V_6;
 		if (!L_25)
 		{
@@ -6228,7 +6228,7 @@ IL_0095:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:106>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7635));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7876));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_26 = V_4;
 		__this->___rightHand = L_26;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rightHand), (void*)L_26);
@@ -6236,8 +6236,8 @@ IL_0095:
 
 IL_00a3:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7636));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7637));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7877));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7878));
 		int32_t L_27 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
@@ -6245,7 +6245,7 @@ IL_00a3:
 IL_00a8:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:102>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7638));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7879));
 		int32_t L_28 = V_3;
 		OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* L_29 = V_2;
 		NullCheck(L_29);
@@ -6256,13 +6256,13 @@ IL_00a8:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:109>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7639));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7880));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_30 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7640));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7881));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_31;
 		L_31 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_30, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7640));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7881));
 		if (!L_31)
 		{
 			goto IL_00c3;
@@ -6283,7 +6283,7 @@ IL_00c3:
 IL_00c4:
 	{
 		V_7 = (bool)G_B20_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7641));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7882));
 		bool L_33 = V_7;
 		if (!L_33)
 		{
@@ -6292,7 +6292,7 @@ IL_00c4:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:109>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7642));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7883));
 		OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* L_34 = V_1;
 		NullCheck(L_34);
 		int32_t L_35 = 0;
@@ -6304,13 +6304,13 @@ IL_00c4:
 IL_00d3:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:110>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7643));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7884));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_37 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7644));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7885));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_38;
 		L_38 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_37, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7644));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7885));
 		if (!L_38)
 		{
 			goto IL_00e9;
@@ -6331,7 +6331,7 @@ IL_00e9:
 IL_00ea:
 	{
 		V_8 = (bool)G_B25_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7645));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7886));
 		bool L_40 = V_8;
 		if (!L_40)
 		{
@@ -6340,7 +6340,7 @@ IL_00ea:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:110>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7646));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7887));
 		OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* L_41 = V_1;
 		NullCheck(L_41);
 		int32_t L_42 = 1;
@@ -6351,17 +6351,17 @@ IL_00ea:
 
 IL_00f9:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7647));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7888));
 	}
 
 IL_00fa:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:112>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7648));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7889));
 		return;
 	}
 }
-// Method Definition Index: 111854
+// Method Definition Index: 111863
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_Update_mAD1EB13C6D8B9634E04E5295BD7518F4D6E59D8B (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6373,41 +6373,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_Update_mAD1EB13C6D8
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_Update_mAD1EB13C6D8B9634E04E5295BD7518F4D6E59D8B_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7649));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7650));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7890));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7891));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7651));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7892));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:116>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7652));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7653));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7893));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7894));
 		MetaXRGestureActions_DetectWristFlip_m954FC85E4E2A8EEF360DCD16F578D18053577192(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7653));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7894));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:117>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7654));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7655));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7895));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7896));
 		MetaXRGestureActions_DetectCursorPinchTap_m1B3F3498442B9B1809E3B9C762037FFD250614A3(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7655));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7896));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:118>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7656));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7657));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7897));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7898));
 		MetaXRGestureActions_DetectFreezeHold_m998C3026244549C3A949AD6DC6F1155BF22187F8(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7657));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7898));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:119>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7658));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7659));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7899));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7900));
 		MetaXRGestureActions_DetectZoom_m880315A097821E257553D6460F3F8B87BC0120EA(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7659));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7900));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:120>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7660));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7661));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7901));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7902));
 		MetaXRGestureActions_DetectFFTGesture_m73E01E43A463DE4684703E45D053E85314DE24EF(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7661));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7902));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:121>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7662));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7903));
 		return;
 	}
 }
-// Method Definition Index: 111855
+// Method Definition Index: 111864
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectWristFlip_m954FC85E4E2A8EEF360DCD16F578D18053577192 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6430,23 +6430,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectWristFlip_m95
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_DetectWristFlip_m954FC85E4E2A8EEF360DCD16F578D18053577192_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7663));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7664));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7904));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7905));
 	int32_t G_B5_0 = 0;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B10_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B9_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7665));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7906));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:126>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7666));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7907));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_0 = __this->___leftSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7667));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7908));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7667));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7908));
 		V_2 = L_1;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7668));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7909));
 		bool L_2 = V_2;
 		if (!L_2)
 		{
@@ -6455,37 +6455,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectWristFlip_m95
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:126>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7669));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7910));
 		goto IL_00af;
 	}
 
 IL_0016:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:127>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7670));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7911));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_3 = __this->___leftSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7671));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7912));
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_3, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7671));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7672));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7912));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7913));
 		NullCheck(L_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_4, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7672));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7913));
 		V_0 = L_5;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:128>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7673));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7914));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___lastLeftWristUp;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7674));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7915));
 		float L_8;
 		L_8 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_6, L_7, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7674));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7915));
 		V_1 = L_8;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:129>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7675));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7916));
 		float L_9 = V_1;
 		float L_10 = __this->___wristFlipAngleThreshold;
 		if ((!(((float)L_9) >= ((float)L_10))))
@@ -6494,10 +6494,10 @@ IL_0016:
 		}
 	}
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7676));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7917));
 		float L_11;
 		L_11 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7676));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7917));
 		float L_12 = __this->___lastWristFlipTime;
 		float L_13 = __this->___wristFlipCooldown;
 		G_B5_0 = ((((int32_t)((!(((float)((float)il2cpp_codegen_subtract(L_11, L_12))) >= ((float)L_13)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
@@ -6512,7 +6512,7 @@ IL_0056:
 IL_0057:
 	{
 		V_3 = (bool)G_B5_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7677));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7918));
 		bool L_14 = V_3;
 		if (!L_14)
 		{
@@ -6520,23 +6520,23 @@ IL_0057:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7678));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7919));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:131>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7679));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7680));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7920));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7921));
 		float L_15;
 		L_15 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7680));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7921));
 		__this->___lastWristFlipTime = L_15;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:132>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7681));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7922));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_0;
 		__this->___lastLeftWristUp = L_16;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:133>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7682));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7923));
 		bool L_17 = __this->___verboseLogs;
 		V_4 = L_17;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7683));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7924));
 		bool L_18 = V_4;
 		if (!L_18)
 		{
@@ -6545,17 +6545,17 @@ IL_0057:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:133>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7684));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7685));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7925));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7926));
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral63D2A0FE3C2CDA91C526AA1D6CE99C05CFBED2CD, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7685));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7926));
 	}
 
 IL_0085:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:134>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7686));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7927));
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_19 = __this->___OnMenuToggle;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_20 = L_19;
 		if (L_20)
@@ -6571,38 +6571,38 @@ IL_0085:
 
 IL_0091:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7687));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7928));
 		NullCheck(G_B10_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B10_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7687));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7928));
 	}
 
 IL_0097:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7688));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7929));
 	}
 
 IL_0098:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:137>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7689));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7930));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->___lastLeftWristUp;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7690));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7931));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C(L_21, L_22, (0.0799999982f), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7690));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7931));
 		__this->___lastLeftWristUp = L_23;
 	}
 
 IL_00af:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:138>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7691));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7932));
 		return;
 	}
 }
-// Method Definition Index: 111856
+// Method Definition Index: 111865
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectCursorPinchTap_m1B3F3498442B9B1809E3B9C762037FFD250614A3 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6625,25 +6625,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectCursorPinchTa
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_DetectCursorPinchTap_m1B3F3498442B9B1809E3B9C762037FFD250614A3_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7692));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7693));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7933));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7934));
 	int32_t G_B5_0 = 0;
 	int32_t G_B8_0 = 0;
 	int32_t G_B13_0 = 0;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B19_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B18_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7694));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7935));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:143>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7695));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7936));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_0 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7696));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7937));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7696));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7937));
 		V_1 = L_1;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7697));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7938));
 		bool L_2 = V_1;
 		if (!L_2)
 		{
@@ -6652,20 +6652,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectCursorPinchTa
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:143>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7698));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7939));
 		goto IL_00cd;
 	}
 
 IL_0016:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:144>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7699));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7940));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_3 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7700));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7941));
 		NullCheck(L_3);
 		bool L_4;
 		L_4 = OVRHand_GetFingerIsPinching_mC0FAC991CEA8B0B07F6DBA92CB56BEA09D4726FD(L_3, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7700));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7941));
 		if (!L_4)
 		{
 			goto IL_003d;
@@ -6673,11 +6673,11 @@ IL_0016:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_5 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7701));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7942));
 		NullCheck(L_5);
 		float L_6;
 		L_6 = OVRHand_GetFingerPinchStrength_mF6517B5CA9FF87146ECDAED8914DE2EFA29BE4E6(L_5, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7701));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7942));
 		float L_7 = __this->___pinchStrengthThreshold;
 		G_B5_0 = ((((int32_t)((!(((float)L_6) >= ((float)L_7)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_003e;
@@ -6692,7 +6692,7 @@ IL_003e:
 	{
 		V_0 = (bool)G_B5_0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:145>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7702));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7943));
 		bool L_8 = V_0;
 		if (!L_8)
 		{
@@ -6713,7 +6713,7 @@ IL_004d:
 IL_004e:
 	{
 		V_2 = (bool)G_B8_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7703));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7944));
 		bool L_10 = V_2;
 		if (!L_10)
 		{
@@ -6721,26 +6721,26 @@ IL_004e:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7704));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7945));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:147>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7705));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7946));
 		__this->___rightIndexPinching = (bool)1;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:148>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7706));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7707));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7947));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7948));
 		float L_11;
 		L_11 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7707));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7948));
 		__this->___rightIndexPinchStartTime = L_11;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7708));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7709));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7949));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7950));
 		goto IL_00cd;
 	}
 
 IL_0068:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:150>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7710));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7951));
 		bool L_12 = V_0;
 		if (L_12)
 		{
@@ -6761,7 +6761,7 @@ IL_0073:
 IL_0074:
 	{
 		V_3 = (bool)G_B13_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7711));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7952));
 		bool L_14 = V_3;
 		if (!L_14)
 		{
@@ -6769,24 +6769,24 @@ IL_0074:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7712));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7953));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:152>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7713));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7714));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7954));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7955));
 		float L_15;
 		L_15 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7714));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7955));
 		float L_16 = __this->___rightIndexPinchStartTime;
 		V_4 = ((float)il2cpp_codegen_subtract(L_15, L_16));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:153>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7715));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7956));
 		__this->___rightIndexPinching = (bool)0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:154>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7716));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7957));
 		float L_17 = V_4;
 		float L_18 = __this->___pinchTapMaxDuration;
 		V_5 = (bool)((((int32_t)((!(((float)L_17) <= ((float)L_18)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7717));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7958));
 		bool L_19 = V_5;
 		if (!L_19)
 		{
@@ -6794,12 +6794,12 @@ IL_0074:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7718));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7959));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:156>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7719));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7960));
 		bool L_20 = __this->___verboseLogs;
 		V_6 = L_20;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7720));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7961));
 		bool L_21 = V_6;
 		if (!L_21)
 		{
@@ -6808,17 +6808,17 @@ IL_0074:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:156>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7721));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7722));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7962));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7963));
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral7401A91C929933E12A9FFBE873A948CCA1957761, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7722));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7963));
 	}
 
 IL_00b9:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:157>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7723));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7964));
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_22 = __this->___OnCursorModeToggle;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_23 = L_22;
 		if (L_23)
@@ -6834,30 +6834,30 @@ IL_00b9:
 
 IL_00c5:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7724));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7965));
 		NullCheck(G_B19_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B19_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7724));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7965));
 	}
 
 IL_00cb:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7725));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7966));
 	}
 
 IL_00cc:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7726));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7967));
 	}
 
 IL_00cd:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:160>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7727));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7968));
 		return;
 	}
 }
-// Method Definition Index: 111857
+// Method Definition Index: 111866
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFreezeHold_m998C3026244549C3A949AD6DC6F1155BF22187F8 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6880,8 +6880,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFreezeHold_m9
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_DetectFreezeHold_m998C3026244549C3A949AD6DC6F1155BF22187F8_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7728));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7729));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7969));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7970));
 	bool G_B3_0 = false;
 	bool G_B2_0 = false;
 	int32_t G_B4_0 = 0;
@@ -6896,20 +6896,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFreezeHold_m9
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B28_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B27_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7730));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7971));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:165>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7731));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7972));
 		V_0 = (bool)0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:166>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7732));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7973));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_0 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7733));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7974));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7733));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7974));
 		V_1 = L_1;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7734));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7975));
 		bool L_2 = V_1;
 		if (!L_2)
 		{
@@ -6918,14 +6918,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFreezeHold_m9
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:167>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7735));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7976));
 		bool L_3 = V_0;
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_4 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7736));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7977));
 		NullCheck(L_4);
 		bool L_5;
 		L_5 = OVRHand_GetFingerIsPinching_mC0FAC991CEA8B0B07F6DBA92CB56BEA09D4726FD(L_4, 2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7736));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7977));
 		if (!L_5)
 		{
 			G_B3_0 = L_3;
@@ -6935,11 +6935,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFreezeHold_m9
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_6 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7737));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7978));
 		NullCheck(L_6);
 		float L_7;
 		L_7 = OVRHand_GetFingerPinchStrength_mF6517B5CA9FF87146ECDAED8914DE2EFA29BE4E6(L_6, 2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7737));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7978));
 		float L_8 = __this->___pinchStrengthThreshold;
 		G_B4_0 = ((((int32_t)((!(((float)L_7) >= ((float)L_8)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		G_B4_1 = G_B2_0;
@@ -6960,15 +6960,15 @@ IL_003c:
 IL_003e:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:168>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7738));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7979));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_9 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7739));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7980));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
 		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7739));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7980));
 		V_2 = L_10;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7740));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7981));
 		bool L_11 = V_2;
 		if (!L_11)
 		{
@@ -6977,14 +6977,14 @@ IL_003e:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:169>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7741));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7982));
 		bool L_12 = V_0;
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_13 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7742));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7983));
 		NullCheck(L_13);
 		bool L_14;
 		L_14 = OVRHand_GetFingerIsPinching_mC0FAC991CEA8B0B07F6DBA92CB56BEA09D4726FD(L_13, 2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7742));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7983));
 		if (!L_14)
 		{
 			G_B8_0 = L_12;
@@ -6994,11 +6994,11 @@ IL_003e:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_15 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7743));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7984));
 		NullCheck(L_15);
 		float L_16;
 		L_16 = OVRHand_GetFingerPinchStrength_mF6517B5CA9FF87146ECDAED8914DE2EFA29BE4E6(L_15, 2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7743));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7984));
 		float L_17 = __this->___pinchStrengthThreshold;
 		G_B9_0 = ((((int32_t)((!(((float)L_16) >= ((float)L_17)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		G_B9_1 = G_B7_0;
@@ -7019,7 +7019,7 @@ IL_0077:
 IL_0079:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:171>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7744));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7985));
 		bool L_18 = V_0;
 		if (!L_18)
 		{
@@ -7040,7 +7040,7 @@ IL_0087:
 IL_0088:
 	{
 		V_3 = (bool)G_B13_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7745));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7986));
 		bool L_20 = V_3;
 		if (!L_20)
 		{
@@ -7048,26 +7048,26 @@ IL_0088:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7746));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7987));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:173>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7747));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7988));
 		__this->___middlePinchHolding = (bool)1;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:174>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7748));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7749));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7989));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7990));
 		float L_21;
 		L_21 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7749));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7990));
 		__this->___middlePinchStartTime = L_21;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7750));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7751));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7991));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7992));
 		goto IL_0119;
 	}
 
 IL_00a2:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:176>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7752));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7993));
 		bool L_22 = V_0;
 		if (L_22)
 		{
@@ -7088,7 +7088,7 @@ IL_00ad:
 IL_00ae:
 	{
 		V_4 = (bool)G_B18_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7753));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7994));
 		bool L_24 = V_4;
 		if (!L_24)
 		{
@@ -7096,19 +7096,19 @@ IL_00ae:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7754));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7995));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:178>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7755));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7996));
 		__this->___middlePinchHolding = (bool)0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7756));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7757));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7997));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7998));
 		goto IL_0119;
 	}
 
 IL_00bf:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:180>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7758));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7999));
 		bool L_25 = __this->___middlePinchHolding;
 		if (!L_25)
 		{
@@ -7116,10 +7116,10 @@ IL_00bf:
 		}
 	}
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7759));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8000));
 		float L_26;
 		L_26 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7759));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8000));
 		float L_27 = __this->___middlePinchStartTime;
 		float L_28 = __this->___freezeHoldSeconds;
 		G_B23_0 = ((((int32_t)((!(((float)((float)il2cpp_codegen_subtract(L_26, L_27))) >= ((float)L_28)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
@@ -7134,7 +7134,7 @@ IL_00e0:
 IL_00e1:
 	{
 		V_5 = (bool)G_B23_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7760));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8001));
 		bool L_29 = V_5;
 		if (!L_29)
 		{
@@ -7142,15 +7142,15 @@ IL_00e1:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7761));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8002));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:182>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7762));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8003));
 		__this->___middlePinchHolding = (bool)0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:183>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7763));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8004));
 		bool L_30 = __this->___verboseLogs;
 		V_6 = L_30;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7764));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8005));
 		bool L_31 = V_6;
 		if (!L_31)
 		{
@@ -7159,17 +7159,17 @@ IL_00e1:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:183>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7765));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7766));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8006));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8007));
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral73F1F026CDA5485EA9150DB35FC57C39CC9C8501, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7766));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8007));
 	}
 
 IL_0106:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:184>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7767));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8008));
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_32 = __this->___OnFreezeToggle;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_33 = L_32;
 		if (L_33)
@@ -7185,25 +7185,25 @@ IL_0106:
 
 IL_0112:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7768));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8009));
 		NullCheck(G_B28_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B28_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7768));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8009));
 	}
 
 IL_0118:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7769));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8010));
 	}
 
 IL_0119:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:186>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7770));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8011));
 		return;
 	}
 }
-// Method Definition Index: 111858
+// Method Definition Index: 111867
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectZoom_m880315A097821E257553D6460F3F8B87BC0120EA (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7231,23 +7231,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectZoom_m880315A
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_1), (&V_6), (&V_7), (&V_8));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_DetectZoom_m880315A097821E257553D6460F3F8B87BC0120EA_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7771));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7772));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8012));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8013));
 	int32_t G_B3_0 = 0;
 	int32_t G_B8_0 = 0;
 	int32_t G_B11_0 = 0;
 	Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* G_B18_0 = NULL;
 	Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* G_B17_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7773));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8014));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:191>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7774));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8015));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_0 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7775));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8016));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7775));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8016));
 		if (L_1)
 		{
 			goto IL_001d;
@@ -7255,11 +7255,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectZoom_m880315A
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_2 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7776));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8017));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7776));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8017));
 		G_B3_0 = ((int32_t)(L_3));
 		goto IL_001e;
 	}
@@ -7272,7 +7272,7 @@ IL_001d:
 IL_001e:
 	{
 		V_2 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7777));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8018));
 		bool L_4 = V_2;
 		if (!L_4)
 		{
@@ -7281,20 +7281,20 @@ IL_001e:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:191>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7778));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8019));
 		goto IL_0177;
 	}
 
 IL_0027:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:192>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7779));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8020));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_5 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7780));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8021));
 		NullCheck(L_5);
 		bool L_6;
 		L_6 = OVRHand_GetFingerIsPinching_mC0FAC991CEA8B0B07F6DBA92CB56BEA09D4726FD(L_5, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7780));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8021));
 		if (!L_6)
 		{
 			goto IL_004e;
@@ -7302,11 +7302,11 @@ IL_0027:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_7 = __this->___leftHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7781));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8022));
 		NullCheck(L_7);
 		float L_8;
 		L_8 = OVRHand_GetFingerPinchStrength_mF6517B5CA9FF87146ECDAED8914DE2EFA29BE4E6(L_7, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7781));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8022));
 		float L_9 = __this->___pinchStrengthThreshold;
 		G_B8_0 = ((((int32_t)((!(((float)L_8) >= ((float)L_9)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_004f;
@@ -7321,13 +7321,13 @@ IL_004f:
 	{
 		V_0 = (bool)G_B8_0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:193>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7782));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8023));
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_10 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7783));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8024));
 		NullCheck(L_10);
 		bool L_11;
 		L_11 = OVRHand_GetFingerIsPinching_mC0FAC991CEA8B0B07F6DBA92CB56BEA09D4726FD(L_10, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7783));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8024));
 		if (!L_11)
 		{
 			goto IL_0077;
@@ -7335,11 +7335,11 @@ IL_004f:
 	}
 	{
 		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_12 = __this->___rightHand;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7784));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8025));
 		NullCheck(L_12);
 		float L_13;
 		L_13 = OVRHand_GetFingerPinchStrength_mF6517B5CA9FF87146ECDAED8914DE2EFA29BE4E6(L_12, 1, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7784));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8025));
 		float L_14 = __this->___pinchStrengthThreshold;
 		G_B11_0 = ((((int32_t)((!(((float)L_13) >= ((float)L_14)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_0078;
@@ -7354,11 +7354,11 @@ IL_0078:
 	{
 		V_1 = (bool)G_B11_0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:195>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7785));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8026));
 		bool L_15 = V_0;
 		bool L_16 = V_1;
 		V_3 = (bool)((int32_t)((int32_t)L_15&(int32_t)L_16));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7786));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8027));
 		bool L_17 = V_3;
 		if (!L_17)
 		{
@@ -7366,12 +7366,12 @@ IL_0078:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7787));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8028));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:197>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7788));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8029));
 		bool L_18 = __this->___bothIndexPinching;
 		V_4 = (bool)((((int32_t)L_18) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7789));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8030));
 		bool L_19 = V_4;
 		if (!L_19)
 		{
@@ -7379,41 +7379,41 @@ IL_0078:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7790));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8031));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:199>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7791));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8032));
 		__this->___bothIndexPinching = (bool)1;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:200>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7792));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7793));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8033));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8034));
 		float L_20;
 		L_20 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7793));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8034));
 		__this->___bothPinchStartTime = L_20;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:201>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7794));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7795));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8035));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8036));
 		float L_21;
 		L_21 = MetaXRGestureActions_CurrentIndexTipDistance_mF5E66631D121BAD3CD2EA50934D9155B843D6CA1(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7795));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8036));
 		__this->___lastPinchDistance = L_21;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7796));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7797));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8037));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8038));
 		goto IL_015f;
 	}
 
 IL_00b8:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:203>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7798));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7799));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8039));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8040));
 		float L_22;
 		L_22 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7799));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8040));
 		float L_23 = __this->___bothPinchStartTime;
 		float L_24 = __this->___zoomActivationDelay;
 		V_5 = (bool)((((int32_t)((!(((float)((float)il2cpp_codegen_subtract(L_22, L_23))) >= ((float)L_24)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7800));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8041));
 		bool L_25 = V_5;
 		if (!L_25)
 		{
@@ -7421,43 +7421,43 @@ IL_00b8:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7801));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8042));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:205>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7802));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7803));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8043));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8044));
 		float L_26;
 		L_26 = MetaXRGestureActions_CurrentIndexTipDistance_mF5E66631D121BAD3CD2EA50934D9155B843D6CA1(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7803));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8044));
 		V_6 = L_26;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:206>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7804));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8045));
 		float L_27 = V_6;
 		float L_28 = __this->___lastPinchDistance;
 		V_7 = ((float)il2cpp_codegen_subtract(L_27, L_28));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:207>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7805));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8046));
 		float L_29 = V_6;
 		__this->___lastPinchDistance = L_29;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:208>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7806));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8047));
 		float L_30 = V_7;
 		float L_31 = __this->___zoomSensitivity;
 		float L_32 = __this->___zoomDeltaClamp;
 		float L_33 = __this->___zoomDeltaClamp;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7807));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8048));
 		float L_34;
 		L_34 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)il2cpp_codegen_multiply(L_30, L_31)), ((-L_32)), L_33, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7807));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8048));
 		V_8 = L_34;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:209>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7808));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8049));
 		float L_35 = V_8;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7809));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8050));
 		float L_36;
 		L_36 = fabsf(L_35);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7809));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8050));
 		V_9 = (bool)((((float)L_36) > ((float)(0.000500000024f)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7810));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8051));
 		bool L_37 = V_9;
 		if (!L_37)
 		{
@@ -7465,9 +7465,9 @@ IL_00b8:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7811));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8052));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:211>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7812));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8053));
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_38 = __this->___OnZoomDelta;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_39 = L_38;
 		if (L_39)
@@ -7484,19 +7484,19 @@ IL_00b8:
 IL_0132:
 	{
 		float L_40 = V_8;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7813));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8054));
 		NullCheck(G_B18_0);
 		Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_inline(G_B18_0, L_40, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7813));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8054));
 	}
 
 IL_013a:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:212>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7814));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8055));
 		bool L_41 = __this->___verboseLogs;
 		V_10 = L_41;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7815));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8056));
 		bool L_42 = V_10;
 		if (!L_42)
 		{
@@ -7505,44 +7505,44 @@ IL_013a:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:212>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7816));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8057));
 		float L_43 = V_8;
 		float L_44 = L_43;
 		RuntimeObject* L_45 = Box(il2cpp_defaults.single_class, &L_44);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7817));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8058));
 		String_t* L_46;
 		L_46 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral0B55122109A50A688CBE54978EFA57609CD6D75B, L_45, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7817));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7818));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8058));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8059));
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_46, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7818));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8059));
 	}
 
 IL_015d:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7819));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8060));
 	}
 
 IL_015e:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7820));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8061));
 	}
 
 IL_015f:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7821));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7822));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8062));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8063));
 		goto IL_0177;
 	}
 
 IL_0162:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:216>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7823));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8064));
 		bool L_47 = __this->___bothIndexPinching;
 		V_11 = L_47;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7824));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8065));
 		bool L_48 = V_11;
 		if (!L_48)
 		{
@@ -7550,21 +7550,21 @@ IL_0162:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7825));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8066));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:218>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7826));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8067));
 		__this->___bothIndexPinching = (bool)0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7827));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8068));
 	}
 
 IL_0177:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:220>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7828));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8069));
 		return;
 	}
 }
-// Method Definition Index: 111859
+// Method Definition Index: 111868
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRGestureActions_CurrentIndexTipDistance_mF5E66631D121BAD3CD2EA50934D9155B843D6CA1 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7584,35 +7584,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRGestureActions_CurrentIndexTipDis
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_CurrentIndexTipDistance_mF5E66631D121BAD3CD2EA50934D9155B843D6CA1_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7829));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7830));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8070));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8071));
 	int32_t G_B3_0 = 0;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7831));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8072));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:224>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7832));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8073));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_0 = __this->___leftSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7833));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8074));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = MetaXRGestureActions_GetFingerTip_m6F12F1925C83F3A9F1C7B4E284A54DEB6B9A75A7(__this, L_0, _stringLiteralBCC29F523643E86D43E31FBC2649C0DEF8B4B612, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7833));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8074));
 		V_0 = L_1;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:225>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7834));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8075));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_2 = __this->___rightSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7835));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8076));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
 		L_3 = MetaXRGestureActions_GetFingerTip_m6F12F1925C83F3A9F1C7B4E284A54DEB6B9A75A7(__this, L_2, _stringLiteralBCC29F523643E86D43E31FBC2649C0DEF8B4B612, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7835));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8076));
 		V_1 = L_3;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:226>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7836));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8077));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7837));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8078));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
 		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7837));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8078));
 		if (L_5)
 		{
 			goto IL_0037;
@@ -7620,11 +7620,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetaXRGestureActions_CurrentIndexTipDis
 	}
 	{
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = V_1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7838));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8079));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
 		L_7 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7838));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8079));
 		G_B3_0 = ((int32_t)(L_7));
 		goto IL_0038;
 	}
@@ -7637,7 +7637,7 @@ IL_0037:
 IL_0038:
 	{
 		V_2 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7839));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8080));
 		bool L_8 = V_2;
 		if (!L_8)
 		{
@@ -7646,7 +7646,7 @@ IL_0038:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:226>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7840));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8081));
 		V_3 = (0.0f);
 		goto IL_0058;
 	}
@@ -7654,23 +7654,23 @@ IL_0038:
 IL_0044:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:227>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7841));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8082));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7842));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8083));
 		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7842));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8083));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = V_1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7843));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8084));
 		NullCheck(L_11);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7843));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7844));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8084));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8085));
 		float L_13;
 		L_13 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_10, L_12, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7844));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8085));
 		V_3 = L_13;
 		goto IL_0058;
 	}
@@ -7678,12 +7678,12 @@ IL_0044:
 IL_0058:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:228>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7845));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8086));
 		float L_14 = V_3;
 		return L_14;
 	}
 }
-// Method Definition Index: 111860
+// Method Definition Index: 111869
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFFTGesture_m73E01E43A463DE4684703E45D053E85314DE24EF (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7705,17 +7705,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFFTGesture_m7
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_DetectFFTGesture_m73E01E43A463DE4684703E45D053E85314DE24EF_RuntimeMethod_var, methodExecutionContextThis, NULL, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7846));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7847));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8087));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8088));
 	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* G_B11_0 = NULL;
 	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* G_B10_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7848));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8089));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:233>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7849));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8090));
 		bool L_0 = __this->___useFourFingerExtendedForFFT;
 		V_1 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7850));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8091));
 		bool L_1 = V_1;
 		if (!L_1)
 		{
@@ -7724,22 +7724,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions_DetectFFTGesture_m7
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:233>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7851));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8092));
 		goto IL_00a8;
 	}
 
 IL_0013:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:234>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7852));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8093));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_2 = __this->___rightSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7853));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8094));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7853));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8094));
 		V_2 = L_3;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7854));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8095));
 		bool L_4 = V_2;
 		if (!L_4)
 		{
@@ -7748,22 +7748,22 @@ IL_0013:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:234>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7855));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8096));
 		goto IL_00a8;
 	}
 
 IL_0028:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:235>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7856));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7857));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8097));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8098));
 		float L_5;
 		L_5 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7857));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8098));
 		float L_6 = __this->___lastFFTTime;
 		float L_7 = __this->___fftCooldown;
 		V_3 = (bool)((((float)((float)il2cpp_codegen_subtract(L_5, L_6))) < ((float)L_7))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7858));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8099));
 		bool L_8 = V_3;
 		if (!L_8)
 		{
@@ -7772,25 +7772,25 @@ IL_0028:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:235>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7859));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8100));
 		goto IL_00a8;
 	}
 
 IL_0042:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:237>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7860));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8101));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_9 = __this->___rightSkeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7861));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8102));
 		int32_t L_10;
 		L_10 = MetaXRGestureActions_CountExtendedFingers_mC2E296884E41FE3E2FD02E79E5CB988296E140F7(__this, L_9, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7861));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8102));
 		V_0 = L_10;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:238>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7862));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8103));
 		int32_t L_11 = V_0;
 		V_4 = (bool)((((int32_t)((((int32_t)L_11) < ((int32_t)4))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7863));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8104));
 		bool L_12 = V_4;
 		if (!L_12)
 		{
@@ -7798,19 +7798,19 @@ IL_0042:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7864));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8105));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:240>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7865));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7866));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8106));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8107));
 		float L_13;
 		L_13 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7866));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8107));
 		__this->___lastFFTTime = L_13;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:241>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7867));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8108));
 		bool L_14 = __this->___verboseLogs;
 		V_5 = L_14;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7868));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8109));
 		bool L_15 = V_5;
 		if (!L_15)
 		{
@@ -7819,24 +7819,24 @@ IL_0042:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:241>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7869));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8110));
 		int32_t L_16 = __this->___activeChannel;
 		int32_t L_17 = L_16;
 		RuntimeObject* L_18 = Box(il2cpp_defaults.int32_class, &L_17);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7870));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8111));
 		String_t* L_19;
 		L_19 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral69D1345F678CB6A28AD0822F1D741AF68B28200F, L_18, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7870));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7871));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8111));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8112));
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_19, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7871));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8112));
 	}
 
 IL_008f:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:242>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7872));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8113));
 		Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_20 = __this->___OnFFTRequest;
 		Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_21 = L_20;
 		if (L_21)
@@ -7853,25 +7853,25 @@ IL_008f:
 IL_009b:
 	{
 		int32_t L_22 = __this->___activeChannel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7873));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8114));
 		NullCheck(G_B11_0);
 		Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(G_B11_0, L_22, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7873));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8114));
 	}
 
 IL_00a7:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7874));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8115));
 	}
 
 IL_00a8:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:244>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7875));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8116));
 		return;
 	}
 }
-// Method Definition Index: 111861
+// Method Definition Index: 111870
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRGestureActions_CountExtendedFingers_mC2E296884E41FE3E2FD02E79E5CB988296E140F7 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* ___0_skeleton, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7900,21 +7900,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRGestureActions_CountExtendedFin
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_skeleton));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_1), (&V_6), (&V_7), (&V_8));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_CountExtendedFingers_mC2E296884E41FE3E2FD02E79E5CB988296E140F7_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7876));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7877));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8117));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8118));
 	int32_t G_B3_0 = 0;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B7_0 = NULL;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B6_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7878));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8119));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:248>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7879));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8120));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_0 = ___0_skeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7880));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8121));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7880));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8121));
 		if (L_1)
 		{
 			goto IL_0015;
@@ -7922,11 +7922,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MetaXRGestureActions_CountExtendedFin
 	}
 	{
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_2 = ___0_skeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7881));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8122));
 		NullCheck(L_2);
 		RuntimeObject* L_3;
 		L_3 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_2, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7881));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8122));
 		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_3) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		goto IL_0016;
 	}
@@ -7939,7 +7939,7 @@ IL_0015:
 IL_0016:
 	{
 		V_2 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7882));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8123));
 		bool L_4 = V_2;
 		if (!L_4)
 		{
@@ -7948,7 +7948,7 @@ IL_0016:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:248>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7883));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8124));
 		V_3 = 0;
 		goto IL_00a5;
 	}
@@ -7956,12 +7956,12 @@ IL_0016:
 IL_0021:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:249>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7884));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8125));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_5 = ___0_skeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7885));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8126));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
 		L_6 = MetaXRGestureActions_GetBoneTransform_m58CC8F85FB2C74D027DEA036D553B8FC59E7AD44(__this, L_5, _stringLiteral7DED6D4F0470E1FDB9FB03367F323DC4617DFB28, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7885));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8126));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = L_6;
 		if (L_7)
 		{
@@ -7972,11 +7972,11 @@ IL_0021:
 	}
 	{
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_8 = ___0_skeleton;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7886));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8127));
 		NullCheck(L_8);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
 		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_8, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7886));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8127));
 		G_B7_0 = L_9;
 	}
 
@@ -7984,48 +7984,48 @@ IL_0037:
 	{
 		V_0 = G_B7_0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:250>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7887));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8128));
 		V_1 = 0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7888));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8129));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:251>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7889));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8130));
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = __this->___fingerTipNames;
 		V_4 = L_10;
 		V_5 = 0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7890));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8131));
 		goto IL_0099;
 	}
 
 IL_0048:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:251>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7891));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8132));
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = V_4;
 		int32_t L_12 = V_5;
 		NullCheck(L_11);
 		int32_t L_13 = L_12;
 		String_t* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		V_6 = L_14;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7892));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8133));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:253>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7893));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8134));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_15 = ___0_skeleton;
 		String_t* L_16 = V_6;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7894));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8135));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
 		L_17 = MetaXRGestureActions_GetFingerTip_m6F12F1925C83F3A9F1C7B4E284A54DEB6B9A75A7(__this, L_15, L_16, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7894));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8135));
 		V_7 = L_17;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:254>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7895));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8136));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = V_7;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7896));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8137));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_19;
 		L_19 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7896));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8137));
 		V_9 = L_19;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7897));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8138));
 		bool L_20 = V_9;
 		if (!L_20)
 		{
@@ -8034,36 +8034,36 @@ IL_0048:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:254>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7898));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8139));
 		goto IL_0093;
 	}
 
 IL_006b:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:255>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7899));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8140));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = V_7;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7900));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8141));
 		NullCheck(L_21);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
 		L_22 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_21, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7900));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8141));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7901));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8142));
 		NullCheck(L_23);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
 		L_24 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_23, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7901));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7902));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8142));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8143));
 		float L_25;
 		L_25 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_22, L_24, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7902));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8143));
 		V_8 = L_25;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:257>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7903));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8144));
 		float L_26 = V_8;
 		V_10 = (bool)((((float)L_26) > ((float)(0.0500000007f)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7904));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8145));
 		bool L_27 = V_10;
 		if (!L_27)
 		{
@@ -8072,19 +8072,19 @@ IL_006b:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:257>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7905));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8146));
 		int32_t L_28 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_28, 1));
 	}
 
 IL_0092:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7906));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8147));
 	}
 
 IL_0093:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7907));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8148));
 		int32_t L_29 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_29, 1));
 	}
@@ -8092,7 +8092,7 @@ IL_0093:
 IL_0099:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:251>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7908));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8149));
 		int32_t L_30 = V_5;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_31 = V_4;
 		NullCheck(L_31);
@@ -8103,7 +8103,7 @@ IL_0099:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:259>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7909));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8150));
 		int32_t L_32 = V_1;
 		V_3 = L_32;
 		goto IL_00a5;
@@ -8112,12 +8112,12 @@ IL_0099:
 IL_00a5:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:260>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7910));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8151));
 		int32_t L_33 = V_3;
 		return L_33;
 	}
 }
-// Method Definition Index: 111862
+// Method Definition Index: 111871
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* MetaXRGestureActions_GetFingerTip_m6F12F1925C83F3A9F1C7B4E284A54DEB6B9A75A7 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* ___0_skel, String_t* ___1_fragment, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8143,31 +8143,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_skel), (&___1_fragment));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_GetFingerTip_m6F12F1925C83F3A9F1C7B4E284A54DEB6B9A75A7_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7911));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7912));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8152));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8153));
 	int32_t G_B3_0 = 0;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B8_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7913));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7914));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8154));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8155));
 		U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB* L_0 = (U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB_il2cpp_TypeInfo_var);
 		U3CU3Ec__DisplayClass52_0__ctor_mAC94D3FFE0EE0CF98C540E3546D4670BD9BBA72E(L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7914));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8155));
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB* L_1 = V_0;
 		String_t* L_2 = ___1_fragment;
 		NullCheck(L_1);
 		L_1->___fragment = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___fragment), (void*)L_2);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7915));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8156));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:264>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7916));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8157));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_3 = ___0_skel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7917));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8158));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7917));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8158));
 		if (L_4)
 		{
 			goto IL_0022;
@@ -8175,11 +8175,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 	}
 	{
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_5 = ___0_skel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7918));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8159));
 		NullCheck(L_5);
 		RuntimeObject* L_6;
 		L_6 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_5, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7918));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8159));
 		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_6) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		goto IL_0023;
 	}
@@ -8192,7 +8192,7 @@ IL_0022:
 IL_0023:
 	{
 		V_2 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7919));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8160));
 		bool L_7 = V_2;
 		if (!L_7)
 		{
@@ -8201,7 +8201,7 @@ IL_0023:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:264>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7920));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8161));
 		V_3 = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		goto IL_0052;
 	}
@@ -8209,25 +8209,25 @@ IL_0023:
 IL_002b:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:265>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7921));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8162));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_8 = ___0_skel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7922));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8163));
 		NullCheck(L_8);
 		RuntimeObject* L_9;
 		L_9 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_8, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7922));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8163));
 		U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB* L_10 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7923));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8164));
 		Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412* L_11 = (Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412*)il2cpp_codegen_object_new(Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412_il2cpp_TypeInfo_var);
 		Func_2__ctor_m0A146F2E0FCBBC13E62BC616919BBCEEAF292714(L_11, L_10, (intptr_t)((void*)U3CU3Ec__DisplayClass52_0_U3CGetFingerTipU3Eb__0_mF9E1E542E9E73B2D88A67ED7AEAFA0852FDC876A_RuntimeMethod_var), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7923));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7924));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8164));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8165));
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_12;
 		L_12 = Enumerable_FirstOrDefault_TisOVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A_m0C5C0922A3ACB0901ABD379C0D395B9D95462D3A(L_9, L_11, Enumerable_FirstOrDefault_TisOVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A_m0C5C0922A3ACB0901ABD379C0D395B9D95462D3A_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7924));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8165));
 		V_1 = L_12;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:266>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7925));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8166));
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_13 = V_1;
 		if (L_13)
 		{
@@ -8242,11 +8242,11 @@ IL_002b:
 IL_0049:
 	{
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_14 = V_1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7926));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8167));
 		NullCheck(L_14);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
 		L_15 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_14, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7926));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8167));
 		G_B8_0 = L_15;
 	}
 
@@ -8259,12 +8259,12 @@ IL_004f:
 IL_0052:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:267>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7927));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8168));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = V_3;
 		return L_16;
 	}
 }
-// Method Definition Index: 111863
+// Method Definition Index: 111872
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* MetaXRGestureActions_GetBoneTransform_m58CC8F85FB2C74D027DEA036D553B8FC59E7AD44 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* ___0_skel, String_t* ___1_fragment, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8290,31 +8290,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_skel), (&___1_fragment));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions_GetBoneTransform_m58CC8F85FB2C74D027DEA036D553B8FC59E7AD44_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7928));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7929));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8169));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8170));
 	int32_t G_B3_0 = 0;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* G_B8_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7930));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7931));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8171));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8172));
 		U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6* L_0 = (U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6_il2cpp_TypeInfo_var);
 		U3CU3Ec__DisplayClass53_0__ctor_m8EE5C899B1B63033E2F83121DAE6F507AFB6D75F(L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7931));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8172));
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6* L_1 = V_0;
 		String_t* L_2 = ___1_fragment;
 		NullCheck(L_1);
 		L_1->___fragment = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___fragment), (void*)L_2);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7932));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8173));
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:271>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7933));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8174));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_3 = ___0_skel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7934));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8175));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7934));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8175));
 		if (L_4)
 		{
 			goto IL_0022;
@@ -8322,11 +8322,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 	}
 	{
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_5 = ___0_skel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7935));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8176));
 		NullCheck(L_5);
 		RuntimeObject* L_6;
 		L_6 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_5, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7935));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8176));
 		G_B3_0 = ((((RuntimeObject*)(RuntimeObject*)L_6) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		goto IL_0023;
 	}
@@ -8339,7 +8339,7 @@ IL_0022:
 IL_0023:
 	{
 		V_2 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7936));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8177));
 		bool L_7 = V_2;
 		if (!L_7)
 		{
@@ -8348,7 +8348,7 @@ IL_0023:
 	}
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:271>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7937));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8178));
 		V_3 = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		goto IL_0052;
 	}
@@ -8356,25 +8356,25 @@ IL_0023:
 IL_002b:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:272>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7938));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8179));
 		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_8 = ___0_skel;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7939));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8180));
 		NullCheck(L_8);
 		RuntimeObject* L_9;
 		L_9 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_8, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7939));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8180));
 		U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6* L_10 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7940));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8181));
 		Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412* L_11 = (Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412*)il2cpp_codegen_object_new(Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412_il2cpp_TypeInfo_var);
 		Func_2__ctor_m0A146F2E0FCBBC13E62BC616919BBCEEAF292714(L_11, L_10, (intptr_t)((void*)U3CU3Ec__DisplayClass53_0_U3CGetBoneTransformU3Eb__0_mCD1B4D482BD149F54D9D21603067A4C9BE5B3F9C_RuntimeMethod_var), NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7940));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7941));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8181));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8182));
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_12;
 		L_12 = Enumerable_FirstOrDefault_TisOVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A_m0C5C0922A3ACB0901ABD379C0D395B9D95462D3A(L_9, L_11, Enumerable_FirstOrDefault_TisOVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A_m0C5C0922A3ACB0901ABD379C0D395B9D95462D3A_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7941));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8182));
 		V_1 = L_12;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:273>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7942));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8183));
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_13 = V_1;
 		if (L_13)
 		{
@@ -8389,11 +8389,11 @@ IL_002b:
 IL_0049:
 	{
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_14 = V_1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7943));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8184));
 		NullCheck(L_14);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
 		L_15 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_14, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7943));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8184));
 		G_B8_0 = L_15;
 	}
 
@@ -8406,12 +8406,12 @@ IL_004f:
 IL_0052:
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:274>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7944));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8185));
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = V_3;
 		return L_16;
 	}
 }
-// Method Definition Index: 111864
+// Method Definition Index: 111873
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions__ctor_mD6342C21521BA20D45B33052DB179E9ABDF66199 (MetaXRGestureActions_t5E26E63BDC9831E766EECE0FD1353FBCFD2FB4C5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8428,47 +8428,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions__ctor_mD6342C21521B
 	}
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, MetaXRGestureActions__ctor_mD6342C21521BA20D45B33052DB179E9ABDF66199_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7945));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7946));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8186));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8187));
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:45>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7947));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8188));
 		__this->___activeChannel = 0;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:48>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7948));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8189));
 		__this->___wristFlipAngleThreshold = (95.0f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:49>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7949));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8190));
 		__this->___wristFlipCooldown = (1.20000005f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:52>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7950));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8191));
 		__this->___pinchStrengthThreshold = (0.649999976f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:53>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7951));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8192));
 		__this->___pinchTapMaxDuration = (0.449999988f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:54>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7952));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8193));
 		__this->___freezeHoldSeconds = (0.899999976f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:57>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7953));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8194));
 		__this->___zoomActivationDelay = (0.150000006f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:58>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7954));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8195));
 		__this->___zoomSensitivity = (4.0f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:59>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7955));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8196));
 		__this->___zoomDeltaClamp = (0.25f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:62>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7956));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8197));
 		__this->___useFourFingerExtendedForFFT = (bool)1;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:63>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7957));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8198));
 		__this->___fftCooldown = (1.5f);
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:66>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7958));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8199));
 		__this->___verboseLogs = (bool)1;
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:87>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7959));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8200));
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)4);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -8484,9 +8484,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions__ctor_mD6342C21521B
 		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral6E71E6ECC41EC9438612D16B776E1DB5CD5994DC);
 		__this->___fingerTipNames = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___fingerTipNames), (void*)L_4);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7960));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8201));
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7960));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8201));
 		return;
 	}
 }
@@ -8498,7 +8498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaXRGestureActions__ctor_mD6342C21521B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111865
+// Method Definition Index: 111874
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass52_0__ctor_mAC94D3FFE0EE0CF98C540E3546D4670BD9BBA72E (U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8514,7 +8514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass52_0__ctor_mAC94D3F
 		return;
 	}
 }
-// Method Definition Index: 111866
+// Method Definition Index: 111875
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass52_0_U3CGetFingerTipU3Eb__0_mF9E1E542E9E73B2D88A67ED7AEAFA0852FDC876A (U3CU3Ec__DisplayClass52_0_t4D8815E752BC3969D1718E966091FE71806E63DB* __this, OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* ___0_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8528,23 +8528,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass52_0_U3CGetFingerTi
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_b));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, U3CU3Ec__DisplayClass52_0_U3CGetFingerTipU3Eb__0_mF9E1E542E9E73B2D88A67ED7AEAFA0852FDC876A_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7961));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7962));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8202));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8203));
 	int32_t G_B3_0 = 0;
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:265>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7963));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8204));
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_0 = ___0_b;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7964));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8205));
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7964));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7965));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8205));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8206));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7965));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8206));
 		if (!L_2)
 		{
 			goto IL_002d;
@@ -8552,22 +8552,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass52_0_U3CGetFingerTi
 	}
 	{
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_3 = ___0_b;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7966));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8207));
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_3, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7966));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7967));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8207));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8208));
 		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_4, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7967));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8208));
 		String_t* L_6 = __this->___fragment;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7968));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8209));
 		NullCheck(L_5);
 		int32_t L_7;
 		L_7 = String_IndexOf_m490810CB7ADA9230AC0F8D78E213A8EFED129F55(L_5, L_6, 5, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7968));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8209));
 		G_B3_0 = ((((int32_t)((((int32_t)L_7) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_002e;
 	}
@@ -8590,7 +8590,7 @@ IL_002e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 111867
+// Method Definition Index: 111876
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass53_0__ctor_m8EE5C899B1B63033E2F83121DAE6F507AFB6D75F (U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8606,7 +8606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass53_0__ctor_m8EE5C89
 		return;
 	}
 }
-// Method Definition Index: 111868
+// Method Definition Index: 111877
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass53_0_U3CGetBoneTransformU3Eb__0_mCD1B4D482BD149F54D9D21603067A4C9BE5B3F9C (U3CU3Ec__DisplayClass53_0_t1C96ECDFEF3E1C88453C3DFC84E7A21E1E6EA3E6* __this, OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* ___0_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8620,23 +8620,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass53_0_U3CGetBoneTran
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___0_b));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, U3CU3Ec__DisplayClass53_0_U3CGetBoneTransformU3Eb__0_mCD1B4D482BD149F54D9D21603067A4C9BE5B3F9C_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7969));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7970));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8210));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8211));
 	int32_t G_B3_0 = 0;
 	{
 		//<source_info:C:/Users/robot/Documents/XREE-LAB/Assets/Scripts/MetaXRGestureActions.cs:272>
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7971));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8212));
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_0 = ___0_b;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7972));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8213));
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_0, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7972));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7973));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8213));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8214));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7973));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8214));
 		if (!L_2)
 		{
 			goto IL_002d;
@@ -8644,22 +8644,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass53_0_U3CGetBoneTran
 	}
 	{
 		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_3 = ___0_b;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7974));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8215));
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_3, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7974));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7975));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8215));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8216));
 		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_4, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7975));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8216));
 		String_t* L_6 = __this->___fragment;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7976));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8217));
 		NullCheck(L_5);
 		int32_t L_7;
 		L_7 = String_IndexOf_m490810CB7ADA9230AC0F8D78E213A8EFED129F55(L_5, L_6, 5, NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 7976));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsAssemblyU2DCSharp + 8217));
 		G_B3_0 = ((((int32_t)((((int32_t)L_7) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_002e;
 	}

@@ -36,17 +36,17 @@ static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoI
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_ImageConversionModule[];
 Il2CppSequencePoint g_sequencePointsUnityEngine_ImageConversionModule[11] = 
 {
-	{ 120019, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 },
-	{ 120019, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 },
-	{ 120019, 1, 41, 41, 9, 10, 0, kSequencePointKind_Normal, 0, 2 },
-	{ 120019, 1, 42, 42, 13, 40, 1, kSequencePointKind_Normal, 0, 3 },
-	{ 120019, 1, 42, 42, 13, 40, 4, kSequencePointKind_StepOut, 0, 4 },
-	{ 120019, 1, 43, 43, 9, 10, 12, kSequencePointKind_Normal, 0, 5 },
-	{ 120021, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 6 },
-	{ 120021, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 7 },
-	{ 120021, 1, 59, 59, 74, 124, 0, kSequencePointKind_Normal, 0, 8 },
-	{ 120021, 1, 59, 59, 74, 124, 2, kSequencePointKind_StepOut, 0, 9 },
-	{ 120021, 1, 59, 59, 74, 124, 8, kSequencePointKind_StepOut, 0, 10 },
+	{ 120034, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 },
+	{ 120034, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 },
+	{ 120034, 1, 41, 41, 9, 10, 0, kSequencePointKind_Normal, 0, 2 },
+	{ 120034, 1, 42, 42, 13, 40, 1, kSequencePointKind_Normal, 0, 3 },
+	{ 120034, 1, 42, 42, 13, 40, 4, kSequencePointKind_StepOut, 0, 4 },
+	{ 120034, 1, 43, 43, 9, 10, 12, kSequencePointKind_Normal, 0, 5 },
+	{ 120036, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 6 },
+	{ 120036, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 7 },
+	{ 120036, 1, 59, 59, 74, 124, 0, kSequencePointKind_Normal, 0, 8 },
+	{ 120036, 1, 59, 59, 74, 124, 2, kSequencePointKind_StepOut, 0, 9 },
+	{ 120036, 1, 59, 59, 74, 124, 8, kSequencePointKind_StepOut, 0, 10 },
 };
 #else
 extern Il2CppSequencePoint g_sequencePointsUnityEngine_ImageConversionModule[];
@@ -68,7 +68,7 @@ static const Il2CppSequencePointSourceFile g_sequencePointSourceFiles[1] = { NUL
 #if IL2CPP_MONO_DEBUGGER
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[1] = 
 {
-	{ 15407, 1 },
+	{ 15409, 1 },
 };
 #else
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[1] = { { 0, 0 } };
