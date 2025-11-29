@@ -1644,15 +1644,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1950395741965885570, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1950395741965885570, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1950395741965885570, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1950395741965885570, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1690,10 +1690,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9046676262094112592, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      propertyPath: m_LinearDamping
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046676262094112592, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      propertyPath: m_AngularDamping
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1543350007}
   m_SourcePrefab: {fileID: 100100000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
 --- !u!1 &950317527
 GameObject:
@@ -2858,6 +2869,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TestGreenCubeSpawner
   distance: 0
   size: {x: 0.5, y: 0.5, z: 0.5}
+--- !u!1 &1543349997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+  m_PrefabInstance: {fileID: 917732044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1543350007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543349997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6076d1c13fe8ff0478f50641395211d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelFollowTether
+  userHead: {fileID: 881147605}
+  maxDistance: 1.6
+  hardClampDistance: 2
+  pullBackSpeed: 3
+  maintainOffset: 1
+  followSmoothTime: 0.25
+  headSmoothingSeconds: 0.05
+  positionDeadzone: 0.005
+  idleDrag: 3
+  idleAngularDrag: 3
+  grabbedDrag: 0.2
+  grabbedAngularDrag: 0.2
+  makeKinematicWhenIdle: 1
+  lockYRelative: 0
+  maxYDelta: 0.25
+  clampOffsetY: 1
+  minOffsetY: -0.2
+  maxOffsetY: 0.35
+  debugLogs: 0
 --- !u!1 &1545387742
 GameObject:
   m_ObjectHideFlags: 0
