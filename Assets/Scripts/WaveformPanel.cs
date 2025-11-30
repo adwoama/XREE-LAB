@@ -23,6 +23,9 @@ public class WaveformPanel : MonoBehaviour
     [Tooltip("Amplitude scaling factor (0-1); reduces waveform vertical extent to fit better in panel")]
     [Range(0.1f, 1.0f)]
     public float amplitudeScale = 0.8f;
+    [Tooltip("Horizontal zoom factor (0.5-3.0); compresses/expands time axis")]
+    [Range(0.5f, 3.0f)]
+    public float horizontalScale = 1.0f;
 
     [Header("Waveform params")]
     public float frequency = 1.0f;
@@ -92,11 +95,15 @@ public class WaveformPanel : MonoBehaviour
             }
         }
 
-        // update line renderer points
+        // update line renderer points with horizontal scaling
         for (int i = 0; i < resolution; i++)
         {
+            // Apply horizontal zoom by adjusting sample index
+            float zoomedIndex = i / horizontalScale;
+            int bufferIndex = Mathf.RoundToInt(zoomedIndex) % resolution;
+            
             float x = Mathf.Lerp(-width/2f, width/2f, (float)i / (resolution-1));
-            float y = buffer[i] * height * amplitudeScale;
+            float y = buffer[bufferIndex] * height * amplitudeScale;
             lr.SetPosition(i, new Vector3(x, y, 0f));
         }
 

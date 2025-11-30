@@ -48,21 +48,16 @@ namespace XreeLab.Gestures
         [Tooltip("Angle delta (degrees) between wrist up vectors to qualify as a flip.")] public float wristFlipAngleThreshold = 95f;
         [Tooltip("Minimum seconds between wrist flip toggles.")] public float wristFlipCooldown = 1.2f;
 
-        [Header("Pinch Settings")] 
-        [Tooltip("Pinch strength threshold considered 'pinching'. Range 0..1.")] public float pinchStrengthThreshold = 0.65f;
-        [Tooltip("Tap release max duration (seconds) for cursor toggle gesture.")] public float pinchTapMaxDuration = 0.45f;
-        [Tooltip("Hold duration (seconds) to treat middle-finger pinch as freeze toggle.")] public float freezeHoldSeconds = 0.9f;
-
-        [Header("Zoom Settings")] 
+    [Header("Pinch Settings")] 
+    [Tooltip("Pinch strength threshold considered 'pinching'. Range 0..1.")] public float pinchStrengthThreshold = 0.65f;
+    [Tooltip("Tap release max duration (seconds) for cursor toggle gesture.")] public float pinchTapMaxDuration = 0.45f;
+    [Tooltip("Hold duration (seconds) to treat middle-finger pinch as FFT toggle.")] public float fftHoldSeconds = 0.9f;        [Header("Zoom Settings")] 
         [Tooltip("Minimum seconds both hands must be pinching before zoom tracking starts.")] public float zoomActivationDelay = 0.15f;
         [Tooltip("Multiplier applied to distance delta to produce zoom factor delta.")] public float zoomSensitivity = 4.0f;
         [Tooltip("Clamp applied to |zoom delta| per frame.")] public float zoomDeltaClamp = 0.25f;
 
-        [Header("FFT Gesture Settings")] 
-        [Tooltip("If true, require 4 extended fingers (index..pinky) on right hand to request FFT.")] public bool useFourFingerExtendedForFFT = true;
-        [Tooltip("Minimum seconds between FFT requests.")] public float fftCooldown = 1.5f;
-
-        [Header("Debug / Diagnostics")] 
+    [Header("Grab Settings")] 
+    [Tooltip("Minimum seconds between freeze toggles.")] public float freezeCooldown = 1.0f;        [Header("Debug / Diagnostics")] 
         public bool verboseLogs = true;
 
         // Events / Actions --------------------------------------
@@ -76,14 +71,12 @@ namespace XreeLab.Gestures
         Vector3 lastLeftWristUp;
         float lastWristFlipTime;
 
-        bool rightIndexPinching; float rightIndexPinchStartTime;
-        bool middlePinchHolding; float middlePinchStartTime;
+    bool rightIndexPinching; float rightIndexPinchStartTime;
+    bool middlePinchHolding; float middlePinchStartTime;
 
-        bool bothIndexPinching; float bothPinchStartTime; float lastPinchDistance;
+    bool bothIndexPinching; float bothPinchStartTime; float lastPinchDistance;
 
-        float lastFFTTime;
-
-        // Skeleton bone name fragments for tips
+    bool rightGrabbing; float lastFreezeTime;        // Skeleton bone name fragments for tips
         readonly string[] fingerTipNames = { "IndexTip", "MiddleTip", "RingTip", "PinkyTip" };
 
         void Start()
@@ -115,9 +108,9 @@ namespace XreeLab.Gestures
         {
             DetectWristFlip();
             DetectCursorPinchTap();
-            DetectFreezeHold();
+            DetectFFTHold();
             DetectZoom();
-            DetectFFTGesture();
+            DetectGrabFreeze();
         }
 
         // 1. Wrist Flip (left hand)
@@ -159,8 +152,8 @@ namespace XreeLab.Gestures
             }
         }
 
-        // 3. Freeze toggle via middle finger pinch hold
-        void DetectFreezeHold()
+        // 3. FFT toggle via middle finger pinch hold
+        void DetectFFTHold()
         {
             bool middlePinch = false;
             if (leftHand != null)
@@ -177,11 +170,11 @@ namespace XreeLab.Gestures
             {
                 middlePinchHolding = false; // released before hold threshold
             }
-            else if (middlePinchHolding && (Time.time - middlePinchStartTime) >= freezeHoldSeconds)
+            else if (middlePinchHolding && (Time.time - middlePinchStartTime) >= fftHoldSeconds)
             {
                 middlePinchHolding = false; // trigger once
-                if (verboseLogs) Debug.Log("[Gesture] Middle pinch hold -> Freeze toggle");
-                OnFreezeToggle?.Invoke();
+                if (verboseLogs) Debug.Log("[Gesture] Middle pinch hold -> FFT request");
+                OnFFTRequest?.Invoke(activeChannel);
             }
         }
 
@@ -227,36 +220,28 @@ namespace XreeLab.Gestures
             return Vector3.Distance(lt.position, rt.position);
         }
 
-        // 5. FFT gesture (four extended fingers on right hand)
-        void DetectFFTGesture()
+        // 5. Freeze via grab and release (right hand)
+        void DetectGrabFreeze()
         {
-            if (!useFourFingerExtendedForFFT) return;
-            if (rightSkeleton == null) return;
-            if (Time.time - lastFFTTime < fftCooldown) return;
+            if (rightHand == null) return;
+            bool grabbing = rightHand.GetFingerIsPinching(OVRHand.HandFinger.Index) &&
+                            rightHand.GetFingerIsPinching(OVRHand.HandFinger.Middle) &&
+                            rightHand.GetFingerIsPinching(OVRHand.HandFinger.Ring);
 
-            int extended = CountExtendedFingers(rightSkeleton);
-            if (extended >= 4)
+            if (grabbing && !rightGrabbing)
             {
-                lastFFTTime = Time.time;
-                if (verboseLogs) Debug.Log($"[Gesture] FFT request (channel {activeChannel})");
-                OnFFTRequest?.Invoke(activeChannel);
+                rightGrabbing = true;
             }
-        }
-
-        int CountExtendedFingers(OVRSkeleton skeleton)
-        {
-            if (skeleton == null || skeleton.Bones == null) return 0;
-            Transform wrist = GetBoneTransform(skeleton, "WristRoot") ?? skeleton.transform;
-            int count = 0;
-            foreach (var nameFrag in fingerTipNames)
+            else if (!grabbing && rightGrabbing)
             {
-                var tip = GetFingerTip(skeleton, nameFrag);
-                if (tip == null) continue;
-                float d = Vector3.Distance(tip.position, wrist.position);
-                // A heuristic: consider extended if tip is farther than median of all distances * 0.7 OR > absolute minimal threshold
-                if (d > 0.05f) count++; // coarse threshold; tune later
+                rightGrabbing = false;
+                if (Time.time - lastFreezeTime >= freezeCooldown)
+                {
+                    lastFreezeTime = Time.time;
+                    if (verboseLogs) Debug.Log("[Gesture] Grab release -> Freeze toggle");
+                    OnFreezeToggle?.Invoke();
+                }
             }
-            return count;
         }
 
         Transform GetFingerTip(OVRSkeleton skel, string fragment)
