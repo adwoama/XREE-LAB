@@ -170,6 +170,7 @@ MonoBehaviour:
   autoStartStreaming: 0
   autoReconnect: 1
   reconnectIntervalSeconds: 3
+  verboseLogging: 1
 --- !u!114 &184710297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1309,6 +1310,10 @@ PrefabInstance:
       propertyPath: channelLabel
       value: CH2
       objectReference: {fileID: 0}
+    - target: {fileID: 5137321563368361317, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      propertyPath: amplitudeScale
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 9046676262094112592, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_LinearDamping
       value: 3.5
@@ -1321,6 +1326,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 773190241}
+    - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 773190242}
     - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       insertIndex: -1
       addedObject: {fileID: 773190231}
@@ -1372,6 +1383,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a382ae2be7b9e43afe3bfe79796692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveformPanel
+--- !u!114 &773190241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773190230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5a7f056ed89904b86fd2aa36affb02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OscilloscopeGrid
+  horizontalDivisions: 10
+  verticalDivisions: 8
+  gridWidth: 0.9
+  gridHeight: 0.45
+  gridLineThickness: 0.002
+  gridColor: {r: 0.3, g: 0.3, b: 0.3, a: 0.6}
+  majorGridColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.8}
+  voltsPerDiv: 1
+  timePerDivUS: 100
+  showLabels: 1
+  labelSize: 0.05
+--- !u!114 &773190242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773190230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06293d5d40a3cd4788d06c11cf6ce0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScopeScaleUpdater
+  tcpClient: {fileID: 184710296}
+  grid: {fileID: 773190241}
+  channelNumber: 2
+  manualVoltsPerDiv: 0
+  manualTimePerDivUS: 0
 --- !u!1 &817394217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,6 +1968,10 @@ PrefabInstance:
       propertyPath: lineThickness
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 5137321563368361317, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      propertyPath: amplitudeScale
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5245524655470312216, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
       value: 0
@@ -1937,6 +1992,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1543350017}
+    - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1543350018}
     - targetCorrespondingSourceObject: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1543350007}
@@ -3151,6 +3212,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a382ae2be7b9e43afe3bfe79796692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveformPanel
+--- !u!114 &1543350017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543349997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5a7f056ed89904b86fd2aa36affb02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OscilloscopeGrid
+  horizontalDivisions: 10
+  verticalDivisions: 8
+  gridWidth: 0.9
+  gridHeight: 0.45
+  gridLineThickness: 0.002
+  gridColor: {r: 0.8565023, g: 1, b: 0, a: 0.83137256}
+  majorGridColor: {r: 0.4764151, g: 1, b: 0.48616812, a: 0.8}
+  voltsPerDiv: 1
+  timePerDivUS: 100
+  showLabels: 1
+  labelSize: 0.05
+--- !u!114 &1543350018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543349997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06293d5d40a3cd4788d06c11cf6ce0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScopeScaleUpdater
+  tcpClient: {fileID: 184710296}
+  grid: {fileID: 1543350017}
+  channelNumber: 1
+  manualVoltsPerDiv: 0
+  manualTimePerDivUS: 0
 --- !u!1 &1545387742
 GameObject:
   m_ObjectHideFlags: 0

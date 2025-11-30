@@ -1,10 +1,10 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 /// <summary>
 /// Draws an oscilloscope-style grid (graticule) with voltage and time scale labels.
 /// Attach to the same GameObject as WaveformPanel or as a child.
 /// </summary>
-[RequireComponent(typeof(LineRenderer))]
 public class OscilloscopeGrid : MonoBehaviour
 {
     [Header("Grid Settings")]
@@ -17,11 +17,11 @@ public class OscilloscopeGrid : MonoBehaviour
     [Tooltip("Height of the grid area (should match WaveformPanel height)")]
     public float gridHeight = 0.45f;
     [Tooltip("Grid line thickness")]
-    public float gridLineThickness = 0.002f;
+    public float gridLineThickness = 0.008f;
     [Tooltip("Grid line color (usually subtle gray)")]
-    public Color gridColor = new Color(0.3f, 0.3f, 0.3f, 0.6f);
+    public Color gridColor = new Color(0.4f, 0.4f, 0.4f, 1.0f);
     [Tooltip("Major division line color (brighter)")]
-    public Color majorGridColor = new Color(0.5f, 0.5f, 0.5f, 0.8f);
+    public Color majorGridColor = new Color(0.6f, 0.6f, 0.6f, 1.0f);
 
     [Header("Scale Labels")]
     [Tooltip("Volts per division (e.g., 0.5V, 1V, 2V)")]
@@ -33,28 +33,24 @@ public class OscilloscopeGrid : MonoBehaviour
     [Tooltip("Label text size")]
     public float labelSize = 0.05f;
 
-    private LineRenderer lr;
+    private List<LineRenderer> gridLines = new List<LineRenderer>();
+    private GameObject gridParent;
     private GameObject labelsParent;
     private TextMesh voltLabel;
     private TextMesh timeLabel;
+    private Material gridMaterial;
 
     void Awake()
     {
-        lr = GetComponent<LineRenderer>();
-        lr.useWorldSpace = false;
-        lr.widthMultiplier = gridLineThickness;
-        
-        // Setup material (use URP Unlit or Sprites/Default)
+        // Setup shared material for all grid lines
         Shader s = Shader.Find("Universal Render Pipeline/Unlit");
         if (s == null) s = Shader.Find("Sprites/Default");
-        lr.material = new Material(s);
-        lr.startColor = gridColor;
-        lr.endColor = gridColor;
+        gridMaterial = new Material(s);
         
-        if (lr.material.HasProperty("_BaseColor")) 
-            lr.material.SetColor("_BaseColor", gridColor);
-        else if (lr.material.HasProperty("_Color")) 
-            lr.material.SetColor("_Color", gridColor);
+        if (gridMaterial.HasProperty("_BaseColor")) 
+            gridMaterial.SetColor("_BaseColor", gridColor);
+        else if (gridMaterial.HasProperty("_Color")) 
+            gridMaterial.SetColor("_Color", gridColor);
 
         BuildGrid();
         
@@ -66,17 +62,15 @@ public class OscilloscopeGrid : MonoBehaviour
 
     void BuildGrid()
     {
-        // Calculate total line segments needed
-        // Vertical lines: horizontalDivisions + 1
-        // Horizontal lines: verticalDivisions + 1
-        // Each line needs 2 points
-        int verticalLines = horizontalDivisions + 1;
-        int horizontalLines = verticalDivisions + 1;
-        int totalSegments = verticalLines + horizontalLines;
-        int pointsNeeded = totalSegments * 3; // 2 points per line + 1 separator (NaN jump)
+        // Clear existing grid
+        if (gridParent != null)
+        {
+            DestroyImmediate(gridParent);
+            gridLines.Clear();
+        }
 
-        lr.positionCount = pointsNeeded;
-        int idx = 0;
+        gridParent = new GameObject("GridLines");
+        gridParent.transform.SetParent(transform, false);
 
         float halfWidth = gridWidth / 2f;
         float halfHeight = gridHeight / 2f;
@@ -85,22 +79,38 @@ public class OscilloscopeGrid : MonoBehaviour
         for (int i = 0; i <= horizontalDivisions; i++)
         {
             float x = Mathf.Lerp(-halfWidth, halfWidth, (float)i / horizontalDivisions);
-            lr.SetPosition(idx++, new Vector3(x, -halfHeight, 0.01f));
-            lr.SetPosition(idx++, new Vector3(x, halfHeight, 0.01f));
-            // Separator point (disconnected segment)
-            if (i < horizontalDivisions)
-                lr.SetPosition(idx++, new Vector3(float.NaN, float.NaN, float.NaN));
+            CreateLine($"VLine_{i}", 
+                new Vector3(x, -halfHeight, -0.015f), 
+                new Vector3(x, halfHeight, -0.015f));
         }
 
         // Draw horizontal lines (voltage divisions)
         for (int i = 0; i <= verticalDivisions; i++)
         {
             float y = Mathf.Lerp(-halfHeight, halfHeight, (float)i / verticalDivisions);
-            lr.SetPosition(idx++, new Vector3(-halfWidth, y, 0.01f));
-            lr.SetPosition(idx++, new Vector3(halfWidth, y, 0.01f));
-            if (i < verticalDivisions)
-                lr.SetPosition(idx++, new Vector3(float.NaN, float.NaN, float.NaN));
+            CreateLine($"HLine_{i}", 
+                new Vector3(-halfWidth, y, -0.015f), 
+                new Vector3(halfWidth, y, -0.015f));
         }
+    }
+
+    void CreateLine(string name, Vector3 start, Vector3 end)
+    {
+        GameObject lineObj = new GameObject(name);
+        lineObj.transform.SetParent(gridParent.transform, false);
+        
+        LineRenderer lr = lineObj.AddComponent<LineRenderer>();
+        lr.positionCount = 2;
+        lr.SetPosition(0, start);
+        lr.SetPosition(1, end);
+        lr.useWorldSpace = false;
+        lr.widthMultiplier = gridLineThickness;
+        lr.material = gridMaterial;
+        lr.startColor = gridColor;
+        lr.endColor = gridColor;
+        lr.sortingOrder = 100; // Render on top
+        
+        gridLines.Add(lr);
     }
 
     void CreateLabels()
@@ -111,7 +121,7 @@ public class OscilloscopeGrid : MonoBehaviour
         // Voltage scale label (bottom left)
         var voltLabelGO = new GameObject("VoltLabel");
         voltLabelGO.transform.SetParent(labelsParent.transform, false);
-        voltLabelGO.transform.localPosition = new Vector3(-gridWidth * 0.48f, -gridHeight * 0.6f, 0.02f);
+        voltLabelGO.transform.localPosition = new Vector3(-gridWidth * 0.48f, -gridHeight * 0.6f, -0.06f);
         voltLabel = voltLabelGO.AddComponent<TextMesh>();
         voltLabel.characterSize = labelSize;
         voltLabel.anchor = TextAnchor.UpperLeft;
@@ -121,7 +131,7 @@ public class OscilloscopeGrid : MonoBehaviour
         // Time scale label (bottom right)
         var timeLabelGO = new GameObject("TimeLabel");
         timeLabelGO.transform.SetParent(labelsParent.transform, false);
-        timeLabelGO.transform.localPosition = new Vector3(gridWidth * 0.48f, -gridHeight * 0.6f, 0.02f);
+        timeLabelGO.transform.localPosition = new Vector3(gridWidth * 0.48f, -gridHeight * 0.6f, -0.06f);
         timeLabel = timeLabelGO.AddComponent<TextMesh>();
         timeLabel.characterSize = labelSize;
         timeLabel.anchor = TextAnchor.UpperRight;
@@ -176,7 +186,7 @@ public class OscilloscopeGrid : MonoBehaviour
     void OnValidate()
     {
         // Rebuild grid when parameters change in Inspector
-        if (lr != null && Application.isPlaying)
+        if (gridParent != null && Application.isPlaying)
         {
             BuildGrid();
             UpdateVoltLabel();

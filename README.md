@@ -1,27 +1,76 @@
 # XREE-LAB
 
-This repository hosts a small Unity experiment (Meta Quest target) that spawns four draggable, world-space waveform panels (CH1..CH4) and wires them to the project's interaction building-blocks so the Meta/Interaction SDK hand/pinch grabbing works.
-
+This repository hosts a Unity XR application (Meta Quest 3S target) that displays real-time oscilloscope waveforms from a Keysight MSOX604A in VR. The project features draggable, world-space waveform panels with oscilloscope-style grids and scale indicators, streaming live data over TCP from a Python server connected to the physical oscilloscope.
 
 ## High-level goal
-- Spawn four waveform panels in front of the user (CH1..CH4).
-- Panels should be grabbable by Meta hand/pinch interactions (the project's building-block wiring: parent Rigidbody/Collider/Grabbable + child HandGrabInteractable + GrabInteractable + MovementProvider).
-- Allow creating a prefab in Editor and reliably instantiating it at runtime so inspector-configured HandGrab / MovementProvider / rules are preserved.
+- Stream real oscilloscope data (CH1 & CH2) from a Keysight MSOX604A to Meta Quest headset in real-time
+- Display waveforms in XR with oscilloscope-style visualization (grid, voltage/time scales)
+- Support hand/pinch grab interactions for moving and positioning panels in 3D space
+- Provide smooth, low-latency data streaming (~20 Hz update rate) over TCP
 
 ## What is implemented
-- Waveform visuals: a small `WaveformPanel` component (in `Assets/Scripts`) drives a LineRenderer and simple fake waveform parameters (frequency/amplitude/noise). Panels are lightweight, designed for prototype/dummy data.
-- `WaveformManager` (`Assets/Scripts/WaveformManager.cs`) is responsible for spawning the four panels. It prefers to instantiate a configured prefab (`panelPrefab`) assigned in the inspector (recommended). If `panelPrefab` is not set it creates a procedural fallback panel at runtime.
-- Runtime injection and compatibility code: to make runtime-spawned panels work with the Meta Interaction SDK, we've implemented reflection-based fallbacks that try available injector methods (InjectColliders, InjectRigidbody, InjectPinchGrabRules, InjectOptionalMovementProvider, etc.) and, if needed, set private backing fields directly where safe.
-- Diagnostics: `WaveformManager` now logs a set of diagnostics right after each instantiation (camera list, renderers, material shader names, renderer bounds). There's also `TestGreenCubeSpawner` and `PanelGrabVerifier` scripts used during debugging to verify grabbing and backing-field injection.
-- Editor helper: `Assets/Editor/SaveSelectedAsWaveformPrefab.cs` adds a menu item to save a selected GameObject to `Assets/Prefabs/Panel_CH.prefab` so you can build and serialize a prefab in Editor with the correct Interaction SDK values.
+
+### XR Interaction & Panel System
+- Waveform visuals: `WaveformPanel` component drives a LineRenderer with configurable amplitude scaling, line thickness, and color
+- Four draggable panels (CH1-CH4) spawned via `WaveformManager` with Meta hand/pinch grab support
+- Runtime injection and compatibility code for Meta Interaction SDK (reflection-based fallbacks for InjectColliders, InjectRigidbody, etc.)
+- Prefab-based workflow with inspector-configured HandGrab/MovementProvider rules preserved across instantiation
+
+### Real-Time Data Streaming
+- **TCP Client** (`TcpOscopeClient.cs`): Connects to Python server, parses JSON waveform packets, dispatches events on main thread
+  - Auto-reconnect with configurable interval
+  - Supports multiple channels, FFT requests, freeze commands
+  - Verbose logging for diagnostics
+- **Panel Connector** (`WaveformPanelConnector.cs`): Routes incoming waveform data to appropriate channel panels
+  - Waits for TCP connection before sending stream commands (fixes race condition)
+  - Auto-starts CH1 & CH2 streaming on connection
+- **Python Server** (`tcp_streaming_server.py`): Streams oscilloscope data over TCP using pyvisa
+  - Real scope mode: Reads from Keysight MSOX604A via VISA (USB/LAN)
+  - Mock mode fallback: Generates synthetic sine/cosine waves for testing
+  - Per-channel streaming threads, line-delimited JSON protocol
+  - Configurable sample rate, normalization to [-1, 1] range
+
+### Oscilloscope-Style Visualization
+- **Grid Overlay** (`OscilloscopeGrid.cs`): Draws graticule with configurable divisions (10 horizontal, 8 vertical)
+  - Individual LineRenderer per grid line for reliability
+  - Auto-updating voltage/time scale labels (V/div, µs/ms/s)
+  - Adjustable color, thickness, visibility
+- **Scale Updater** (`ScopeScaleUpdater.cs`): Auto-calculates and updates grid scales from incoming data or manual override
+- **Amplitude Scaling**: `WaveformPanel.amplitudeScale` (0.1-1.0) keeps waveforms within panel bounds
+- **External Data Mode**: Disables synthetic generation when real data arrives via `SetSamples()`
 
 ## Key files and game objects
-- `Assets/Scripts/WaveformManager.cs` - spawns panels, logs diagnostics, does defensive injection for the Interaction SDK. Public field `panelPrefab` points to the prefab asset to instantiate.
-- `Assets/Prefabs/Panel_CH.prefab` - the prefab we use for panels (example). Place a reference to this asset into `WaveformManager.panelPrefab` in Edit mode (Project view) so the reference persists into builds.
-- `Assets/Scripts/WaveformPanel.cs` - waveform drawing & parameters.
-- `Assets/Scripts/TestGreenCubeSpawner.cs` - test spawner used while developing the injection logic.
-- `Assets/Scripts/PanelGrabVerifier.cs` - verifier that runs checks and prints results after spawn.
-- `Assets/Editor/SaveSelectedAsWaveformPrefab.cs` - Editor utility to create prefabs from selected scene objects into `Assets/Prefabs/`.
+
+### Unity Scripts (Assets/Scripts/)
+- `WaveformManager.cs` - spawns panels, logs diagnostics, handles Meta SDK injection
+- `WaveformPanel.cs` - waveform rendering with LineRenderer, amplitude scaling, external data mode
+- `TcpOscopeClient.cs` - TCP client for oscilloscope data streaming, event-driven architecture
+- `WaveformPanelConnector.cs` - routes waveform events to correct channel panels
+- `OscilloscopeGrid.cs` - draws oscilloscope graticule grid with individual line renderers
+- `ScopeScaleUpdater.cs` - updates V/div and time/div labels based on data or manual settings
+- `TestGreenCubeSpawner.cs` - test spawner for debugging grab interactions
+- `PanelGrabVerifier.cs` - verifies grab component injection after spawn
+
+### Python Server (OscopeScripts/)
+- `tcp_streaming_server.py` - main TCP server with real scope integration via pyvisa
+  - `KeysightScope` class: VISA connection, waveform acquisition, preamble parsing
+  - `MockScope` class: Synthetic data generator for testing
+  - Line-delimited JSON protocol with command parsing (stream, stop_stream, fft, freeze)
+- `oscope.py` - Basic VISA connection test and channel enumeration
+- `quick_channel_test.py` - Quick 2-channel test with voltage/sample rate readout
+- `requirements.txt` - Python dependencies (pyvisa, numpy)
+
+### Prefabs & Assets
+- `Assets/Prefabs/Panel_CH.prefab` - fully configured panel with Interaction SDK components
+- `Assets/Panel_Background.mat` - URP Unlit material for panel background
+- `Assets/Panel_Frame.mat`, `Assets/Panel_Handle.mat` - frame/handle materials
+- `Assets/Editor/SaveSelectedAsWaveformPrefab.cs` - Editor utility for creating prefabs
+
+### Configuration
+- **Scope IP**: Set in `tcp_streaming_server.py` (`SCOPE_IP = "169.254.208.205"`)
+- **Server IP**: Set in Unity Inspector on `TcpOscopeClient` component (`serverIP = "192.168.1.156"`)
+- **Channels**: CH1 & CH2 enabled by default in `WaveformPanelConnector`
+- **Grid scales**: Adjustable per-panel in `OscilloscopeGrid` or auto-updated via `ScopeScaleUpdater`
 
 ## Prefab contents and materials
 - `Panel_CH.prefab` (in `Assets/Prefabs/`) contains:
@@ -41,10 +90,69 @@ The prefab was intentionally assembled in Editor so the HandGrabInteractable ser
 - Prefab-first workflow: create a fully-configured prefab in Editor (with Inspector-set HandGrab rules, MovementProvider, and materials) and then instantiate that prefab at runtime. This is more robust and recommended.
 - Added a one-frame re-injection coroutine (`ReinjectHandGrabRulesNextFrame`) to try to address Start() ordering races when reflection is unavoidable.
 
+## Setup & Usage
+
+### Python Server Setup
+1. Navigate to `OscopeScripts/` directory
+2. Activate virtual environment:
+   ```cmd
+   cd c:\Users\robot\Documents\XREE-LAB\OscopeScripts
+   venv\Scripts\activate.bat
+   ```
+3. Install dependencies (if needed):
+   ```cmd
+   pip install -r requirements.txt
+   ```
+4. Update scope IP in `tcp_streaming_server.py` if changed (default: `169.254.208.205`)
+5. Ensure oscilloscope is powered on and CH1/CH2 are displayed
+6. Start server:
+   ```cmd
+   python tcp_streaming_server.py
+   ```
+   Look for: `[SCOPE] Connected: KEYSIGHT TECHNOLOGIES...` and `[SERVER] Using REAL scope data`
+
+### Unity Setup
+1. Open project in Unity 2022.3+ with URP
+2. Select `OscopeManager` GameObject in Hierarchy
+3. In `TcpOscopeClient` component, set `Server IP` to your PC's LAN IP (e.g., `192.168.1.156`)
+4. In `WaveformPanelConnector`, ensure `Stream Channel 1` and `Stream Channel 2` are checked
+5. On each panel GameObject:
+   - Add `OscilloscopeGrid` component (if not present)
+   - Add `ScopeScaleUpdater` component and assign references:
+     - `Tcp Client`: OscopeManager
+     - `Grid`: OscilloscopeGrid on same panel
+     - `Channel Number`: 1 or 2
+   - Adjust `Amplitude Scale` (0.5-0.8 recommended) in `WaveformPanel` to fit waveforms in bounds
+6. Build Settings → Android → Switch Platform
+7. Build And Run to Meta Quest 3S
+
+### Networking Notes
+- **Firewall**: Allow Python and Unity through Windows Firewall (both inbound/outbound)
+- **IP Addresses**: 
+  - Scope: Link-local (169.254.x.x) or LAN IP
+  - PC Server: LAN IP (192.168.x.x), NOT 127.0.0.1 for device builds
+  - Quest: Check in Meta Quest Developer Hub or via `adb shell ip addr`
+- **Testing**: Use `telnet <server_ip> 8765` to verify TCP connectivity before building
+
+### Debugging
+- **Unity Logs (Device)**: 
+  ```cmd
+  adb logcat -s Unity
+  adb logcat | findstr TcpOscopeClient
+  ```
+- **Meta Quest Developer Hub**: Device → Logs tab → filter "TcpOscopeClient" or "WaveformPanelConnector"
+- **Server Logs**: Watch Python console for connection events, stream commands, packet counts
+- **Verbose Mode**: Enable `verboseLogging` in `TcpOscopeClient` for detailed packet statistics
+
 ## What works
-- Prefab when created in Editor and assigned as an asset in `WaveformManager.panelPrefab` shows correct visuals and grabbing behavior in Editor Play mode.
-- Diagnostic logging in Editor and in-device build (if you build with Script Debugging enabled) prints instantiation and renderer/material details.
-- Reflection/injection utilities successfully find common injection methods for many Interaction SDK versions and fall back to setting private backing fields where available.
+- Real-time streaming of oscilloscope data from Keysight MSOX604A to Meta Quest over TCP
+- Smooth waveform updates at ~20 Hz with automatic reconnection on disconnect
+- Oscilloscope-style grid overlay with auto-updating voltage and time scale labels
+- Hand/pinch grab interactions for moving panels in 3D space
+- Prefab-based panel instantiation preserves Interaction SDK configuration
+- Dual-channel display (CH1 & CH2) with independent waveform routing
+- Automatic fallback to mock data if scope connection fails
+- Amplitude scaling keeps waveforms within panel bounds
 
 ## Known issues / What didn't work reliably
 - If you assign a scene object instance (a Hierarchy object) to `WaveformManager.panelPrefab` during Play instead of the prefab asset from the Project view, that scene reference does not persist to builds - panels will not appear in the built player. Always assign the prefab asset (Project → Assets/Prefabs/Panel_CH).
