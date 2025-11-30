@@ -6,9 +6,12 @@ import socket
 import threading
 import time
 import numpy as np
+import pyvisa
 
-# If you have pyvisa + scope, you can integrate similar to oscope_streaming.py
-USE_MOCK = True  # set False when integrating real scope reads
+# Configuration
+USE_MOCK = False  # Set True to use mock data, False for real scope
+SCOPE_IP = "169.254.208.205"  # Update this to match your scope's IP
+VISA_ADDRESS = f"TCPIP0::{SCOPE_IP}::inst0::INSTR"
 
 HOST = "0.0.0.0"
 PORT = 8765
@@ -37,7 +40,106 @@ class MockScope:
             data = data / m
         return data.astype(np.float32)
 
-scope = MockScope()
+# Real scope interface
+class KeysightScope:
+    def __init__(self, visa_address, timeout=10000):
+        self.rm = pyvisa.ResourceManager()
+        self.scope = None
+        self.visa_address = visa_address
+        self.timeout = timeout
+        self.sample_rate = 1e6  # default, updated from scope
+        self.connected = False
+        self._lock = threading.Lock()
+        
+    def connect(self):
+        """Connect to the scope"""
+        try:
+            self.scope = self.rm.open_resource(self.visa_address)
+            self.scope.timeout = self.timeout
+            idn = self.scope.query("*IDN?")
+            print(f"[SCOPE] Connected: {idn.strip()}")
+            self.connected = True
+            return True
+        except Exception as e:
+            print(f"[SCOPE] Connection failed: {e}")
+            self.connected = False
+            return False
+    
+    def read_channel(self, ch):
+        """Read waveform data from specified channel"""
+        if not self.connected or self.scope is None:
+            print(f"[SCOPE] Not connected, returning zeros for ch={ch}")
+            return np.zeros(1000, dtype=np.float32)
+        
+        with self._lock:
+            try:
+                # Check if channel is displayed
+                disp = self.scope.query(f":CHANnel{ch}:DISPlay?").strip()
+                if disp == '0':
+                    if VERBOSE:
+                        print(f"[SCOPE] Channel {ch} is OFF, returning zeros")
+                    return np.zeros(1000, dtype=np.float32)
+                
+                # Configure waveform acquisition
+                self.scope.write(f":WAVeform:SOURce CHANnel{ch}")
+                self.scope.write(":WAVeform:FORMat BYTE")
+                self.scope.write(":WAVeform:BYTeorder LSBFirst")
+                self.scope.write(":WAVeform:POINts:MODE NORMal")
+                self.scope.write(":WAVeform:POINts 1000")
+                
+                # Get preamble for scaling
+                preamble = self.scope.query(":WAVeform:PREamble?").split(',')
+                x_increment = float(preamble[4])
+                y_increment = float(preamble[7])
+                y_origin = float(preamble[8])
+                y_reference = float(preamble[9])
+                
+                # Update sample rate
+                self.sample_rate = 1.0 / x_increment
+                
+                # Read binary data
+                original_timeout = self.scope.timeout
+                self.scope.timeout = 3000
+                raw_data = self.scope.query_binary_values(":WAVeform:DATA?", datatype='B', container=np.array)
+                self.scope.timeout = original_timeout
+                
+                # Convert to voltage
+                voltage = (raw_data - y_reference) * y_increment + y_origin
+                
+                # Normalize to [-1, 1] range for consistency
+                voltage = voltage - np.mean(voltage)
+                v_max = np.max(np.abs(voltage))
+                if v_max > 0:
+                    voltage = voltage / v_max
+                
+                return voltage.astype(np.float32)
+                
+            except Exception as e:
+                print(f"[SCOPE] Error reading ch={ch}: {e}")
+                return np.zeros(1000, dtype=np.float32)
+    
+    def close(self):
+        """Close connection to scope"""
+        if self.scope:
+            try:
+                self.scope.write(":SYSTem:LOCal")
+                self.scope.close()
+            except:
+                pass
+        self.connected = False
+
+# Initialize scope based on mode
+if USE_MOCK:
+    scope = MockScope()
+    print("[SERVER] Using MOCK data generator")
+else:
+    scope = KeysightScope(VISA_ADDRESS)
+    if not scope.connect():
+        print("[SERVER] Failed to connect to real scope, falling back to MOCK")
+        scope = MockScope()
+        USE_MOCK = True
+    else:
+        print("[SERVER] Using REAL scope data")
 
 def handle_client(conn, addr):
     print(f"Client connected: {addr}")

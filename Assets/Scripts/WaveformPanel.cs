@@ -20,6 +20,9 @@ public class WaveformPanel : MonoBehaviour
     public bool scaleThicknessWithDistance = true;
     [Tooltip("Multiplier applied when auto-scaling thickness")] 
     public float distanceThicknessFactor = 0.0025f;
+    [Tooltip("Amplitude scaling factor (0-1); reduces waveform vertical extent to fit better in panel")]
+    [Range(0.1f, 1.0f)]
+    public float amplitudeScale = 0.8f;
 
     [Header("Waveform params")]
     public float frequency = 1.0f;
@@ -93,7 +96,7 @@ public class WaveformPanel : MonoBehaviour
         for (int i = 0; i < resolution; i++)
         {
             float x = Mathf.Lerp(-width/2f, width/2f, (float)i / (resolution-1));
-            float y = buffer[i] * height;
+            float y = buffer[i] * height * amplitudeScale;
             lr.SetPosition(i, new Vector3(x, y, 0f));
         }
 
