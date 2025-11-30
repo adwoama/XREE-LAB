@@ -26315,6 +26315,9 @@ struct WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7  : public MonoBeh
 	float ___width;
 	float ___height;
 	float ___updateRate;
+	float ___lineThickness;
+	bool ___scaleThicknessWithDistance;
+	float ___distanceThicknessFactor;
 	float ___frequency;
 	float ___amplitude;
 	float ___noise;
@@ -26324,6 +26327,7 @@ struct WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7  : public MonoBeh
 	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___buffer;
 	float ___timeAcc;
 	TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* ___labelMesh;
+	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___cachedGradient;
 };
 struct XmlObjectSerializerReadContextComplex_t764224A3F9F0FCE40B6A799CF100BCD1037086CB  : public XmlObjectSerializerReadContext_tA10E43DFFA0889AD640ECB84E93F0C6C1BAE95E7
 {
@@ -34455,9 +34459,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14008[22] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14009[6] = 
 {
 	static_cast<int32_t>(offsetof(WaveformManager_t7BD1AD50DD3193DBC8C39FA5AAF7BEE3E0912A4C, ___channels)),static_cast<int32_t>(offsetof(WaveformManager_t7BD1AD50DD3193DBC8C39FA5AAF7BEE3E0912A4C, ___distance)),static_cast<int32_t>(offsetof(WaveformManager_t7BD1AD50DD3193DBC8C39FA5AAF7BEE3E0912A4C, ___verticalOffset)),static_cast<int32_t>(offsetof(WaveformManager_t7BD1AD50DD3193DBC8C39FA5AAF7BEE3E0912A4C, ___spacing)),static_cast<int32_t>(offsetof(WaveformManager_t7BD1AD50DD3193DBC8C39FA5AAF7BEE3E0912A4C, ___panelPrefab)),static_cast<int32_t>(offsetof(WaveformManager_t7BD1AD50DD3193DBC8C39FA5AAF7BEE3E0912A4C, ___panelSize)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14010[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14010[17] = 
 {
-	static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___resolution)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___width)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___height)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___updateRate)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___frequency)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___amplitude)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___noise)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___channelLabel)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___lineColor)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___lr)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___buffer)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___timeAcc)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___labelMesh)),};
+	static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___resolution)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___width)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___height)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___updateRate)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___lineThickness)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___scaleThicknessWithDistance)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___distanceThicknessFactor)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___frequency)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___amplitude)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___noise)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___channelLabel)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___lineColor)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___lr)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___buffer)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___timeAcc)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___labelMesh)),static_cast<int32_t>(offsetof(WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7, ___cachedGradient)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14011[3] = 
 {
 	static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatInputField)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatDisplayOutput)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatScrollbar)),};

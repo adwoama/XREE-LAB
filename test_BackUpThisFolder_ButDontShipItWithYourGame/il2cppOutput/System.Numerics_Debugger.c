@@ -188,10 +188,10 @@ Il2CppSequencePoint g_sequencePointsSystem_Numerics[1] = { { 0, 0, 0, 0, 0, 0, 0
 #endif
 #if IL2CPP_MONO_DEBUGGER
 static const Il2CppCatchPoint g_catchPoints[] = {
-{ 117754, 31304, 176, 0, -1 },
-{ 117754, 31304, 344, 1, -1 },
-{ 117754, 31304, 438, 2, -1 },
-{ 117754, 31304, 462, 3, -1 },
+{ 117760, 31304, 176, 0, -1 },
+{ 117760, 31304, 344, 1, -1 },
+{ 117760, 31304, 438, 2, -1 },
+{ 117760, 31304, 462, 3, -1 },
 };
 #else
 static const Il2CppCatchPoint g_catchPoints[1] = { { 0, 0, 0, 0, } };

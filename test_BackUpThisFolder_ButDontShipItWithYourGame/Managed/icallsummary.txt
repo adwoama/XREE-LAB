@@ -1066,6 +1066,7 @@ UnityEngine.LightProbesQuery::Create
 UnityEngine.LightProbesQuery::CalculateInterpolatedLightAndOcclusionProbes
 UnityEngine.LightProbesQuery::Destroy
 UnityEngine.LineRenderer::get_startWidth_Injected
+UnityEngine.LineRenderer::SetColorGradient_Injected
 UnityEngine.LineRenderer::SetPosition_Injected
 UnityEngine.LineRenderer::SetPositions_Injected
 UnityEngine.LineRenderer::SetWidthCurve_Injected

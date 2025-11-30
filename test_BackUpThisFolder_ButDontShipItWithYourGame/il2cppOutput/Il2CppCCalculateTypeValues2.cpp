@@ -48296,6 +48296,9 @@ struct WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7  : public MonoBeh
 	float ___width;
 	float ___height;
 	float ___updateRate;
+	float ___lineThickness;
+	bool ___scaleThicknessWithDistance;
+	float ___distanceThicknessFactor;
 	float ___frequency;
 	float ___amplitude;
 	float ___noise;
@@ -48305,6 +48308,7 @@ struct WaveformPanel_t2FFE1DD0968843EFAF491BBCD2022FC9562082D7  : public MonoBeh
 	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___buffer;
 	float ___timeAcc;
 	TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* ___labelMesh;
+	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___cachedGradient;
 };
 struct XmlObjectSerializerReadContextComplex_t764224A3F9F0FCE40B6A799CF100BCD1037086CB  : public XmlObjectSerializerReadContext_tA10E43DFFA0889AD640ECB84E93F0C6C1BAE95E7
 {

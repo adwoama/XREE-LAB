@@ -107,6 +107,9 @@ extern void WaveformPanel_GenerateSample_mB8D762575152208A5532E9C81472124D067D13
 extern void WaveformPanel_PushSample_mE6133DAAA25B1C7B0939DB80D1BB8A6D6EB2EBB6 (void);
 extern void WaveformPanel_SetLabel_m740F1BA21B1796D7631E3F7CAA56D7C57A23D5DB (void);
 extern void WaveformPanel_SetColor_m18698742D02DE1FF214907066B971F46A537C3B9 (void);
+extern void WaveformPanel_SetThickness_m17B00D2FCA2517B663E56B8796FE5A29A6126071 (void);
+extern void WaveformPanel_BuildGradient_mBD7A18380E8F6D6FAFFCF0FB964603411F9E78CE (void);
+extern void WaveformPanel_ApplyLineColor_mD4563EB6486751A51E97FAC05EEC0ECFA4C60504 (void);
 extern void WaveformPanel__ctor_m3A5C5AB09ACCC65EF63E5E04310DDE28A2F1CF59 (void);
 extern void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (void);
 extern void ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46 (void);
@@ -404,7 +407,7 @@ extern void U3CU3Ec__DisplayClass52_0__ctor_mAC94D3FFE0EE0CF98C540E3546D4670BD9B
 extern void U3CU3Ec__DisplayClass52_0_U3CGetFingerTipU3Eb__0_mF9E1E542E9E73B2D88A67ED7AEAFA0852FDC876A (void);
 extern void U3CU3Ec__DisplayClass53_0__ctor_m8EE5C899B1B63033E2F83121DAE6F507AFB6D75F (void);
 extern void U3CU3Ec__DisplayClass53_0_U3CGetBoneTransformU3Eb__0_mCD1B4D482BD149F54D9D21603067A4C9BE5B3F9C (void);
-static Il2CppMethodPointer s_methodPointers[397] = 
+static Il2CppMethodPointer s_methodPointers[400] = 
 {
 	ActiveStateTrackerSafety_EnsureActiveStateTrackersSafe_mC8435EA9AF59E7B9983C2124DFDD4E5E48B26712,
 	ActiveStateTrackerSafety__ctor_m0C322AE2F08D005F5AA3EC3AA1B3AA07313AA4DB,
@@ -506,6 +509,9 @@ static Il2CppMethodPointer s_methodPointers[397] =
 	WaveformPanel_PushSample_mE6133DAAA25B1C7B0939DB80D1BB8A6D6EB2EBB6,
 	WaveformPanel_SetLabel_m740F1BA21B1796D7631E3F7CAA56D7C57A23D5DB,
 	WaveformPanel_SetColor_m18698742D02DE1FF214907066B971F46A537C3B9,
+	WaveformPanel_SetThickness_m17B00D2FCA2517B663E56B8796FE5A29A6126071,
+	WaveformPanel_BuildGradient_mBD7A18380E8F6D6FAFFCF0FB964603411F9E78CE,
+	WaveformPanel_ApplyLineColor_mD4563EB6486751A51E97FAC05EEC0ECFA4C60504,
 	WaveformPanel__ctor_m3A5C5AB09ACCC65EF63E5E04310DDE28A2F1CF59,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
 	ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46,
@@ -804,7 +810,7 @@ static Il2CppMethodPointer s_methodPointers[397] =
 	U3CU3Ec__DisplayClass53_0__ctor_m8EE5C899B1B63033E2F83121DAE6F507AFB6D75F,
 	U3CU3Ec__DisplayClass53_0_U3CGetBoneTransformU3Eb__0_mCD1B4D482BD149F54D9D21603067A4C9BE5B3F9C,
 };
-static const int32_t s_InvokerIndices[397] = 
+static const int32_t s_InvokerIndices[400] = 
 {
 	33815,
 	20465,
@@ -906,6 +912,9 @@ static const int32_t s_InvokerIndices[397] =
 	15573,
 	15470,
 	15247,
+	15573,
+	20465,
+	20465,
 	20465,
 	20465,
 	20465,
@@ -1209,7 +1218,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	397,
+	400,
 	s_methodPointers,
 	0,
 	NULL,
