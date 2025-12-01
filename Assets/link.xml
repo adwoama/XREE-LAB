@@ -1,0 +1,12 @@
+<linker>
+  <assembly fullname="Assembly-CSharp">
+    <type fullname="XreeLab.Gestures.MetaXRGestureActions" preserve="all"/>
+    <type fullname="XreeLab.Gestures.GestureControlManager" preserve="all"/>
+    <type fullname="WaveformPanel" preserve="all"/>
+    <type fullname="WaveformPanelConnector" preserve="all"/>
+    <type fullname="TcpOscopeClient" preserve="all"/>
+  </assembly>
+  <assembly fullname="Oculus.Interaction" preserve="all"/>
+  <assembly fullname="Oculus.Platform" preserve="all"/>
+  <assembly fullname="OVRPlugin" preserve="all"/>
+</linker>

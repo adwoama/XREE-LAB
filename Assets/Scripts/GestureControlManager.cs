@@ -78,10 +78,31 @@ namespace XreeLab.Gestures
         {
             // Show/hide a world-space menu canvas if present.
             var menu = GetComponentInChildren<Canvas>(true);
-            if (menu != null)
+            if (menu == null) return;
+
+            bool next = !menu.gameObject.activeSelf;
+            menu.gameObject.SetActive(next);
+
+            if (next)
             {
-                bool next = !menu.gameObject.activeSelf;
-                menu.gameObject.SetActive(next);
+                // Reposition and face the user so it's always findable
+                var cam = Camera.main;
+                if (cam != null)
+                {
+                    float distance = 1.2f;
+                    Vector3 targetPos = cam.transform.position + cam.transform.forward * distance;
+                    // keep roughly at eye height; allow designer to fine-tune in editor afterwards
+                    menu.transform.position = targetPos;
+                    Vector3 toCam = cam.transform.position - menu.transform.position;
+                    toCam.y = 0f; // keep upright
+                    if (toCam.sqrMagnitude > 0.0001f)
+                        menu.transform.rotation = Quaternion.LookRotation(-toCam.normalized, Vector3.up);
+
+                    // Ensure reasonable world scale for visibility
+                    var s = menu.transform.localScale;
+                    float uniform = Mathf.Clamp(Mathf.Max(s.x, Mathf.Max(s.y, s.z)), 0.0005f, 0.005f);
+                    menu.transform.localScale = new Vector3(uniform, uniform, uniform);
+                }
             }
         }
 
