@@ -25,7 +25,7 @@ namespace XreeLab.Gestures
         public PanelFollower panelFollower;
 
         [Header("Menu State")] 
-        [Tooltip("Currently selected channel index.")]
+        [Tooltip("Zero-based selected panel index (mapped to server channel = index+1).")]
         public int selectedChannel = 0;
 
         [Tooltip("Total channel count available.")]
@@ -113,19 +113,17 @@ namespace XreeLab.Gestures
         void HandleFreezeToggle()
         {
             if (tcpClient == null) return;
-            int ch = selectedChannel;
-            // Toggle freeze state
-            bool shouldFreeze = !IsFrozen(ch);
-            tcpClient.FreezeChannel(ch, shouldFreeze);
-            Debug.Log($"[GestureManager] Freeze {(shouldFreeze ? "ON" : "OFF")} for channel {ch}");
+            int serverCh = selectedChannel + 1; // map to 1-based
+            bool isFrozen = frozenStates.Contains(serverCh);
+            bool next = !isFrozen;
+            // Diagnostic logging around freeze toggle
+            Debug.Log($"[GestureManager] FreezeToggle invoked (channel={serverCh}, currentlyFrozen={isFrozen}, next={next}, time={Time.time:F3}) thread={System.Threading.Thread.CurrentThread.ManagedThreadId}");
+            tcpClient.FreezeChannel(serverCh, next);
+            if (next) frozenStates.Add(serverCh); else frozenStates.Remove(serverCh);
+            Debug.Log($"[GestureManager] Freeze {(next ? "ON" : "OFF")} for server channel {serverCh}");
         }
 
-        bool IsFrozen(int channel)
-        {
-            // Simple state tracking; could expand to per-channel dict if needed
-            // For now assume single freeze state per channel
-            return false; // placeholder; track in dict if you need persistent state
-        }
+        private HashSet<int> frozenStates = new HashSet<int>();
 
         // FFT gesture: toggle FFT display for selected channel
         void HandleFFTRequest(int channel)
@@ -133,17 +131,19 @@ namespace XreeLab.Gestures
             if (Time.time - lastFftTime < fftGestureCooldown) return;
             lastFftTime = Time.time;
             if (tcpClient == null) return;
-            
+
             fftEnabled = !fftEnabled;
+            int serverCh = selectedChannel + 1;
+            var panel = PanelForChannel(selectedChannel)?.GetComponent<WaveformPanel>();
+            if (panel != null) panel.showFFT = fftEnabled;
             if (fftEnabled)
             {
-                tcpClient.RequestFFT(selectedChannel, "hann");
-                Debug.Log($"[GestureManager] FFT ON for channel {selectedChannel}");
+                tcpClient.RequestFFT(serverCh, "hann");
+                Debug.Log($"[GestureManager] FFT ON for server channel {serverCh}");
             }
             else
             {
-                // Could send a stop_fft command if server supports it
-                Debug.Log($"[GestureManager] FFT OFF for channel {selectedChannel}");
+                Debug.Log($"[GestureManager] FFT OFF for server channel {serverCh}");
             }
         }
 
@@ -151,7 +151,7 @@ namespace XreeLab.Gestures
         public void SetSelectedChannel(int index)
         {
             selectedChannel = Mathf.Clamp(index, 0, channelCount - 1);
-            if (gestureActions != null) gestureActions.activeChannel = selectedChannel;
+            if (gestureActions != null) gestureActions.activeChannel = selectedChannel + 1; // gesture actions expect 1-based for semantic channel id
         }
 
         public void SetChannelCount(int count)
@@ -169,13 +169,13 @@ namespace XreeLab.Gestures
                 if (!enabledChannels.Contains(index)) enabledChannels.Add(index);
                 // start streaming if tcpClient present
                 if (tcpClient != null && tcpClient.IsConnected)
-                    tcpClient.StartStreaming(index);
+                    tcpClient.StartStreaming(index + 1); // map to server channel
             }
             else
             {
                 enabledChannels.Remove(index);
                 if (tcpClient != null && tcpClient.IsConnected)
-                    tcpClient.StopStreaming(index);
+                    tcpClient.StopStreaming(index + 1);
             }
             UpdatePanelVisibility();
         }

@@ -28,6 +28,8 @@ public class WaveformPanelConnector : MonoBehaviour
             return;
         }
         tcpClient.OnWaveformReceived += OnWaveform;
+        tcpClient.OnFFTReceived += OnFFT;
+        tcpClient.OnChannelFrozen += OnChannelFrozen;
     }
 
     private void Start()
@@ -90,10 +92,15 @@ public class WaveformPanelConnector : MonoBehaviour
             tcpClient.OnWaveformReceived -= OnWaveform;
         if (tcpClient != null)
             tcpClient.OnConnected -= HandleClientConnected;
+        if (tcpClient != null)
+            tcpClient.OnFFTReceived -= OnFFT;
+        if (tcpClient != null)
+            tcpClient.OnChannelFrozen -= OnChannelFrozen;
     }
 
     private void OnWaveform(int channel, float[] samples)
     {
+        if (IsChannelFrozen(channel)) return; // suppress live updates while frozen
         switch (channel)
         {
             case 1:
@@ -114,4 +121,40 @@ public class WaveformPanelConnector : MonoBehaviour
                 break;
         }
     }
+
+    // FFT handler
+    private void OnFFT(int channel, TcpOscopeClient.FFTData fft)
+    {
+        float[] mags = fft.magnitude_db != null && fft.magnitude_db.Length > 0 ? fft.magnitude_db : fft.magnitude_linear;
+        switch (channel)
+        {
+            case 1:
+                if (channel1Panel != null && channel1Panel.showFFT)
+                    channel1Panel.SetFFT(mags);
+                break;
+            case 2:
+                if (channel2Panel != null && channel2Panel.showFFT)
+                    channel2Panel.SetFFT(mags);
+                break;
+        }
+    }
+
+    private System.Collections.Generic.HashSet<int> frozenChannels = new System.Collections.Generic.HashSet<int>();
+    private void OnChannelFrozen(int channel, bool frozen)
+    {
+        if (frozen) frozenChannels.Add(channel); else frozenChannels.Remove(channel);
+        Debug.Log($"[WaveformPanelConnector] Channel {channel} frozen={frozen}");
+
+        // Update panel indicator
+        switch (channel)
+        {
+            case 1:
+                if (channel1Panel != null) channel1Panel.SetFrozen(frozen);
+                break;
+            case 2:
+                if (channel2Panel != null) channel2Panel.SetFrozen(frozen);
+                break;
+        }
+    }
+    private bool IsChannelFrozen(int ch) => frozenChannels.Contains(ch);
 }

@@ -27,6 +27,19 @@ public class WaveformPanel : MonoBehaviour
     [Range(0.5f, 3.0f)]
     public float horizontalScale = 1.0f;
 
+    [Header("Display Modes")]
+    [Tooltip("If true, render FFT magnitude instead of time-domain waveform for this panel.")]
+    public bool showFFT = false;
+    [Tooltip("Use dB values for FFT (magnitude_db) instead of linear magnitude.")]
+    public bool fftUseDb = true;
+    [Tooltip("Auto-normalize FFT magnitudes to fit vertical range.")]
+    public bool fftNormalize = true;
+
+    private float[] fftBuffer; // stores last received spectrum (trimmed/resampled to resolution)
+    private bool isFrozen = false;
+    private TextMesh fftLabel;
+    private TextMesh stateLabel;
+
     [Header("Waveform params")]
     public float frequency = 1.0f;
     public float amplitude = 0.8f;
@@ -72,6 +85,28 @@ public class WaveformPanel : MonoBehaviour
         labelMesh.characterSize = 0.08f;
         labelMesh.anchor = TextAnchor.UpperLeft;
         labelMesh.color = Color.white;
+
+        // FFT indicator (top-right)
+        var fftGO = new GameObject("FFTLabel");
+        fftGO.transform.SetParent(transform, false);
+        fftGO.transform.localPosition = new Vector3(width*0.48f, height*0.55f, -0.06f);
+        fftLabel = fftGO.AddComponent<TextMesh>();
+        fftLabel.text = "FFT";
+        fftLabel.characterSize = 0.07f;
+        fftLabel.anchor = TextAnchor.UpperRight;
+        fftLabel.color = new Color(0.6f, 0.9f, 1f, 1f);
+        fftLabel.gameObject.SetActive(false);
+
+        // State indicator (pause/play) top center
+        var stGO = new GameObject("StateLabel");
+        stGO.transform.SetParent(transform, false);
+        stGO.transform.localPosition = new Vector3(0f, height*0.55f, -0.06f);
+        stateLabel = stGO.AddComponent<TextMesh>();
+        stateLabel.text = "";
+        stateLabel.characterSize = 0.08f;
+        stateLabel.anchor = TextAnchor.UpperCenter;
+        stateLabel.color = new Color(1f, 0.85f, 0.3f, 1f);
+        stateLabel.gameObject.SetActive(false);
     }
 
     void Start()
@@ -95,15 +130,24 @@ public class WaveformPanel : MonoBehaviour
             }
         }
 
-        // update line renderer points with horizontal scaling
+        // choose source array based on mode
+        var src = showFFT && fftBuffer != null && fftBuffer.Length == resolution ? fftBuffer : buffer;
+
+        // update line renderer points with horizontal scaling (time-domain only affects waveform)
         for (int i = 0; i < resolution; i++)
         {
-            // Apply horizontal zoom by adjusting sample index
-            float zoomedIndex = i / horizontalScale;
-            int bufferIndex = Mathf.RoundToInt(zoomedIndex) % resolution;
-            
+            int bufferIndex;
+            if (!showFFT)
+            {
+                float zoomedIndex = i / horizontalScale;
+                bufferIndex = Mathf.Clamp(Mathf.RoundToInt(zoomedIndex), 0, resolution - 1);
+            }
+            else
+            {
+                bufferIndex = i; // FFT does not use horizontalScale; frequencies already mapped
+            }
             float x = Mathf.Lerp(-width/2f, width/2f, (float)i / (resolution-1));
-            float y = buffer[bufferIndex] * height * amplitudeScale;
+            float y = src[bufferIndex] * height * amplitudeScale;
             lr.SetPosition(i, new Vector3(x, y, 0f));
         }
 
@@ -116,6 +160,11 @@ public class WaveformPanel : MonoBehaviour
             thickness = Mathf.Clamp(lineThickness + d * distanceThicknessFactor, lineThickness, lineThickness * 6f);
         }
         lr.widthMultiplier = thickness;
+
+        // Toggle labels based on state
+        if (fftLabel) fftLabel.gameObject.SetActive(showFFT);
+        if (stateLabel) stateLabel.gameObject.SetActive(isFrozen);
+        if (stateLabel) stateLabel.text = isFrozen ? "⏸" : ""; // pause symbol
     }
 
     float GenerateSample(float t)
@@ -191,6 +240,7 @@ public class WaveformPanel : MonoBehaviour
     /// </summary>
     public void SetSamples(float[] samples)
     {
+        if (showFFT) return; // ignore time-domain updates when in FFT mode
         if (samples == null || samples.Length == 0) return;
         useExternalData = true; // switch to external data mode upon first injection
         if (buffer == null || buffer.Length != resolution) buffer = new float[resolution];
@@ -214,5 +264,52 @@ public class WaveformPanel : MonoBehaviour
                 buffer[i] = Mathf.Clamp(v, -1f, 1f);
             }
         }
+    }
+
+    /// <summary>
+    /// Sets FFT data (magnitude array). Will switch panel into FFT display mode externally (manager toggles showFFT).
+    /// Expects magnitudes (linear or dB already chosen). Resamples to resolution.
+    /// </summary>
+    public void SetFFT(float[] magnitudes)
+    {
+        if (magnitudes == null || magnitudes.Length == 0) return;
+        if (fftBuffer == null || fftBuffer.Length != resolution) fftBuffer = new float[resolution];
+
+        int srcLen = magnitudes.Length;
+        // resample
+        for (int i = 0; i < resolution; i++)
+        {
+            float srcIndex = (float)i * (srcLen - 1) / (resolution - 1);
+            int i0 = (int)srcIndex;
+            int i1 = Mathf.Min(i0 + 1, srcLen - 1);
+            float t = srcIndex - i0;
+            float v = Mathf.Lerp(magnitudes[i0], magnitudes[i1], t);
+            fftBuffer[i] = v;
+        }
+
+        if (fftNormalize)
+        {
+            float maxAbs = 0f;
+            for (int i = 0; i < fftBuffer.Length; i++)
+            {
+                float a = Mathf.Abs(fftBuffer[i]);
+                if (a > maxAbs) maxAbs = a;
+            }
+            if (maxAbs > 1e-6f)
+            {
+                float inv = 1f / maxAbs;
+                for (int i = 0; i < fftBuffer.Length; i++) fftBuffer[i] *= inv;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Sets frozen state and updates UI indicator.
+    /// </summary>
+    public void SetFrozen(bool frozen)
+    {
+        isFrozen = frozen;
+        if (stateLabel) stateLabel.gameObject.SetActive(isFrozen);
+        if (stateLabel) stateLabel.text = isFrozen ? "⏸" : "";
     }
 }

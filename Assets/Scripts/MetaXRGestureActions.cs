@@ -51,20 +51,22 @@ namespace XreeLab.Gestures
     [Header("Pinch Settings")] 
     [Tooltip("Pinch strength threshold considered 'pinching'. Range 0..1.")] public float pinchStrengthThreshold = 0.65f;
     [Tooltip("Tap release max duration (seconds) for cursor toggle gesture.")] public float pinchTapMaxDuration = 0.45f;
+    [Tooltip("Max seconds between two taps to treat as a double pinch for freeze.")] public float doubleTapWindow = 0.6f;
     [Tooltip("Hold duration (seconds) to treat middle-finger pinch as FFT toggle.")] public float fftHoldSeconds = 0.9f;        [Header("Zoom Settings")] 
         [Tooltip("Minimum seconds both hands must be pinching before zoom tracking starts.")] public float zoomActivationDelay = 0.15f;
         [Tooltip("Multiplier applied to distance delta to produce zoom factor delta.")] public float zoomSensitivity = 4.0f;
         [Tooltip("Clamp applied to |zoom delta| per frame.")] public float zoomDeltaClamp = 0.25f;
 
     [Header("Grab Settings")] 
-    [Tooltip("Minimum seconds between freeze toggles.")] public float freezeCooldown = 1.0f;        [Header("Debug / Diagnostics")] 
+    [Tooltip("Minimum seconds between freeze toggles.")] public float freezeCooldown = 1.5f;        [Header("Debug / Diagnostics")] 
         public bool verboseLogs = true;
 
         // Events / Actions --------------------------------------
         public event Action OnMenuToggle;          // Wrist flip left
         public event Action OnCursorModeToggle;    // Right index pinch tap
         public event Action<float> OnZoomDelta;    // Two-hand pinch distance changes
-        public event Action OnFreezeToggle;        // Middle finger pinch hold
+        public event Action OnZoomComplete;        // Fired when zoom gesture ends (release)
+        public event Action OnFreezeToggle;        // Right index double pinch (two taps)
         public event Action<int> OnFFTRequest;     // Extended fingers gesture
 
         // Internal state ---------------------------------------
@@ -72,11 +74,13 @@ namespace XreeLab.Gestures
         float lastWristFlipTime;
 
     bool rightIndexPinching; float rightIndexPinchStartTime;
+    float lastRightIndexTapTime; bool awaitingSecondTap;
     bool middlePinchHolding; float middlePinchStartTime;
+    bool ringPinchHolding; float ringPinchStartTime;
 
     bool bothIndexPinching; float bothPinchStartTime; float lastPinchDistance;
 
-    bool rightGrabbing; float lastFreezeTime;        // Skeleton bone name fragments for tips
+    float lastFreezeTime;        // Skeleton bone name fragments for tips
         readonly string[] fingerTipNames = { "IndexTip", "MiddleTip", "RingTip", "PinkyTip" };
 
         void Start()
@@ -110,7 +114,7 @@ namespace XreeLab.Gestures
             DetectCursorPinchTap();
             DetectFFTHold();
             DetectZoom();
-            DetectGrabFreeze();
+            // Freeze handled via double pinch inside DetectCursorPinchTap
         }
 
         // 1. Wrist Flip (left hand)
@@ -146,9 +150,40 @@ namespace XreeLab.Gestures
                 rightIndexPinching = false;
                 if (dur <= pinchTapMaxDuration)
                 {
-                    if (verboseLogs) Debug.Log("[Gesture] Index pinch tap -> Cursor mode toggle");
-                    OnCursorModeToggle?.Invoke();
+                    // Check double tap
+                    float now = Time.time;
+                    if (awaitingSecondTap && (now - lastRightIndexTapTime) <= doubleTapWindow)
+                    {
+                        awaitingSecondTap = false;
+                        lastRightIndexTapTime = 0f;
+                        if (verboseLogs) Debug.Log("[Gesture] Index double pinch -> Freeze toggle");
+                        try { OnFreezeToggle?.Invoke(); } catch (System.Exception ex) { Debug.LogError($"[Gesture] Freeze handler error: {ex.Message}"); }
+                    }
+                    else
+                    {
+                        awaitingSecondTap = true;
+                        lastRightIndexTapTime = now;
+                        // Delay cursor toggle slightly to see if a second tap arrives
+                        StartCoroutine(DeferredSingleTap(now));
+                    }
                 }
+            }
+        }
+
+        System.Collections.IEnumerator DeferredSingleTap(float tapTimestamp)
+        {
+            // Wait up to doubleTapWindow; if no second tap, treat as single tap cursor toggle
+            float deadline = tapTimestamp + doubleTapWindow;
+            while (Time.time < deadline)
+            {
+                if (!awaitingSecondTap) yield break; // a second tap arrived
+                yield return null;
+            }
+            if (awaitingSecondTap)
+            {
+                awaitingSecondTap = false;
+                if (verboseLogs) Debug.Log("[Gesture] Index single pinch -> Cursor mode toggle");
+                OnCursorModeToggle?.Invoke();
             }
         }
 
@@ -209,6 +244,8 @@ namespace XreeLab.Gestures
             else if (bothIndexPinching)
             {
                 bothIndexPinching = false;
+                if (verboseLogs) Debug.Log("[Gesture] Zoom gesture completed");
+                try { OnZoomComplete?.Invoke(); } catch (Exception ex) { Debug.LogError($"[Gesture] OnZoomComplete error: {ex.Message}"); }
             }
         }
 
@@ -220,29 +257,7 @@ namespace XreeLab.Gestures
             return Vector3.Distance(lt.position, rt.position);
         }
 
-        // 5. Freeze via grab and release (right hand)
-        void DetectGrabFreeze()
-        {
-            if (rightHand == null) return;
-            bool grabbing = rightHand.GetFingerIsPinching(OVRHand.HandFinger.Index) &&
-                            rightHand.GetFingerIsPinching(OVRHand.HandFinger.Middle) &&
-                            rightHand.GetFingerIsPinching(OVRHand.HandFinger.Ring);
-
-            if (grabbing && !rightGrabbing)
-            {
-                rightGrabbing = true;
-            }
-            else if (!grabbing && rightGrabbing)
-            {
-                rightGrabbing = false;
-                if (Time.time - lastFreezeTime >= freezeCooldown)
-                {
-                    lastFreezeTime = Time.time;
-                    if (verboseLogs) Debug.Log("[Gesture] Grab release -> Freeze toggle");
-                    OnFreezeToggle?.Invoke();
-                }
-            }
-        }
+        // (Freeze via double pinch; ring pinch hold removed)
 
         Transform GetFingerTip(OVRSkeleton skel, string fragment)
         {
