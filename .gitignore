@@ -75,5 +75,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Python virtual environment cache files inside committed venv
+!/OscopeScripts/venv/
+!/OscopeScripts/venv/**
 /OscopeScripts/venv/**/__pycache__/
 /OscopeScripts/venv/**/*.pyc
