@@ -1,5 +1,6 @@
 # TCP Oscilloscope Streaming Server (Windows/Pi)
 # Streams newline-delimited JSON frames to Unity client
+# Supports 4 channels: Keysight CH1/CH2 (channels 1,2) + AD3 CH1/CH2 (channels 3,4)
 
 import json
 import socket
@@ -7,9 +8,11 @@ import threading
 import time
 import numpy as np
 import pyvisa
+from ad3_reader import create_reader as create_ad3_reader
 
 # Configuration
 USE_MOCK = False  # Set True to use mock data, False for real scope
+USE_MOCK_AD3 = True  # Set True to use mock AD3, False for real AD3
 SCOPE_IP = "169.254.208.205"  # Update this to match your scope's IP
 VISA_ADDRESS = f"TCPIP0::{SCOPE_IP}::inst0::INSTR"
 
@@ -131,7 +134,7 @@ class KeysightScope:
 # Initialize scope based on mode
 if USE_MOCK:
     scope = MockScope()
-    print("[SERVER] Using MOCK data generator")
+    print("[SERVER] Using MOCK data generator for Keysight CH1/CH2")
 else:
     scope = KeysightScope(VISA_ADDRESS)
     if not scope.connect():
@@ -139,7 +142,37 @@ else:
         scope = MockScope()
         USE_MOCK = True
     else:
-        print("[SERVER] Using REAL scope data")
+        print("[SERVER] Using REAL Keysight scope data for CH1/CH2")
+
+# Initialize AD3 for channels 3 and 4
+try:
+    ad3 = create_ad3_reader(mock=USE_MOCK_AD3, sample_rate=1e6, buffer_size=1000, voltage_range=5.0)
+    ad3.connect()
+    ad3.start_streaming()
+    print("[SERVER] AD3 initialized for CH3/CH4")
+except Exception as e:
+    print(f"[SERVER] AD3 init failed: {e}, falling back to mock AD3")
+    ad3 = create_ad3_reader(mock=True, sample_rate=1e6, buffer_size=1000)
+    ad3.connect()
+    ad3.start_streaming()
+
+def read_channel_unified(ch):
+    """
+    Unified channel reader:
+    CH1, CH2 -> Keysight scope
+    CH3, CH4 -> AD3 (mapped to AD3 CH1, CH2)
+    """
+    if ch in [1, 2]:
+        return scope.read_channel(ch)
+    elif ch in [3, 4]:
+        ch1_data, ch2_data = ad3.read_channels(timeout=0.5)
+        if ch == 3:
+            return ch1_data if ch1_data is not None else np.zeros(1000, dtype=np.float32)
+        else:  # ch == 4
+            return ch2_data if ch2_data is not None else np.zeros(1000, dtype=np.float32)
+    else:
+        print(f"[SERVER] Invalid channel {ch}, returning zeros")
+        return np.zeros(1000, dtype=np.float32)
 
 def handle_client(conn, addr):
     print(f"Client connected: {addr}")
@@ -171,13 +204,19 @@ def handle_client(conn, addr):
             if streaming_channels:
                 for ch in list(streaming_channels):
                     try:
-                        data = scope.read_channel(ch)
+                        data = read_channel_unified(ch)
+                        # Get sample rate based on source
+                        if ch in [1, 2]:
+                            sr = float(scope.sample_rate)
+                        else:  # ch 3,4 from AD3
+                            sr = float(ad3.sample_rate)
+                        
                         pkt = {
                             "type": "waveform",
                             "channel": ch,
                             "data": data.tolist(),
                             "timestamp": time.time(),
-                            "sample_rate": float(scope.sample_rate)
+                            "sample_rate": sr
                         }
                         send_json_safe(pkt)
                         packet_counts[ch] = packet_counts.get(ch, 0) + 1
@@ -188,7 +227,7 @@ def handle_client(conn, addr):
                     for ch in streaming_channels:
                         # basic stats on latest data
                         try:
-                            sample = scope.read_channel(ch)
+                            sample = read_channel_unified(ch)
                             mn = float(np.min(sample))
                             mx = float(np.max(sample))
                             print(f"[SERVER] ch={ch} packets={packet_counts.get(ch,0)} last_min={mn:.3f} last_max={mx:.3f}")
@@ -224,8 +263,13 @@ def handle_client(conn, addr):
                     streaming_channels.discard(ch)
                     send_json_safe({"type":"status","message":"stream stopped","channel":ch})
                 elif ctype == "fft":
-                    data = scope.read_channel(ch)
-                    freqs = np.fft.rfftfreq(len(data), 1.0/scope.sample_rate)
+                    data = read_channel_unified(ch)
+                    # Get sample rate for FFT
+                    if ch in [1, 2]:
+                        sr = scope.sample_rate
+                    else:
+                        sr = ad3.sample_rate
+                    freqs = np.fft.rfftfreq(len(data), 1.0/sr)
                     mag = np.abs(np.fft.rfft(data))
                     mag_db = 20*np.log10(mag + 1e-12)
                     send_json_safe({
@@ -235,13 +279,13 @@ def handle_client(conn, addr):
                         "magnitude_db": mag_db.astype(np.float32).tolist(),
                         "magnitude_linear": mag.astype(np.float32).tolist(),
                         "window": cmd.get("window", "hann"),
-                        "sample_rate": float(scope.sample_rate)
+                        "sample_rate": float(sr)
                     })
                 elif ctype == "freeze":
                     freeze = bool(cmd.get("freeze", True))
                     resp = {"type":"freeze_response","channel":ch,"frozen":freeze}
                     if freeze:
-                        resp["buffer"] = scope.read_channel(ch).tolist()
+                        resp["buffer"] = read_channel_unified(ch).tolist()
                     send_json_safe(resp)
                 else:
                     if VERBOSE:

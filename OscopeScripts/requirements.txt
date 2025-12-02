@@ -3,3 +3,4 @@ pyvisa-py>=0.8.1
 numpy>=1.24.0
 scipy>=1.11.0
 websockets>=12.0
+pydwf>=1.1.19

@@ -23,6 +23,8 @@ Real-time oscilloscope data streaming system for XR applications. Raspberry Pi a
  **Gesture Control** - Trigger functions via hand gestures in VR  
  **Multiple Channels** - Stream/analyze up to 4 channels independently  
 
+Supports Keysight MSOX604A on CH1/CH2 and Analog Discovery 3 (AD3) on CH3/CH4.
+
 ## Setup
 
 ### 1. Raspberry Pi Setup
@@ -41,6 +43,13 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+On Windows, use the provided bootstrap script:
+
+```bat
+cd OscopeScripts
+activate.bat
 ```
 
 ### 2. Configuration
@@ -160,14 +169,13 @@ oscopeClient.OnChannelFrozen += (channel, isFrozen) => {
 
 ## Gesture Mapping Examples
 
-| Gesture | Function | Command |
-|---------|----------|---------|
-| 👌 Pinch | Start streaming | `StartStreaming()` |
-| ✋ Grab | Freeze channel | `FreezeChannel(freeze: true)` |
-| 🖐️ Release | Unfreeze | `FreezeChannel(freeze: false)` |
-| 👆 Swipe Up | FFT analysis | `RequestFFT()` |
-| 🔄 Rotate Hand | Change window type | `RequestFFT(window: "hann")` |
-| ✊ Fist | Stop streaming | `StopStreaming()` |
+Current in-app gestures (Meta XR hand tracking):
+
+- **Left wrist flip:** Toggle the menu Canvas
+- **Right index single-tap:** Place cursor/select UI target
+- **Right index double-tap:** Freeze/unfreeze selected channel
+- **Middle finger hold:** Toggle FFT mode for selected channel
+- **Two-hand index pinch:** Horizontal zoom; updates time/div label when released
 
 ## Message Protocol
 
@@ -305,6 +313,7 @@ The script should automatically return it to local control.
 - `OscopeClient.cs` - Unity client script (attach to GameObject)
 - `requirements.txt` - Python dependencies
 - `oscope.py` - Original test script (connectivity verification)
+- `activate.bat` - Windows bootstrap to create/activate venv and install deps
 
 ## Dependencies
 
@@ -313,6 +322,7 @@ The script should automatically return it to local control.
 - numpy >= 1.24.0
 - scipy >= 1.11.0
 - websockets >= 12.0
+- pydwf >= 1.1.19 (Analog Discovery 3)
 
 **Unity (Quest):**
 - NativeWebSocket

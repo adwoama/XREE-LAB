@@ -13,10 +13,14 @@ public class WaveformPanelConnector : MonoBehaviour
     [Header("Panels")] 
     [SerializeField] private WaveformPanel channel1Panel;
     [SerializeField] private WaveformPanel channel2Panel;
+    [SerializeField] private WaveformPanel channel3Panel;
+    [SerializeField] private WaveformPanel channel4Panel;
 
-    [Header("Auto Start Both Channels")] 
+    [Header("Auto Start Channels")] 
     [SerializeField] private bool streamChannel1 = true;
     [SerializeField] private bool streamChannel2 = true;
+    [SerializeField] private bool streamChannel3 = false;
+    [SerializeField] private bool streamChannel4 = false;
 
     private bool channelsStarted = false;
 
@@ -36,7 +40,7 @@ public class WaveformPanelConnector : MonoBehaviour
     {
         if (tcpClient == null) return;
 
-        if (streamChannel1 || streamChannel2)
+        if (streamChannel1 || streamChannel2 || streamChannel3 || streamChannel4)
         {
             // If already connected, start immediately; else defer until OnConnected
             if (tcpClient.IsConnected)
@@ -52,7 +56,7 @@ public class WaveformPanelConnector : MonoBehaviour
 
     private void HandleClientConnected()
     {
-        Debug.Log($"[WaveformPanelConnector] HandleClientConnected - channelsStarted={channelsStarted}, streamCH1={streamChannel1}, streamCH2={streamChannel2}");
+        Debug.Log($"[WaveformPanelConnector] HandleClientConnected - channelsStarted={channelsStarted}, streamCH1={streamChannel1}, streamCH2={streamChannel2}, streamCH3={streamChannel3}, streamCH4={streamChannel4}");
         // Avoid duplicate starts on reconnects
         if (!channelsStarted)
         {
@@ -67,7 +71,7 @@ public class WaveformPanelConnector : MonoBehaviour
             Debug.LogWarning("[WaveformPanelConnector] StartRequestedChannels called but already started.");
             return;
         }
-        Debug.Log($"[WaveformPanelConnector] StartRequestedChannels: will start CH1={streamChannel1}, CH2={streamChannel2}");
+        Debug.Log($"[WaveformPanelConnector] StartRequestedChannels: will start CH1={streamChannel1}, CH2={streamChannel2}, CH3={streamChannel3}, CH4={streamChannel4}");
         
         if (streamChannel1)
         {
@@ -78,6 +82,18 @@ public class WaveformPanelConnector : MonoBehaviour
         if (streamChannel2)
         {
             tcpClient.StartStreaming(2);
+            await System.Threading.Tasks.Task.Delay(100);
+        }
+        
+        if (streamChannel3)
+        {
+            tcpClient.StartStreaming(3);
+            await System.Threading.Tasks.Task.Delay(100);
+        }
+        
+        if (streamChannel4)
+        {
+            tcpClient.StartStreaming(4);
             await System.Threading.Tasks.Task.Delay(100);
         }
         
@@ -119,6 +135,22 @@ public class WaveformPanelConnector : MonoBehaviour
                         Debug.Log($"[WaveformPanelConnector] Applied CH2 samples len={samples.Length} first={samples[0]:F3}");
                 }
                 break;
+            case 3:
+                if (channel3Panel != null)
+                {
+                    channel3Panel.SetSamples(samples);
+                    if (samples != null && samples.Length > 0)
+                        Debug.Log($"[WaveformPanelConnector] Applied CH3 samples len={samples.Length} first={samples[0]:F3}");
+                }
+                break;
+            case 4:
+                if (channel4Panel != null)
+                {
+                    channel4Panel.SetSamples(samples);
+                    if (samples != null && samples.Length > 0)
+                        Debug.Log($"[WaveformPanelConnector] Applied CH4 samples len={samples.Length} first={samples[0]:F3}");
+                }
+                break;
         }
     }
 
@@ -135,6 +167,14 @@ public class WaveformPanelConnector : MonoBehaviour
             case 2:
                 if (channel2Panel != null && channel2Panel.showFFT)
                     channel2Panel.SetFFT(mags);
+                break;
+            case 3:
+                if (channel3Panel != null && channel3Panel.showFFT)
+                    channel3Panel.SetFFT(mags);
+                break;
+            case 4:
+                if (channel4Panel != null && channel4Panel.showFFT)
+                    channel4Panel.SetFFT(mags);
                 break;
         }
     }
@@ -153,6 +193,12 @@ public class WaveformPanelConnector : MonoBehaviour
                 break;
             case 2:
                 if (channel2Panel != null) channel2Panel.SetFrozen(frozen);
+                break;
+            case 3:
+                if (channel3Panel != null) channel3Panel.SetFrozen(frozen);
+                break;
+            case 4:
+                if (channel4Panel != null) channel4Panel.SetFrozen(frozen);
                 break;
         }
     }
