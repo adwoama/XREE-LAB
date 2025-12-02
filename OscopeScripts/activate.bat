@@ -3,20 +3,23 @@ setlocal
 
 REM Bootstrap venv on Windows and activate it
 set "VENV_DIR=%~dp0venv"
-set "PYTHON=python"
+
+REM Prefer Python 3.12 for pydwf compatibility; fallback to default python
+set "PY_CMD=python"
+py -3.12 -V >nul 2>&1 && set "PY_CMD=py -3.12"
 
 if not exist "%VENV_DIR%\Scripts\activate.bat" (
-    echo [setup] Creating Python virtual environment at "%VENV_DIR%"...
-    %PYTHON% -m venv "%VENV_DIR%"
+    echo [setup] Creating Python virtual environment at "%VENV_DIR%" using %PY_CMD% ...
+    %PY_CMD% -m venv "%VENV_DIR%"
     if errorlevel 1 (
         echo [error] Failed to create venv. Ensure Python is installed and on PATH.
         exit /b 1
     )
     echo [setup] Installing requirements...
     call "%VENV_DIR%\Scripts\activate.bat"
-    pip install --upgrade pip
+    python -m pip install --upgrade pip
     if exist "%~dp0requirements.txt" (
-        pip install -r "%~dp0requirements.txt"
+        python -m pip install -r "%~dp0requirements.txt"
     ) else (
         echo [warn] requirements.txt not found; skipping package install.
     )

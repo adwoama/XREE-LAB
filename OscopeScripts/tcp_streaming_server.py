@@ -13,6 +13,7 @@ from ad3_reader import create_reader as create_ad3_reader
 # Configuration
 USE_MOCK = False  # Set True to use mock data, False for real scope
 USE_MOCK_AD3 = True  # Set True to use mock AD3, False for real AD3
+ALLOW_AD3_FALLBACK_TO_MOCK = False  # If False, server will not silently fall back when AD3 init fails
 SCOPE_IP = "169.254.208.205"  # Update this to match your scope's IP
 VISA_ADDRESS = f"TCPIP0::{SCOPE_IP}::inst0::INSTR"
 
@@ -145,16 +146,34 @@ else:
         print("[SERVER] Using REAL Keysight scope data for CH1/CH2")
 
 # Initialize AD3 for channels 3 and 4
-try:
-    ad3 = create_ad3_reader(mock=USE_MOCK_AD3, sample_rate=1e6, buffer_size=1000, voltage_range=5.0)
+if USE_MOCK_AD3:
+    ad3 = create_ad3_reader(mock=True, sample_rate=1e6, buffer_size=1000, voltage_range=5.0)
     ad3.connect()
     ad3.start_streaming()
-    print("[SERVER] AD3 initialized for CH3/CH4")
-except Exception as e:
-    print(f"[SERVER] AD3 init failed: {e}, falling back to mock AD3")
-    ad3 = create_ad3_reader(mock=True, sample_rate=1e6, buffer_size=1000)
-    ad3.connect()
-    ad3.start_streaming()
+    print("[SERVER] Using MOCK AD3 for CH3/CH4")
+else:
+    try:
+        ad3 = create_ad3_reader(mock=False, sample_rate=1e6, buffer_size=1000, voltage_range=5.0)
+        ad3.connect()
+        ad3.start_streaming()
+        if getattr(ad3, "is_mock", False):
+            # pydwf missing or reader fell back internally
+            raise RuntimeError("AD3 reader resolved to mock despite REAL mode requested")
+        print("[SERVER] Using REAL AD3 for CH3/CH4")
+    except Exception as e:
+        msg = (
+            "[SERVER] AD3 init failed (REAL mode). "
+            "Ensure Digilent WaveForms runtime is installed, the AD3 is connected, and pydwf is available. "
+            f"Error: {e}"
+        )
+        print(msg)
+        if ALLOW_AD3_FALLBACK_TO_MOCK:
+            print("[SERVER] Falling back to MOCK AD3 due to init failure.")
+            ad3 = create_ad3_reader(mock=True, sample_rate=1e6, buffer_size=1000)
+            ad3.connect()
+            ad3.start_streaming()
+        else:
+            raise
 
 def read_channel_unified(ch):
     """
@@ -230,9 +249,15 @@ def handle_client(conn, addr):
                             sample = read_channel_unified(ch)
                             mn = float(np.min(sample))
                             mx = float(np.max(sample))
-                            print(f"[SERVER] ch={ch} packets={packet_counts.get(ch,0)} last_min={mn:.3f} last_max={mx:.3f}")
-                        except Exception:
-                            pass
+                            if ch in [3,4]:
+                                mean_val = float(np.mean(sample))
+                                head = sample[:3].tolist() if hasattr(sample, 'tolist') else list(sample)[:3]
+                                print(f"[SERVER] ch={ch} pkts={packet_counts.get(ch,0)} min={mn:.3f} max={mx:.3f} mean={mean_val:.3f} head={head}")
+                            else:
+                                print(f"[SERVER] ch={ch} packets={packet_counts.get(ch,0)} last_min={mn:.3f} last_max={mx:.3f}")
+                        except Exception as e:
+                            if VERBOSE:
+                                print(f"[SERVER] stats error ch={ch}: {e}")
                     last_log = time.time()
             time.sleep(0.05)
 

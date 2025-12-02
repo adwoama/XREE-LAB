@@ -27,7 +27,7 @@ Supports Keysight MSOX604A on CH1/CH2 and Analog Discovery 3 (AD3) on CH3/CH4.
 
 ## Setup
 
-### 1. Raspberry Pi Setup
+### 1. Python Environment (Windows/Linux)
 
 ```bash
 # Clone or copy files to your Raspberry Pi
@@ -37,7 +37,7 @@ cd ~/oscope_project
 sudo apt update
 sudo apt install python3.11 python3-pip python3-venv
 
-# Create virtual environment
+# Create virtual environment (Linux)
 python3 -m venv venv
 source venv/bin/activate
 
@@ -45,12 +45,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-On Windows, use the provided bootstrap script:
+On Windows, use the provided bootstrap script (prefers Python 3.12 for AD3 compatibility):
 
 ```bat
 cd OscopeScripts
 activate.bat
 ```
+
+Note: pydwf currently provides wheels up to Python 3.12 on Windows. If you use Python 3.13, AD3 may fall back to mock. The bootstrap picks 3.12 when available.
 
 ### 2. Configuration
 
