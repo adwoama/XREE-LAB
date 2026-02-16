@@ -1,0 +1,14 @@
+{
+  "steps": [
+    "Step 1: Probe the power input (probeA) and verify expected voltage.",
+    "Step 2: Probe the buck converter output (probeB) and compare to expected voltage.",
+    "Step 3: If buck output is low, check buck converter settings and input supply."
+  ],
+  "blocks_to_spawn": [
+    { "type": "TimeDomainPanel", "source": "probeA" },
+    { "type": "FFTMagnitudePanel", "source": "probeB" },
+    { "type": "Spectrogram3DVolume", "source": "probeB" }
+  ],
+  "reasoning": "Based on topology and low amplitude at probeB, the buck converter or its input is suspect.",
+  "confidence": 0.82
+}

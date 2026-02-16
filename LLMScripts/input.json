@@ -1,0 +1,14 @@
+{
+  "task_type": "debug",
+  "circuit_topology": "Power supply -> buck converter -> motor driver -> motor",
+  "probe_labels": {
+    "probeA": "power input",
+    "probeB": "buck output"
+  },
+  "symptoms": "motor not turning",
+  "signal_features": {
+    "time_domain": {...},
+    "fft": {...},
+    "spectrogram": {...}
+  }
+}

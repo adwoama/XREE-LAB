@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ea92867d4037c4f906234a8e5c8109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TcpOscopeClient
-  serverIP: 192.168.1.156
+  serverIP: 192.168.1.158
   port: 8765
   channel: 1
   autoStartStreaming: 0
