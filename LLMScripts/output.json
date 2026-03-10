@@ -1,0 +1,18 @@
+{
+    "steps": [
+        "Step 1: Inspect probeA for proper connection to power supply.",
+        "Step 2: Verify buck converter is enabled and functioning correctly."
+    ],
+    "blocks_to_spawn": [
+        {
+            "type": "Oscilloscope",
+            "source": "probeA"
+        },
+        {
+            "type": "SignalGenerator",
+            "source": "probeB"
+        }
+    ],
+    "reasoning": "The motor not turning symptom could be caused by a low amplitude signal at probeB, which might be due to a faulty buck converter or a disconnection in the circuit. However, we are uncertain about the specific cause.",
+    "confidence": 0.5
+}

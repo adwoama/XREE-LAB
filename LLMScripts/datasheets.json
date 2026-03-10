@@ -1,0 +1,73 @@
+{
+  "_description": "Fictional component datasheets for the simulated circuit. Used by the LLM as a reference to determine expected values at each node. No fault information is included here.",
+  "components": {
+    "PSU-12V-3A": {
+      "type": "Power Supply",
+      "manufacturer": "FictaCorp",
+      "part_number": "FC-PSU-12-3A",
+      "description": "Regulated 12V DC wall-adapter power supply",
+      "output_voltage_V": 12.0,
+      "output_voltage_tolerance_pct": 2.0,
+      "output_voltage_min_V": 11.76,
+      "output_voltage_max_V": 12.24,
+      "max_current_A": 3.0,
+      "ripple_noise_mVpp": 50,
+      "output_impedance_ohm": 0.1,
+      "notes": "Output should be a stable DC rail with <50mVpp ripple under rated load."
+    },
+    "BUCK-5V-2A": {
+      "type": "Synchronous Buck Converter",
+      "manufacturer": "FictaCorp",
+      "part_number": "FC-BUCK-5V-2A",
+      "description": "Step-down switching regulator, 12V input to 5V output",
+      "input_voltage_V": 12.0,
+      "output_voltage_V": 5.0,
+      "output_voltage_tolerance_pct": 3.0,
+      "output_voltage_min_V": 4.85,
+      "output_voltage_max_V": 5.15,
+      "max_output_current_A": 2.0,
+      "switching_frequency_kHz": 300,
+      "output_ripple_mVpp_typical": 30,
+      "output_ripple_mVpp_max": 80,
+      "efficiency_pct_typical": 92,
+      "enable_pin": "active high",
+      "notes": "Output must be stable DC. Ripple >80mVpp or deviation from 5V ±3% indicates malfunction. Switching artifacts at 300kHz may appear in FFT but are normal."
+    },
+    "DRV-H-BRIDGE": {
+      "type": "H-Bridge Motor Driver IC",
+      "manufacturer": "FictaCorp",
+      "part_number": "FC-DRV-HBR-1",
+      "description": "Dual H-bridge motor driver, supply rail 4.5V to 7V",
+      "supply_voltage_min_V": 4.5,
+      "supply_voltage_max_V": 7.0,
+      "logic_voltage_V": 3.3,
+      "max_continuous_current_A": 1.5,
+      "pwm_frequency_kHz": 20,
+      "output_voltage_typical_V": "VCC - 0.6V drop per switch",
+      "under_voltage_lockout_V": 4.3,
+      "notes": "If supply (VCC) drops below 4.3V, UVLO activates and driver output shuts down. Normal PWM output should be near-symmetric square wave at 20kHz with amplitude close to VCC."
+    },
+    "MOTOR-DC-5V": {
+      "type": "Brushed DC Motor",
+      "manufacturer": "FictaCorp",
+      "part_number": "FC-MOTOR-5V-0.5A",
+      "description": "Small brushed DC motor, nominal 5V operation",
+      "nominal_supply_V": 5.0,
+      "stall_current_A": 1.2,
+      "no_load_current_A": 0.08,
+      "no_load_rpm": 8500,
+      "terminal_resistance_ohm": 4.2,
+      "minimum_start_voltage_V": 1.5,
+      "back_emf_V_per_krpm": 0.55,
+      "notes": "Motor requires at least 1.5V at its terminals to begin turning. Under normal 5V PWM drive at 50% duty, expect ~2.5V average at terminal. Below ~1V average the motor will not rotate."
+    }
+  },
+  "circuit_connections": {
+    "PSU-12V-3A.output": "probeA (power input)",
+    "BUCK-5V-2A.input": "probeA (power input)",
+    "BUCK-5V-2A.output": "probeB (buck converter output)",
+    "DRV-H-BRIDGE.VCC": "probeB (buck converter output)",
+    "DRV-H-BRIDGE.OUT": "probeC (motor driver output)",
+    "MOTOR-DC-5V.terminal": "probeD (motor terminal voltage)"
+  }
+}

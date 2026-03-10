@@ -1,0 +1,91 @@
+{
+  "_description": "Simulated oscilloscope captures. Ground truth: buck converter output is ~2.8V (should be 5V) with large low-frequency ripple, causing the motor driver to be starved and the motor to not turn.",
+  "circuit_topology": "Power supply -> buck converter -> motor driver -> motor",
+  "sampling_rate_hz": 5000,
+  "dt_s": 0.0002,
+  "num_samples": 50,
+  "time_window_ms": 10,
+  "probes": {
+    "probeA": {
+      "label": "power input",
+      "node": "12V power supply output, before buck converter",
+      "expected_voltage_V": 12.0,
+      "samples": {
+        "time_s": [0.0, 0.0002, 0.0004, 0.0006, 0.0008, 0.001, 0.0012, 0.0014, 0.0016, 0.0018, 0.002, 0.0022, 0.0024, 0.0026, 0.0028, 0.003, 0.0032, 0.0034, 0.0036, 0.0038, 0.004, 0.0042, 0.0044, 0.0046, 0.0048, 0.005, 0.0052, 0.0054, 0.0056, 0.0058, 0.006, 0.0062, 0.0064, 0.0066, 0.0068, 0.007, 0.0072, 0.0074, 0.0076, 0.0078, 0.008, 0.0082, 0.0084, 0.0086, 0.0088, 0.009, 0.0092, 0.0094, 0.0096, 0.0098],
+        "voltage_V": [12.01, 11.98, 12.03, 12.00, 11.97, 12.02, 11.99, 12.04, 12.01, 11.98, 12.02, 12.00, 11.97, 12.03, 12.01, 12.00, 11.99, 12.02, 11.98, 12.01, 12.03, 12.00, 11.99, 12.02, 11.97, 12.01, 12.03, 12.00, 11.99, 12.02, 12.01, 11.98, 12.03, 12.00, 11.97, 12.02, 11.99, 12.04, 12.01, 11.98, 12.02, 12.00, 11.97, 12.03, 12.01, 12.00, 11.99, 12.02, 11.98, 12.01]
+      },
+      "features": {
+        "mean_V": 12.01,
+        "min_V": 11.97,
+        "max_V": 12.04,
+        "peak_to_peak_V": 0.07,
+        "rms_V": 12.01,
+        "dominant_freq_hz": 0,
+        "signal_type": "stable DC",
+        "within_expected_range": true
+      }
+    },
+    "probeB": {
+      "label": "buck converter output",
+      "node": "Buck converter output, feeds motor driver supply rail",
+      "expected_voltage_V": 5.0,
+      "samples": {
+        "time_s": [0.0, 0.0002, 0.0004, 0.0006, 0.0008, 0.001, 0.0012, 0.0014, 0.0016, 0.0018, 0.002, 0.0022, 0.0024, 0.0026, 0.0028, 0.003, 0.0032, 0.0034, 0.0036, 0.0038, 0.004, 0.0042, 0.0044, 0.0046, 0.0048, 0.005, 0.0052, 0.0054, 0.0056, 0.0058, 0.006, 0.0062, 0.0064, 0.0066, 0.0068, 0.007, 0.0072, 0.0074, 0.0076, 0.0078, 0.008, 0.0082, 0.0084, 0.0086, 0.0088, 0.009, 0.0092, 0.0094, 0.0096, 0.0098],
+        "voltage_V": [2.80, 3.09, 3.18, 3.12, 3.16, 3.37, 3.54, 3.48, 3.26, 3.12, 3.15, 3.16, 2.96, 2.64, 2.44, 2.45, 2.48, 2.34, 2.12, 2.06, 2.23, 2.44, 2.48, 2.42, 2.51, 2.80, 3.09, 3.18, 3.12, 3.16, 3.37, 3.54, 3.48, 3.26, 3.12, 3.15, 3.16, 2.96, 2.64, 2.44, 2.45, 2.48, 2.34, 2.12, 2.06, 2.23, 2.44, 2.48, 2.42, 2.51]
+      },
+      "features": {
+        "mean_V": 2.83,
+        "min_V": 2.06,
+        "max_V": 3.54,
+        "peak_to_peak_V": 1.48,
+        "rms_V": 2.91,
+        "dominant_freq_hz": 200,
+        "signal_type": "unstable DC with large low-frequency ripple",
+        "within_expected_range": false,
+        "note": "Expected ~5V stable DC. Actual: 2.83V mean with 1.48Vpp ripple at ~200Hz. Buck converter is malfunctioning."
+      }
+    },
+    "probeC": {
+      "label": "motor driver output",
+      "node": "Motor driver PWM output to motor winding",
+      "expected_voltage_V": "PWM ~3-4V peak, ~50% duty cycle at 20kHz for normal operation",
+      "samples": {
+        "sampling_rate_hz": 200000,
+        "time_s": [0.0, 5e-6, 1e-5, 1.5e-5, 2e-5, 2.5e-5, 3e-5, 3.5e-5, 4e-5, 4.5e-5, 5e-5, 5.5e-5, 6e-5, 6.5e-5, 7e-5, 7.5e-5, 8e-5, 8.5e-5, 9e-5, 9.5e-5, 1e-4, 1.05e-4, 1.1e-4, 1.15e-4, 1.2e-4, 1.25e-4, 1.3e-4, 1.35e-4, 1.4e-4, 1.45e-4, 1.5e-4, 1.55e-4, 1.6e-4, 1.65e-4, 1.7e-4, 1.75e-4, 1.8e-4, 1.85e-4, 1.9e-4, 1.95e-4, 2e-4, 2.05e-4, 2.1e-4, 2.15e-4, 2.2e-4, 2.25e-4, 2.3e-4, 2.35e-4, 2.4e-4, 2.45e-4],
+        "voltage_V": [2.58, 2.61, 2.60, 0.02, 0.01, 0.00, 0.03, 0.01, 0.02, 0.00, 2.58, 2.61, 2.60, 0.02, 0.01, 0.00, 0.03, 0.01, 0.02, 0.00, 2.58, 2.61, 2.60, 0.02, 0.01, 0.00, 0.03, 0.01, 0.02, 0.00, 2.58, 2.61, 2.60, 0.02, 0.01, 0.00, 0.03, 0.01, 0.02, 0.00, 2.58, 2.61, 2.60, 0.02, 0.01, 0.00, 0.03, 0.01, 0.02, 0.00]
+      },
+      "features": {
+        "mean_V": 0.78,
+        "min_V": 0.0,
+        "max_V": 2.61,
+        "peak_to_peak_V": 2.61,
+        "rms_V": 0.91,
+        "dominant_freq_hz": 20000,
+        "signal_type": "low-amplitude PWM, abnormally low duty cycle (~30%)",
+        "within_expected_range": false,
+        "note": "Motor driver supply (probeB) is only ~2.8V instead of ~5V. Driver has reduced headroom and is operating at low duty cycle, producing insufficient torque drive."
+      }
+    },
+    "probeD": {
+      "label": "motor terminal voltage",
+      "node": "Motor winding input terminal",
+      "expected_voltage_V": "~2-3V average for normal rotation",
+      "samples": {
+        "sampling_rate_hz": 200000,
+        "time_s": [0.0, 5e-6, 1e-5, 1.5e-5, 2e-5, 2.5e-5, 3e-5, 3.5e-5, 4e-5, 4.5e-5, 5e-5, 5.5e-5, 6e-5, 6.5e-5, 7e-5, 7.5e-5, 8e-5, 8.5e-5, 9e-5, 9.5e-5, 1e-4, 1.05e-4, 1.1e-4, 1.15e-4, 1.2e-4, 1.25e-4, 1.3e-4, 1.35e-4, 1.4e-4, 1.45e-4, 1.5e-4, 1.55e-4, 1.6e-4, 1.65e-4, 1.7e-4, 1.75e-4, 1.8e-4, 1.85e-4, 1.9e-4, 1.95e-4, 2e-4, 2.05e-4, 2.1e-4, 2.15e-4, 2.2e-4, 2.25e-4, 2.3e-4, 2.35e-4, 2.4e-4, 2.45e-4],
+        "voltage_V": [0.85, 0.65, 0.50, 0.38, 0.28, 0.20, 0.13, 0.07, 0.03, 0.00, 0.85, 0.65, 0.50, 0.38, 0.28, 0.20, 0.13, 0.07, 0.03, 0.00, 0.85, 0.65, 0.50, 0.38, 0.28, 0.20, 0.13, 0.07, 0.03, 0.00, 0.85, 0.65, 0.50, 0.38, 0.28, 0.20, 0.13, 0.07, 0.03, 0.00, 0.85, 0.65, 0.50, 0.38, 0.28, 0.20, 0.13, 0.07, 0.03, 0.00]
+      },
+      "features": {
+        "mean_V": 0.31,
+        "min_V": 0.0,
+        "max_V": 0.85,
+        "peak_to_peak_V": 0.85,
+        "rms_V": 0.38,
+        "dominant_freq_hz": 20000,
+        "signal_type": "very low amplitude, motor not receiving sufficient drive voltage",
+        "within_expected_range": false,
+        "note": "Motor terminal voltage far below minimum threshold for rotation. Root cause is insufficient supply from buck converter."
+      }
+    }
+  }
+}
