@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Spectrogram3D : MonoBehaviour
 {
@@ -14,6 +15,36 @@ public class Spectrogram3D : MonoBehaviour
 
     private List<List<GameObject>> voxelGrid = new List<List<GameObject>>();
 
+    [Header("Debug/Test Settings")]
+    [SerializeField] private bool testMode = false; // Toggle for test mode
+    [SerializeField] private int testTimeSteps = 10; // Number of time steps for test data
+    [SerializeField] private int testFrequencyBins = 10; // Number of frequency bins for test data
+    [SerializeField] private float testFrequency = 1f; // Frequency for sinusoidal test data
+
+    private float[,] preallocatedData; // Preallocated array for data
+    private int currentTimeSteps = 0;
+    private int currentFrequencyBins = 0;
+
+    private void Start()
+    {
+        // Preallocate voxel grid based on initial settings
+        InitializeVoxelGrid(10, 10); // Default size, can be adjusted
+    }
+
+    /// <summary>
+    /// Initializes the voxel grid with the specified dimensions.
+    /// </summary>
+    /// <param name="timeSteps">Number of time steps.</param>
+    /// <param name="frequencyBins">Number of frequency bins.</param>
+    private void InitializeVoxelGrid(int timeSteps, int frequencyBins)
+    {
+        currentTimeSteps = timeSteps;
+        currentFrequencyBins = frequencyBins;
+        preallocatedData = new float[timeSteps, frequencyBins];
+
+        AdjustVoxelGrid(timeSteps, frequencyBins);
+    }
+
     /// <summary>
     /// Sets the spectrogram data and updates the 3D grid.
     /// </summary>
@@ -23,7 +54,12 @@ public class Spectrogram3D : MonoBehaviour
         int timeSteps = data.GetLength(0);
         int frequencyBins = data.GetLength(1);
 
-        AdjustVoxelGrid(timeSteps, frequencyBins);
+        if (timeSteps != currentTimeSteps || frequencyBins != currentFrequencyBins)
+        {
+            AdjustVoxelGrid(timeSteps, frequencyBins);
+            currentTimeSteps = timeSteps;
+            currentFrequencyBins = frequencyBins;
+        }
 
         for (int t = 0; t < timeSteps; t++)
         {
@@ -37,7 +73,7 @@ public class Spectrogram3D : MonoBehaviour
                 Renderer voxelRenderer = voxelGrid[t][f].GetComponent<Renderer>();
                 if (voxelRenderer != null)
                 {
-                    voxelRenderer.material.color = colorGradient.Evaluate(normalizedHeight);
+                    voxelRenderer.sharedMaterial.color = colorGradient.Evaluate(normalizedHeight);
                 }
             }
         }
@@ -56,17 +92,6 @@ public class Spectrogram3D : MonoBehaviour
             voxelGrid.Add(new List<GameObject>());
         }
 
-        // Remove extra rows if needed
-        while (voxelGrid.Count > timeSteps)
-        {
-            List<GameObject> rowToRemove = voxelGrid[voxelGrid.Count - 1];
-            foreach (GameObject voxel in rowToRemove)
-            {
-                Destroy(voxel);
-            }
-            voxelGrid.RemoveAt(voxelGrid.Count - 1);
-        }
-
         // Adjust columns in each row
         for (int t = 0; t < timeSteps; t++)
         {
@@ -81,8 +106,19 @@ public class Spectrogram3D : MonoBehaviour
             {
                 GameObject voxelToRemove = voxelGrid[t][voxelGrid[t].Count - 1];
                 voxelGrid[t].RemoveAt(voxelGrid[t].Count - 1);
-                Destroy(voxelToRemove);
+                voxelToRemove.SetActive(false); // Disable instead of destroying
             }
+        }
+
+        // Remove extra rows if needed
+        while (voxelGrid.Count > timeSteps)
+        {
+            List<GameObject> rowToRemove = voxelGrid[voxelGrid.Count - 1];
+            foreach (GameObject voxel in rowToRemove)
+            {
+                voxel.SetActive(false); // Disable instead of destroying
+            }
+            voxelGrid.RemoveAt(voxelGrid.Count - 1);
         }
     }
 
@@ -95,9 +131,29 @@ public class Spectrogram3D : MonoBehaviour
         {
             foreach (GameObject voxel in row)
             {
-                Destroy(voxel);
+                voxel.SetActive(false); // Disable instead of destroying
             }
         }
         voxelGrid.Clear();
+    }
+
+    /// <summary>
+    /// Generates example rendering data (sinusoidal or random) for visualization.
+    /// </summary>
+    private void GenerateTestData()
+    {
+        for (int t = 0; t < currentTimeSteps; t++)
+        {
+            for (int f = 0; f < currentFrequencyBins; f++)
+            {
+                // Example: Sinusoidal data
+                preallocatedData[t, f] = Mathf.Abs(Mathf.Sin((t + f) * testFrequency * Mathf.PI / currentTimeSteps));
+
+                // Uncomment the following line for random data instead:
+                // preallocatedData[t, f] = UnityEngine.Random.value;
+            }
+        }
+
+        SetData(preallocatedData);
     }
 }
