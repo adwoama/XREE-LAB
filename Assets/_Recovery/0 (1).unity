@@ -563,9 +563,9 @@ MonoBehaviour:
   channel3Panel: {fileID: 845719447}
   channel4Panel: {fileID: 207147543}
   streamChannel1: 1
-  streamChannel2: 0
-  streamChannel3: 0
-  streamChannel4: 0
+  streamChannel2: 1
+  streamChannel3: 1
+  streamChannel4: 1
 --- !u!1 &198428393
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5137321563368361317, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: height
@@ -3482,7 +3482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5137321563368361317, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: height
@@ -4289,7 +4289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301220056970834000, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5137321563368361317, guid: 4cfef08c380901b4aa19660009bc0a96, type: 3}
       propertyPath: height
@@ -10830,22 +10830,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2600770967919581060, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2600770967919581060, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2600770967919581060, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612719411366450993, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3605571183340474346, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
       propertyPath: testMode
       value: 1
@@ -10854,10 +10838,6 @@ PrefabInstance:
       propertyPath: voxelParent
       value: 
       objectReference: {fileID: 6474320070433166687}
-    - target: {fileID: 3605571183340474346, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
-      propertyPath: usePrimitiveDebug
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3605571183340474346, guid: ea8dcb7b0a90b5048bfd92dec87c9aac, type: 3}
       propertyPath: colorGradient.key0.b
       value: 0.7492353
