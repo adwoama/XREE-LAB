@@ -20,6 +20,8 @@ public class Spectrogram3D : MonoBehaviour
     [SerializeField] private int testTimeSteps = 10; // Number of time steps for test data
     [SerializeField] private int testFrequencyBins = 10; // Number of frequency bins for test data
     [SerializeField] private float testFrequency = 1f; // Frequency for sinusoidal test data
+    [Tooltip("Multiplier applied to the inspector maxVoxelHeight to allow slightly taller debug visualization.")]
+    public float heightMultiplier = 2.0f;
     [SerializeField] private bool usePrimitiveDebug = false; // Use a clean primitive cube for debugging
 
     private float[,] preallocatedData; // Preallocated array for data
@@ -219,24 +221,21 @@ public class Spectrogram3D : MonoBehaviour
 
         if (debugInstancedMesh != null && debugBaseVertices != null)
         {
-            // Clamp multiplier to avoid runaway vertex positions in case
-            // of malformed base data.
-            float clampFactor = 10f;
-            float clampMinY = debugMeshBaseMinY - debugMeshBaseHeight * clampFactor;
-            float clampMaxY = debugMeshBaseMinY + debugMeshBaseHeight * clampFactor;
+            // Compute a desired visual height in local mesh units using
+            // inspector `maxVoxelHeight` as the maximum. This maps the
+            // normalized [0..1] signal to a concrete desired height and
+            // prevents runaway expansion.
+            float desiredHeight = Mathf.Clamp(normalized * maxVoxelHeight * heightMultiplier, 0f, maxVoxelHeight * heightMultiplier);
+            // Ensure a tiny minimum so zero height doesn't collapse mesh
+            desiredHeight = Mathf.Max(desiredHeight, debugMeshBaseHeight * 0.05f);
 
             for (int i = 0; i < debugBaseVertices.Length; i++)
             {
-                float dy = debugBaseVertices[i].y - debugMeshBaseMinY;
-                float newYLocal = debugMeshBaseMinY + dy * heightScaleFactor;
-
-                if (float.IsNaN(newYLocal) || float.IsInfinity(newYLocal))
-                {
-                    newYLocal = debugBaseVertices[i].y;
-                }
-
-                newYLocal = Mathf.Clamp(newYLocal, clampMinY, clampMaxY);
-
+                // Preserve X/Z, remap Y proportionally between mesh min and desiredHeight.
+                float ratio = (debugBaseVertices[i].y - debugMeshBaseMinY) / debugMeshBaseHeight;
+                ratio = Mathf.Clamp01(ratio);
+                float newYLocal = debugMeshBaseMinY + ratio * desiredHeight;
+                if (float.IsNaN(newYLocal) || float.IsInfinity(newYLocal)) newYLocal = debugBaseVertices[i].y;
                 debugModifiedVertices[i].x = debugBaseVertices[i].x;
                 debugModifiedVertices[i].y = newYLocal;
                 debugModifiedVertices[i].z = debugBaseVertices[i].z;
@@ -252,14 +251,9 @@ public class Spectrogram3D : MonoBehaviour
                 debugInstancedMesh.RecalculateNormals();
             }
 
-            // Update collider if present so physics/collisions match visual.
-            if (debugBoxCollider != null)
-            {
-                Vector3 newSize = new Vector3(debugBoxBaseSize.x, debugBoxBaseSize.y * heightScaleFactor, debugBoxBaseSize.z);
-                debugBoxCollider.size = newSize;
-                // shift center upward by half the size delta so the bottom stays anchored
-                debugBoxCollider.center = debugBoxBaseCenter + new Vector3(0f, (newSize.y - debugBoxBaseSize.y) * 0.5f, 0f);
-            }
+            // NOTE: skip updating colliders here in debug mode to avoid
+            // introducing physics/collider-driven movement. If necessary,
+            // we can update colliders later with a safe mapping.
         }
         else
         {
