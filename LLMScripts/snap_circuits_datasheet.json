@@ -1,0 +1,44 @@
+{
+  "_description": "Datasheet for Snap Circuits Jr. components used in the simulated circuit.",
+  "components": {
+    "U1": {
+      "type": "IC",
+      "description": "Snap Circuits Music IC that generates a signal for the Happy Birthday song",
+      "nominal_voltage_V": 5.0,
+      "operating_current_mA": 50,
+      "part_number": "N/A",
+      "notes": "U1 is a Music IC used for various Snap Circuits Jr. projects."
+    },
+    "S1": {
+      "type": "Switch",
+      "description": "Snap Circuits slide switch",
+      "max_voltage_V": 12.0,
+      "max_current_A": 1.0,
+      "part_number": "N/A",
+      "notes": "S1 is a simple slide switch used to control circuit power."
+    },
+    "SP": {
+      "type": "Speaker",
+      "description": "Snap Circuits speaker",
+      "nominal_impedance_ohm": 8,
+      "max_power_W": 0.5,
+      "part_number": "N/A",
+      "notes": "SP is an 8-ohm speaker used for audio output in Snap Circuits Jr. projects."
+    },
+    "B1": {
+      "type": "Battery Holder",
+      "description": "Snap Circuits battery holder for 2 AA batteries",
+      "output_voltage_V": 3.0,
+      "output_current_max_A": 1.5,
+      "part_number": "N/A",
+      "notes": "B1 provides 3V DC power from two AA batteries."
+    }
+  },
+  "circuit_connections": {
+    "B1.output": "probeA (power input)",
+    "U1.input": "probeA (power input)",
+    "U1.output": "probeB (IC output)",
+    "S1.connection": "probeB (IC output)",
+    "SP.input": "probeC (speaker input)"
+  }
+}

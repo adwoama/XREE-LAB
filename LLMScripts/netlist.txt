@@ -1,0 +1,27 @@
+# Power source
+(B1) Battery 3V
+  + -> B1_pos
+  - -> GND
+
+# Switch
+(S1) Flip Switch
+  input  -> B1_pos
+  output -> S1_out
+
+# Music IC
+(U1) Music IC
+  VCC   -> U1_vcc
+  GND   -> U1_gnd
+  CTRL  -> U1_ctrl
+  PWM   -> U1_pwm
+
+# Speaker
+(SP) Speaker
+  + -> SP_pos
+  - -> SP_neg
+
+# Wiring connections
+Wire: S1_out  -> U1_vcc
+Wire: U1_gnd  -> GND
+Wire: SP_pos  -> B1_pos
+Wire: SP_neg  -> U1_pwm

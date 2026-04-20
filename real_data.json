@@ -1,0 +1,19 @@
+{
+  "waveform_data": {
+    "SP_pos_0001": [
+      // Extracted data from SP_pos_0001.csv
+    ],
+    "U1_ctrl_0001": [
+      // Extracted data from U1_ctrl_0001.csv
+    ],
+    "U1_gnd_0001": [
+      // Extracted data from U1_gnd_0001.csv
+    ],
+    "U1_pwm_0001": [
+      // Extracted data from U1_pwm_0001.csv
+    ],
+    "U1_VCC_0001": [
+      // Extracted data from U1_VCC_0001.csv
+    ]
+  }
+}

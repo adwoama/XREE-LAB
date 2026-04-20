@@ -7,6 +7,15 @@ import shutil
 import os
 import logging
 import json
+import time
+
+
+# Configure logging to output debug information to a file
+logging.basicConfig(
+    filename="ollama_runner_debug.log",  # Log file to store debug information
+    level=logging.DEBUG,  # Set logging level to DEBUG
+    format="%(asctime)s - %(levelname)s - %(message)s"  # Log format
+)
 
 
 def _ollama_executable():
@@ -22,22 +31,31 @@ def _ollama_executable():
 def run_ollama_prompt(prompt: str, model: str = "llama3.1:8b-instruct-q8_0") -> str:
     exe = _ollama_executable()
     if not exe:
+        logging.error("No ollama executable found (looked for ollama.cmd and ollama in PATH)")
         raise FileNotFoundError("No ollama executable found (looked for ollama.cmd and ollama in PATH)")
 
     cmd = [exe, "run", model]
     logging.debug(f"Running command: {cmd}")
     with subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8') as proc:
         try:
+            logging.debug("Sending prompt to Ollama process.")
             stdout, stderr = proc.communicate(input=prompt, timeout=120)
+            logging.debug(f"Ollama process stdout: {stdout}")
+            logging.debug(f"Ollama process stderr: {stderr}")
             if proc.returncode != 0:
                 logging.error(f"Ollama run failed with error: {stderr}")
                 raise RuntimeError(f"Ollama run failed: {stderr}")
             logging.debug("Ollama run completed successfully.")
             return stdout
         except subprocess.TimeoutExpired:
+            logging.error("Ollama process timed out. Attempting to terminate.")
             proc.kill()
-            logging.error("Ollama process timed out.")
-            raise TimeoutError("Ollama process timed out.")
+            try:
+                proc.wait(timeout=10)  # Wait for the process to terminate
+                logging.debug("Ollama process terminated successfully.")
+            except subprocess.TimeoutExpired:
+                logging.error("Ollama process did not terminate within the grace period.")
+            raise TimeoutError("Ollama process timed out and was terminated.")
 
 
 

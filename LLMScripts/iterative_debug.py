@@ -16,20 +16,23 @@ import signal
 import logging
 import datetime
 from pathlib import Path
+import re
 
 from LLMScripts.ollama_runner import run_ollama_prompt
-from LLMScripts import signal_math
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 SCRIPT_DIR = Path(__file__).parent
-FAKE_DATA_FILE = SCRIPT_DIR / "fake_data.json"
-DATASHEETS_FILE = SCRIPT_DIR / "datasheets.json"
+FAKE_DATA_FILE = SCRIPT_DIR / "real_data.json"
+DATASHEETS_FILE = SCRIPT_DIR / "snap_circuits_datasheet.json"
 SESSION_DIR = SCRIPT_DIR / "debug_sessions"
 
-MAX_ITERATIONS = 10
+MAX_ITERATIONS = 20
 CONFIDENCE_THRESHOLD = 0.85
 MODEL = "llama3.1:8b-instruct-q8_0"
+EXPECTED_SIGNAL_TYPES = {
+    "probeD": "DC",  # Music IC control should be a stable logic level in this scenario.
+}
 
 # --------------------------------------------------------------------------- #
 # Graceful Ctrl+C handling                                                    #
@@ -60,6 +63,15 @@ def load_datasheets() -> dict:
         return json.load(f)
 
 
+def load_netlist() -> str:
+    with open(SCRIPT_DIR / "netlist.txt", "r", encoding="utf-8") as f:
+        return f.read()
+
+def load_snap_input() -> dict:
+    with open(SCRIPT_DIR / "SnapCircuit_input.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 # --------------------------------------------------------------------------- #
 # Prompt construction                                                         #
 # --------------------------------------------------------------------------- #
@@ -86,76 +98,83 @@ def _datasheet_text(datasheets: dict) -> str:
 
 
 def build_system_context(fake_data: dict, datasheets: dict) -> str:
+    netlist = load_netlist()
+    snap_input = load_snap_input()
     probe_lines = "\n".join(
         _probe_summary_line(pid, p)
         for pid, p in fake_data["probes"].items()
     )
-    datasheet_block = _datasheet_text(datasheets)
-    return f"""You are an expert electronics circuit debugger working in an iterative measurement loop.
-
-Circuit topology: {fake_data['circuit_topology']}
-Symptom: Motor is not turning.
-
-Available measurement probes:
-{probe_lines}
-
---- COMPONENT DATASHEETS ---
-{datasheet_block}
---- END DATASHEETS ---
-
-Each turn you will receive the running measurement history.
-Respond ONLY with a single valid JSON object — no extra text, no markdown fences.
-Required fields:
-{{
-  "reasoning": "your analysis of what you know so far",
-  "next_probe": "probeA | probeB | probeC | probeD | null",
-  "request_analysis": [],
-  "confidence": 0.0,
-  "conclusion": null,
-  "recommended_fix": null
-}}
-
-Rules:
-- Set "next_probe" to the probe ID you want to measure next, or null if you have enough data.
-- "request_analysis" is a list of math operations to run on the NEXT probe's raw sample array.
-  Supported values: "stats", "dominant_freq", "moving_average".
-  You will NOT receive any measurement values until you request them via analysis.
-  Leave as [] if the probe has no raw samples (script will tell you).
-- Use the datasheets above to determine whether measured values are within specification.
-- Set "conclusion" to a concise fault diagnosis only when confidence >= {CONFIDENCE_THRESHOLD}.
-- Set "recommended_fix" once you have a conclusion.
-- Never guess at the fault without measurement evidence.
-"""
+    datasheet_text = _datasheet_text(datasheets)
+    return f"""
+    You are an expert electronics circuit debugger working in an iterative measurement loop.
+    Circuit Topology: {snap_input['circuit_topology']}
+    Symptoms: {snap_input['symptoms']}
+    Netlist:
+    {netlist}
+    Probes:
+    {probe_lines}
+    Datasheet:
+    {datasheet_text}
+    """
 
 
-def build_prompt(system_context: str, history: list,
-                 iteration: int, max_iterations: int,
-                 peak_confidence: float, all_probes_measured: bool) -> str:
-    parts = [system_context, "--- MEASUREMENT HISTORY ---"]
-    if not history:
-        parts.append("No measurements taken yet. Choose the first probe to measure.")
-    else:
-        for i, entry in enumerate(history, 1):
-            parts.append(f"\nStep {i} \u2014 Probe: {entry['probe_id']} ({entry['label']})")
-            parts.append(entry["result_text"])
+def build_prompt(previous_data: dict, iteration: int, history: list, findings: list) -> str:
+    """Build a prompt for the LLM to process."""
+    history_text = json.dumps(history[-8:], ensure_ascii=True)
+    findings_text = json.dumps(findings, ensure_ascii=True)
+    prompt = (
+        f"You are an expert debugging assistant for electronic circuits. "
+        f"Your task is to analyze the provided data, eliminate hypotheses, and decide the next probe/analysis. "
+        f"You must strictly follow this format in your response:\n\n"
+        f"{{\n"
+        f"  \"reasoning\": \"<Your reasoning here>\",\n"
+        f"  \"next_probe\": \"<The next probe to measure>\",\n"
+        f"  \"request_analysis\": [\"<Analysis 1>\", \"<Analysis 2>\"],\n"
+        f"  \"confidence\": <0.0 to 1.0>,\n"
+        f"  \"conclusion\": \"<Your conclusion or 'inconclusive' if no conclusion can be drawn>\"\n"
+        f"}}\n\n"
+        f"Rules:\n"
+        f"1. Do not ask questions.\n"
+        f"2. Only request data or analyses from probes and data sheets.\n"
+        f"3. Use measurement history and do not repeat the exact same probe+analysis unless your reasoning explains why.\n"
+        f"4. Explicitly narrow the diagnosis by ruling out at least one hypothesis each iteration when evidence allows.\n"
+        f"5. If evidence is insufficient, state 'inconclusive' in conclusion and keep confidence <= 0.6.\n"
+        f"6. Ensure the response is valid JSON.\n\n"
+        f"Iteration: {iteration}\n"
+        f"Previous Data: {json.dumps(previous_data)}\n"
+        f"Recent Measurement History: {history_text}\n"
+        f"Confirmed Findings: {findings_text}\n"
+        f"Valid analysis parameters: ['stats', 'dominant_freq', 'moving_average', 'dc_offset', 'signal_type'].\n\n"
+    )
+    return prompt
 
-    is_final = (iteration >= max_iterations) or all_probes_measured
-    parts.append("\n--- SESSION STATE ---")
-    parts.append(f"Iteration: {iteration} of {max_iterations}")
-    parts.append(f"Peak confidence reached this session: {peak_confidence:.0%}")
-    parts.append("Confidence rule: only lower confidence if new evidence directly contradicts "
-                 "prior findings. It should generally increase as more evidence is collected.")
-    if is_final:
-        parts.append("\nFINAL ITERATION: No more measurements will be taken after this. "
-                     "Summarise what the collected evidence does and does not show. "
-                     "If you have enough evidence to identify the fault, state it in 'conclusion' "
-                     "with an honest confidence score. "
-                     "If the evidence is genuinely insufficient, set 'conclusion' to "
-                     "'Insufficient data to determine root cause' and set confidence "
-                     "to a low value reflecting that uncertainty. "
-                     "Do NOT invent a diagnosis you cannot support with the measurements taken.")
-    parts.append("\n--- YOUR JSON RESPONSE ---")
-    return "\n".join(parts)
+
+def extract_signal_type(result_text: str) -> str | None:
+    match = re.search(r"signal_type:\s*([^\n]+)", result_text)
+    return match.group(1).strip() if match else None
+
+
+def update_findings_from_measurement(probe_id: str, result_text: str, findings: list) -> None:
+    expected = EXPECTED_SIGNAL_TYPES.get(probe_id)
+    observed = extract_signal_type(result_text)
+    if not expected or not observed:
+        return
+
+    key = f"{probe_id}:signal_type_mismatch"
+    already_present = any(f.get("key") == key for f in findings)
+    if already_present:
+        return
+
+    if observed != expected:
+        findings.append({
+            "key": key,
+            "severity": "high",
+            "type": "logic_signal_mismatch",
+            "probe": probe_id,
+            "expected_signal_type": expected,
+            "observed_signal_type": observed,
+            "implication": "Control/input behavior is unstable for a node expected to be steady.",
+        })
 
 
 # --------------------------------------------------------------------------- #
@@ -165,9 +184,8 @@ def build_prompt(system_context: str, history: list,
 def format_probe_result(probe_id: str, probe: dict, requested_analysis: list = None) -> str:
     """Return the measurement text shown to the LLM for one probe.
 
-    The LLM receives ONLY the outputs of the math functions it explicitly
-    requested via request_analysis.  No pre-computed features, signal_type,
-    expected values, or notes are ever surfaced here.
+    The LLM receives ONLY pre-computed values from the loaded JSON.
+    This avoids per-iteration recalculation overhead.
 
     If the probe has no raw samples (probeC / probeD) the LLM is told so it
     can adjust its strategy (e.g. ask for a different probe or conclude).
@@ -190,22 +208,46 @@ def format_probe_result(probe_id: str, probe: dict, requested_analysis: list = N
                 " \"moving_average\"]")  
 
     v = samples["voltage_V"]
+    precomputed = probe.get("stats", {})
     lines = [f"  Sampling rate: {rate} Hz,  {len(v)} samples  "
              f"({len(v)/rate*1000:.1f} ms window)"]
     lines.append("  [Analysis Results]")
 
     if "stats" in requested_analysis:
-        s = signal_math.compute_stats(v)
-        lines.append(f"    stats: mean={s['mean']:.4f}V  std={s['std']:.4f}V  "
-                     f"min={s['min']:.4f}V  max={s['max']:.4f}V  "
-                     f"p2p={s['peak_to_peak']:.4f}V  rms={s['rms']:.4f}V  n={s['n']}")
+        needed = ["mean", "std", "min", "max", "peak_to_peak", "rms", "n"]
+        if all(k in precomputed for k in needed):
+            lines.append(
+                f"    stats: mean={precomputed['mean']:.4f}V  std={precomputed['std']:.4f}V  "
+                f"min={precomputed['min']:.4f}V  max={precomputed['max']:.4f}V  "
+                f"p2p={precomputed['peak_to_peak']:.4f}V  rms={precomputed['rms']:.4f}V  n={precomputed['n']}"
+            )
+        else:
+            lines.append("    stats: unavailable in JSON")
+
     if "dominant_freq" in requested_analysis:
-        freq = signal_math.dominant_frequency_estimate(v, rate)
-        lines.append(f"    dominant_freq: {freq} Hz")
+        if "dominant_frequency_hz" in precomputed:
+            lines.append(f"    dominant_freq: {precomputed['dominant_frequency_hz']} Hz")
+        else:
+            lines.append("    dominant_freq: unavailable in JSON")
+
     if "moving_average" in requested_analysis:
-        ma = signal_math.moving_average(v, window=5)
-        preview = ma[:5] + ["..."] + ma[-5:]
-        lines.append(f"    moving_average (first5...last5): {preview}")
+        # Intentionally not recomputed to keep runtime low; print only if present in JSON.
+        if "moving_average" in precomputed:
+            lines.append(f"    moving_average: {precomputed['moving_average']}")
+        else:
+            lines.append("    moving_average: unavailable in JSON")
+
+    if "dc_offset" in requested_analysis:
+        if "dc_offset_V" in precomputed:
+            lines.append(f"    dc_offset: {precomputed['dc_offset_V']:.4f}V")
+        else:
+            lines.append("    dc_offset: unavailable in JSON")
+
+    if "signal_type" in requested_analysis:
+        if "signal_type" in precomputed:
+            lines.append(f"    signal_type: {precomputed['signal_type']}")
+        else:
+            lines.append("    signal_type: unavailable in JSON")
 
     return "\n".join(lines)
 
@@ -214,17 +256,64 @@ def format_probe_result(probe_id: str, probe: dict, requested_analysis: list = N
 # LLM response parsing                                                        #
 # --------------------------------------------------------------------------- #
 
-def parse_llm_response(raw: str) -> dict:
-    clean = raw.strip()
-    # Strip markdown code fences if the model wraps its output
-    if clean.startswith("```"):
-        lines = clean.splitlines()
-        clean = "\n".join(lines[1:] if lines[0].startswith("```") else lines)
-    if clean.endswith("```"):
-        clean = "\n".join(clean.splitlines()[:-1])
-    clean = clean.strip()
-    return json.loads(clean)
+def parse_llm_response(llm_output: str) -> dict:
+    """Parse the LLM response, handling both JSON and structured text."""
+    def sanitize_output(output: str) -> str:
+        """Remove escape sequences, control characters, and fix line breaks."""
+        # Remove ANSI escape sequences and other control characters
+        sanitized = re.sub(r'(?:\x1B|\x9B)\[[0-?]*[ -/]*[@-~]', '', output)
+        # Remove unnecessary line breaks within JSON strings
+        sanitized = re.sub(r'\s*\\[dD]\[.*?\]', '', sanitized)
+        sanitized = re.sub(r'\s+', ' ', sanitized)
+        return sanitized.strip()
 
+    # Sanitize the raw output
+    sanitized_output = sanitize_output(llm_output)
+
+    # Log sanitized output for debugging
+    logging.debug(f"Sanitized LLM output: {sanitized_output}")
+
+    try:
+        # Attempt to parse as JSON
+        return json.loads(sanitized_output)
+    except json.JSONDecodeError:
+        logging.warning("LLM returned non-JSON response. Attempting to parse manually.")
+
+        # Initialize default response structure
+        response = {
+            "reasoning": None,
+            "next_probe": None,
+            "request_analysis": [],
+            "confidence": 0.0,
+            "conclusion": None,
+            "recommended_fix": None,
+        }
+
+        # Extract fields from structured text
+        try:
+            if "reasoning:" in sanitized_output:
+                reasoning_match = re.search(r'reasoning:\s*(.*?)(,|$)', sanitized_output)
+                if reasoning_match:
+                    response["reasoning"] = reasoning_match.group(1).strip()
+
+            if "next_probe:" in sanitized_output:
+                next_probe_match = re.search(r'next_probe:\s*(.*?)(,|$)', sanitized_output)
+                if next_probe_match:
+                    response["next_probe"] = next_probe_match.group(1).strip().strip("\"")
+
+            if "request_analysis:" in sanitized_output:
+                analysis_match = re.search(r'request_analysis:\s*(\[.*?\])', sanitized_output)
+                if analysis_match:
+                    response["request_analysis"] = json.loads(analysis_match.group(1))
+
+            if "conclusion:" in sanitized_output:
+                conclusion_match = re.search(r'conclusion:\s*(.*?)(,|$)', sanitized_output)
+                if conclusion_match:
+                    response["conclusion"] = conclusion_match.group(1).strip().strip("\"")
+        except Exception as e:
+            logging.error(f"Error parsing structured text response: {e}")
+
+        return response
 
 # --------------------------------------------------------------------------- #
 # Main simulation loop                                                        #
@@ -238,11 +327,12 @@ def run_session(auto: bool = True):
     system_context = build_system_context(fake_data, datasheets)
 
     history = []
+    findings = []
     session_log = {
         "timestamp": datetime.datetime.now().isoformat(),
         "model": MODEL,
         "circuit": fake_data["circuit_topology"],
-        "symptom": "Motor not turning",
+        "symptom": fake_data.get("_description", "Unknown symptom"),
         "ground_truth": "Buck converter output ~2.8V (expected 5V) with 1.48Vpp ripple at 200Hz",
         "mode": "auto" if auto else "manual",
         "iterations": [],
@@ -271,9 +361,7 @@ def run_session(auto: bool = True):
 
         all_probes_measured = len(measured_probes) >= len(probes)
         print(f"\n[Iteration {iteration}/{MAX_ITERATIONS}]  Querying LLM...")
-        prompt = build_prompt(system_context, history,
-                              iteration, MAX_ITERATIONS,
-                              peak_confidence, all_probes_measured)
+        prompt = build_prompt(system_context, iteration, history, findings)
 
         try:
             raw = run_ollama_prompt(prompt, model=MODEL)
@@ -291,6 +379,7 @@ def run_session(auto: bool = True):
             response = {
                 "reasoning": raw,
                 "next_probe": None,
+                "request_analysis": [],
                 "confidence": 0.0,
                 "conclusion": None,
                 "recommended_fix": None,
@@ -300,6 +389,13 @@ def run_session(auto: bool = True):
         conclusion = response.get("conclusion")
         fix = response.get("recommended_fix")
         reasoning = response.get("reasoning", "")
+
+        # Confidence guardrails when model omits it.
+        if "confidence" not in response:
+            if findings:
+                confidence = max(confidence, 0.75)
+            if conclusion and str(conclusion).strip().lower() not in ("", "inconclusive"):
+                confidence = max(confidence, 0.85)
 
         # Track peak confidence across the whole session
         if confidence > peak_confidence:
@@ -336,8 +432,13 @@ def run_session(auto: bool = True):
 
         # --- Determine which probe to measure next ---
         next_probe = response.get("next_probe")
-        if next_probe and next_probe not in probes:
-            print(f"  [WARNING] LLM asked for unknown probe '{next_probe}', ignoring.")
+        request_analysis = response.get("request_analysis", [])
+
+        # Strip descriptive text from next_probe
+        if isinstance(next_probe, str) and ':' in next_probe:
+            next_probe = next_probe.split(':')[0].strip()
+        if next_probe not in probes:
+            print(f"[ERROR] next_probe '{next_probe}' is not a valid probe key. Ignoring.")
             next_probe = None
 
         if not next_probe:
@@ -361,19 +462,32 @@ def run_session(auto: bool = True):
                     continue
                 next_probe = raw_input
 
+        if not request_analysis:
+            print("  [Auto] No analysis requested — defaulting to all analyses.")
+            request_analysis = ["stats", "dominant_freq", "moving_average"]
+
         # --- Fetch and display probe data ---
         probe_data = probes[next_probe]
-        requested_analysis = response.get("request_analysis") or []
-        if requested_analysis:
-            print(f"  [Analysis requested] {requested_analysis}")
+        if request_analysis:
+            print(f"  [Analysis requested] {request_analysis}")
         print(f"\n  Measuring {next_probe} ({probe_data['label']})...")
-        result_text = format_probe_result(next_probe, probe_data, requested_analysis)
+        result_text = format_probe_result(next_probe, probe_data, request_analysis)
         print(result_text)
+
+        # Deterministic narrowing: promote a confirmed mismatch into findings.
+        update_findings_from_measurement(next_probe, result_text, findings)
+        if findings:
+            latest = findings[-1]
+            print(
+                f"  [Finding] {latest['probe']} expected {latest['expected_signal_type']} "
+                f"but observed {latest['observed_signal_type']}"
+            )
 
         measured_probes.add(next_probe)
         history.append({
             "probe_id": next_probe,
             "label": probe_data["label"],
+            "requested_analysis": request_analysis,
             "result_text": result_text,
         })
         iter_log["probe_measured"] = next_probe

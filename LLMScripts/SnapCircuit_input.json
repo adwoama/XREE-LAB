@@ -1,0 +1,14 @@
+{
+  "task_type": "debug",
+  "circuit_topology": "Battery -> Switch -> Music IC -> Speaker",
+  "probe_labels": {
+    "probeA": "Battery positive terminal",
+    "probeB": "Switch output",
+    "probeC": "Music IC VCC",
+    "probeD": "Music IC control. When HIGH the song will play on repeat. When LOW the song will stop until it is HIGH again and restarts.",
+    "probeE": "Music IC PWM",
+    "probeF": "Speaker positive terminal",
+    "probeG": "Speaker negative terminal"
+  },
+  "symptoms": "Song buffers first note repeatedly instead of playing song. It is as if it keeps turning off and then restarting."
+}

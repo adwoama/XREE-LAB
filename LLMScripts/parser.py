@@ -65,9 +65,16 @@ def parse_llm_output(text: str, probe_labels: dict = None):
         src = b.get("source")
         if probe_labels is not None and src not in probe_labels and src not in (None, ""):
             hallucinations.append(f"Unknown source '{src}' (not in probe_labels)")
+        # Log the state of probe_labels and the source being validated
+        print(f"Validating source: {src}, Available probes: {list(probe_labels.keys()) if probe_labels else 'None'}")
 
     if hallucinations:
         errors.extend(hallucinations)
+
+    valid_parameters = ['stats', 'dominant_freq', 'moving_average', 'dc_offset']
+    invalid_requests = [param for param in js.get('request_analysis', []) if param not in valid_parameters]
+    if invalid_requests:
+        errors.append(f"Invalid analysis parameters requested: {invalid_requests}")
 
     return js, errors
 
