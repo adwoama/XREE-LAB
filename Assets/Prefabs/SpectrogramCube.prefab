@@ -162,3 +162,9 @@ MonoBehaviour:
   testTimeSteps: 10
   testFrequencyBins: 10
   testFrequency: 1
+  heightMultiplier: 2
+  usePrimitiveDebug: 1
+  vertexEditVertexLimit: 2000
+  forceUsePrimitivePool: 1
+  debugGridTimeSteps: 2
+  debugGridFrequencyBins: 2

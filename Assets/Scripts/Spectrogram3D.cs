@@ -23,12 +23,24 @@ public class Spectrogram3D : MonoBehaviour
     [Tooltip("Multiplier applied to the inspector maxVoxelHeight to allow slightly taller debug visualization.")]
     public float heightMultiplier = 2.0f;
     [SerializeField] private bool usePrimitiveDebug = false; // Use a clean primitive cube for debugging
+    [Tooltip("Max vertex count for enabling per-voxel vertex editing. If the mesh has more vertices than this, the script will fallback to transform-scaling to avoid heavy CPU work.")]
+    public int vertexEditVertexLimit = 2000;
+    [Tooltip("When true, always use simple runtime primitive cubes for pooled voxels instead of instantiating the configured prefab. Safer for low-memory/debug runs.")]
+    public bool forceUsePrimitivePool = true;
+    [Tooltip("When true, disable debug grid initialization on non-Editor (device) builds to avoid startup memory/CPU spikes.")]
+    public bool disableDebugOnDevice = true;
+    [Tooltip("When testMode is enabled, initialize a small debug grid of this many time steps (X). Set to 1 for single-voxel.")]
+    public int debugGridTimeSteps = 2;
+    [Tooltip("When testMode is enabled, initialize a small debug grid of this many frequency bins (Z). Set to 1 for single-voxel.")]
+    public int debugGridFrequencyBins = 2;
 
     private float[,] preallocatedData; // Preallocated array for data
     private int currentTimeSteps = 0;
     private int currentFrequencyBins = 0;
 
     private Queue<GameObject> voxelPool = new Queue<GameObject>(); // Object pooling for voxels
+    private List<List<Renderer>> voxelRenderers = new List<List<Renderer>>(); // cached renderers
+    private Mesh primitiveCubeMesh = null;
 
     private Color[] precomputedColors; // Precomputed gradient colors
     
@@ -48,6 +60,7 @@ public class Spectrogram3D : MonoBehaviour
     private Mesh debugInstancedMesh;
     private Vector3[] debugBaseVertices;
     private Vector3[] debugModifiedVertices;
+    private bool debugUseVertexEditing = true;
     private float debugMeshBaseMinY;
     private float debugMeshBaseHeight;
     private BoxCollider debugBoxCollider;
@@ -72,8 +85,33 @@ public class Spectrogram3D : MonoBehaviour
             defaultRenderer.enabled = false;
         }
 
-        // Generate a single static voxel for debugging
-        GenerateSingleVoxel();
+        // Safety: if running on device (Quest/Android) and the developer
+        // opted-in, disable test-mode grid initialization to avoid heavy
+        // startup work that can hang the device. We force conservative
+        // defaults so the app can load; the user can re-enable debug in
+        // the Editor.
+        if (disableDebugOnDevice && Application.platform == RuntimePlatform.Android && !Application.isEditor)
+        {
+            Debug.Log("Spectrogram3D: running on device; disabling debug grid to avoid startup spikes.");
+            testMode = false;
+            forceUsePrimitivePool = true;
+            debugGridTimeSteps = 1;
+            debugGridFrequencyBins = 1;
+        }
+
+        // If testMode requests a small grid, initialize it. Otherwise
+        // generate a single voxel for focused debugging.
+        if (testMode && (debugGridTimeSteps > 1 || debugGridFrequencyBins > 1))
+        {
+            InitializeVoxelGrid(debugGridTimeSteps, debugGridFrequencyBins);
+            PrecomputeGradientColors(Mathf.Max(16, debugGridTimeSteps * debugGridFrequencyBins * 2));
+            GenerateTestData();
+        }
+        else
+        {
+            // Generate a single static voxel for debugging
+            GenerateSingleVoxel();
+        }
 
         // Log current state to help debug why Update may not run or the
         // voxel may not animate. This log is printed once at Start.
@@ -136,6 +174,15 @@ public class Spectrogram3D : MonoBehaviour
                 debugModifiedVertices = new Vector3[debugBaseVertices.Length];
                 debugInstancedMesh.MarkDynamic();
 
+                // If the mesh is very large, don't perform per-frame
+                // vertex edits — fallback to scaling the visible
+                // transform instead to avoid excessive CPU cost.
+                if (debugBaseVertices.Length > vertexEditVertexLimit)
+                {
+                    debugUseVertexEditing = false;
+                    Debug.LogWarning($"Spectrogram3D: mesh vertex count ({debugBaseVertices.Length}) exceeds vertexEditVertexLimit ({vertexEditVertexLimit}), falling back to transform-scaling.");
+                }
+
                 // compute mesh local-space min/max Y
                 float minY = float.MaxValue;
                 float maxY = float.MinValue;
@@ -174,14 +221,10 @@ public class Spectrogram3D : MonoBehaviour
             debugRenderer.SetPropertyBlock(debugMPB);
         }
 
-        // Ensure the voxel does not participate in physics (prevents
-        // unexpected movement when transforms are modified elsewhere).
-        Rigidbody rb = singleVoxel.GetComponent<Rigidbody>();
-        if (rb == null)
-        {
-            rb = singleVoxel.AddComponent<Rigidbody>();
-        }
-        rb.isKinematic = true;
+            // Do not add or modify physics components here — unnecessary
+            // Rigidbody additions caused overhead previously. If a
+            // Rigidbody exists in the prefab, leave it alone; avoid
+            // creating new ones at runtime for debug voxels.
     }
 
     private void Update()
@@ -241,14 +284,25 @@ public class Spectrogram3D : MonoBehaviour
                 debugModifiedVertices[i].z = debugBaseVertices[i].z;
             }
 
-            debugInstancedMesh.vertices = debugModifiedVertices;
-            debugInstancedMesh.RecalculateBounds();
-
-            // Recalculate normals less frequently to reduce CPU usage.
             debugFrameCounter++;
-            if (debugFrameCounter % debugNormalsUpdateFrameInterval == 0)
+            // Apply vertex edits but only recalc bounds/normals occasionally
+            // to reduce CPU churn. If vertex editing was disabled because
+            // the mesh is large, fall back to transform-scaling instead.
+            if (debugUseVertexEditing)
             {
-                debugInstancedMesh.RecalculateNormals();
+                debugInstancedMesh.vertices = debugModifiedVertices;
+                if (debugFrameCounter % debugNormalsUpdateFrameInterval == 0)
+                {
+                    debugInstancedMesh.RecalculateBounds();
+                    debugInstancedMesh.RecalculateNormals();
+                }
+            }
+            else
+            {
+                // Fallback: animate the visible transform's localScale
+                float sY = debugRenderableBaseLocalScale.y * heightScaleFactor;
+                if (debugRenderableTransform != null) debugRenderableTransform.localScale = new Vector3(debugRenderableBaseLocalScale.x, sY, debugRenderableBaseLocalScale.z);
+                else if (debugVoxel != null) debugVoxel.transform.localScale = new Vector3(debugVoxel.transform.localScale.x, sY, debugVoxel.transform.localScale.z);
             }
 
             // NOTE: skip updating colliders here in debug mode to avoid
@@ -282,17 +336,6 @@ public class Spectrogram3D : MonoBehaviour
             debugMPB.SetColor("_Color", c);
             debugMPB.SetColor("_BaseColor", c);
             debugRenderer.SetPropertyBlock(debugMPB);
-
-            // Fallback: set instance material color (this will create a
-            // material instance on first access; acceptable for debug).
-            try
-            {
-                debugRenderer.material.color = c;
-            }
-            catch (Exception e)
-            {
-                Debug.LogWarning($"Spectrogram3D: failed to set material.color fallback: {e.Message}");
-            }
         }
 
         // Debug: log scale and renderer bounds to determine whether the
@@ -329,7 +372,23 @@ public class Spectrogram3D : MonoBehaviour
         currentFrequencyBins = frequencyBins;
         preallocatedData = new float[timeSteps, frequencyBins];
 
+        // Ensure renderer cache rows match grid rows
+        while (voxelRenderers.Count < timeSteps) voxelRenderers.Add(new List<Renderer>());
+        while (voxelRenderers.Count > timeSteps) voxelRenderers.RemoveAt(voxelRenderers.Count - 1);
+
         AdjustVoxelGrid(timeSteps, frequencyBins);
+    }
+
+    // Return a shared cube mesh we can assign to other objects. Creating
+    // a temporary primitive once and caching its mesh avoids extra GC.
+    private Mesh GetPrimitiveCubeMesh()
+    {
+        if (primitiveCubeMesh != null) return primitiveCubeMesh;
+        GameObject tmp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        MeshFilter mf = tmp.GetComponent<MeshFilter>();
+        if (mf != null) primitiveCubeMesh = mf.sharedMesh;
+        Destroy(tmp);
+        return primitiveCubeMesh;
     }
 
     /// <summary>
@@ -357,10 +416,12 @@ public class Spectrogram3D : MonoBehaviour
                 voxelScale.y = normalizedHeight * maxVoxelHeight;
                 voxelGrid[t][f].transform.localScale = voxelScale;
 
-                Renderer voxelRenderer = voxelGrid[t][f].GetComponent<Renderer>();
+                // Use cached renderer when available to avoid GetComponent costs
+                Renderer voxelRenderer = null;
+                if (t < voxelRenderers.Count && f < voxelRenderers[t].Count) voxelRenderer = voxelRenderers[t][f];
                 if (voxelRenderer != null)
                 {
-                    voxelRenderer.sharedMaterial.color = GetPrecomputedColor(normalizedHeight);
+                    try { voxelRenderer.sharedMaterial.color = GetPrecomputedColor(normalizedHeight); } catch { }
                 }
             }
         }
@@ -377,22 +438,70 @@ public class Spectrogram3D : MonoBehaviour
         while (voxelGrid.Count < timeSteps)
         {
             voxelGrid.Add(new List<GameObject>());
+            voxelRenderers.Add(new List<Renderer>());
         }
 
         // Adjust columns in each row
         for (int t = 0; t < timeSteps; t++)
         {
-            while (voxelGrid[t].Count < frequencyBins)
+                while (voxelGrid[t].Count < frequencyBins)
             {
                 GameObject newVoxel = GetPooledVoxel();
-                newVoxel.transform.localPosition = new Vector3(t * voxelSpacing.x, 0, t * voxelSpacing.z);
+                // Position X = time index, Z = frequency index
+                int f = voxelGrid[t].Count;
+                newVoxel.transform.localPosition = new Vector3(t * voxelSpacing.x, 0, f * voxelSpacing.z);
+                newVoxel.name = $"Voxel_{t}_{f}";
                 voxelGrid[t].Add(newVoxel);
+
+                // Cache renderer reference to avoid GetComponent per-frame
+                Renderer r = newVoxel.GetComponentInChildren<Renderer>();
+                voxelRenderers[t].Add(r);
+
+                // Inspect mesh and replace flat meshes with a cube for clear
+                // Y-scaling. Log details so user can spot which voxels are flat.
+                MeshFilter mf = newVoxel.GetComponentInChildren<MeshFilter>();
+                int vertexCount = -1;
+                Vector3 meshBoundsSize = Vector3.zero;
+                bool replaced = false;
+                if (mf != null && mf.sharedMesh != null)
+                {
+                    vertexCount = mf.sharedMesh.vertexCount;
+                    meshBoundsSize = mf.sharedMesh.bounds.size;
+                    if (vertexCount < 8)
+                    {
+                        Mesh cube = GetPrimitiveCubeMesh();
+                        if (cube != null)
+                        {
+                            replaced = true;
+                            mf.sharedMesh = cube;
+                            if (mf.mesh != null) mf.mesh = Instantiate(cube);
+                            vertexCount = cube.vertexCount;
+                            meshBoundsSize = cube.bounds.size;
+                        }
+                    }
+                }
+
+                string rendererInfo = r != null ? $"rendererBounds={r.bounds.size}" : "noRenderer";
+                Debug.Log($"Spectrogram3D.CreateVoxel idx=({t},{f}) name={newVoxel.name} vertexCount={vertexCount} meshBounds={meshBoundsSize} replaced={replaced} {rendererInfo}");
+                // Color each voxel distinctively for easier visual identification
+                if (r != null)
+                {
+                    try
+                    {
+                        float key = ((t * frequencyBins) + f) / (float)Mathf.Max(1, timeSteps * frequencyBins - 1);
+                        Color cc = colorGradient.Evaluate(key);
+                        r.material.color = cc;
+                    }
+                    catch { }
+                }
             }
 
             while (voxelGrid[t].Count > frequencyBins)
             {
-                GameObject voxelToRemove = voxelGrid[t][voxelGrid[t].Count - 1];
-                voxelGrid[t].RemoveAt(voxelGrid[t].Count - 1);
+                int last = voxelGrid[t].Count - 1;
+                GameObject voxelToRemove = voxelGrid[t][last];
+                voxelGrid[t].RemoveAt(last);
+                if (voxelRenderers[t].Count > last) voxelRenderers[t].RemoveAt(last);
                 ReturnVoxelToPool(voxelToRemove);
             }
         }
@@ -420,6 +529,21 @@ public class Spectrogram3D : MonoBehaviour
             voxel.SetActive(true);
             return voxel;
         }
+        // For safety on low-memory/debug runs, optionally create a
+        // lightweight primitive cube rather than instantiating the full
+        // prefab which may contain expensive scripts or child objects.
+        if (forceUsePrimitivePool || usePrimitiveDebug || voxelPrefab == null)
+        {
+            GameObject voxel = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            voxel.transform.SetParent(voxelParent, false);
+            // Minimal size
+            voxel.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+            // Remove collider to avoid physics overhead in pooled debug voxels
+            Collider col = voxel.GetComponent<Collider>();
+            if (col != null) Destroy(col);
+            return voxel;
+        }
+
         return Instantiate(voxelPrefab, voxelParent);
     }
 
@@ -431,6 +555,7 @@ public class Spectrogram3D : MonoBehaviour
         voxel.SetActive(false);
         voxelPool.Enqueue(voxel);
     }
+
 
     /// <summary>
     /// Precomputes gradient colors for a fixed number of steps to optimize color evaluation.
@@ -477,8 +602,12 @@ public class Spectrogram3D : MonoBehaviour
         {
             for (int f = 0; f < currentFrequencyBins; f++)
             {
-                // Example: Sinusoidal data
-                preallocatedData[t, f] = Mathf.Abs(Mathf.Sin((t + f) * testFrequency * Mathf.PI / currentTimeSteps));
+                // Example: Sinusoidal data.
+                // Map sine to [0,1] and add a small baseline so voxels
+                // never collapse completely to a flat square during tests.
+                float s = Mathf.Sin((t + f) * testFrequency * Mathf.PI / Mathf.Max(1, currentTimeSteps));
+                float n = (s + 1f) * 0.5f; // 0..1
+                preallocatedData[t, f] = Mathf.Clamp01(0.2f + 0.8f * n); // 0.2..1.0
 
                 // Uncomment the following line for random data instead:
                 // preallocatedData[t, f] = UnityEngine.Random.value;
